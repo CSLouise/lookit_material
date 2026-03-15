@@ -1,0 +1,652 @@
+{
+    "frames": {
+        "exit-survey": {
+            "kind": "exp-lookit-exit-survey",
+            "debriefing": {
+                "text": "\n This study is a follow-up study for a series of our previous studies.\n In our previous studies, we wanted to know if “causes to break” and “break” mean the same thing. Though many researchers think they do, children may think they don’t. We found that when hearing a story where Suzy was riding her bike, hit Andy and he fell into the fence and it broke, young children, e.g. 4 and 5 year olds, say that Suzy caused the fence to break and Andy broke it. Similarly, when told that Sophia scared Bobby and he fell into a mirror and the mirror cracked, children said that Sophia caused the mirror to crack and that Bobby cracked it. These findings suggest that young children don’t think that “causes to break” and “break” mean the same thing. Note that “causing to break” and “break” are both statements about causation. So in saying that, for instance, Suzy caused the fence to break and that Andy broke it, we are making two different causal judgments. And if we are making two different causal judgments this raises questions about how we resolve responsibility. Most researchers think that being responsible for an outcome requires that you caused the outcome to occur. But how do we decide responsibility when making two different causal judgments? Though nobody has examined this question, we think our findings will make a contribution to understanding how, over development, we resolve issues of responsibility when making different causal judgments. \n Although children’s answers can vary, there aren’t any “right” or “wrong” answers to the questions. We are just interested in looking at the average responses from children and we won’t take any specific answers as “good” or “bad”.\n If you are interested in learning more about this, please see the following experimental paper with adults <a href='https://philpapers.org/rec/ROSCAB-3' target='_blank' rel='noopener'>here</a>. Thank you again for your participation!",
+                "title": "Thank you!"
+            }
+        },
+        "start-recording-with-image": {
+            "kind": "exp-lookit-start-recording",
+            "baseDir": "https://www.mit.edu/~kimscott/placeholderstimuli/",
+            "videoTypes": [
+                "webm",
+                "mp4"
+            ],
+            "image": "peekaboo_remy.jpg",
+            "imageAnimation": "spin",
+            "displayFullscreen": true
+        },
+        "stop-recording-with-video": {
+            "kind": "exp-lookit-stop-recording",
+            "baseDir": "https://www.mit.edu/~kimscott/placeholderstimuli/",
+            "videoTypes": [
+                "webm",
+                "mp4"
+            ],
+            "video": "attentiongrabber",
+            "displayFullscreen": true,
+            "showProgressBar": true,
+            "waitForUploadMessage": " "
+        },
+        "instructions": {
+            "kind": "exp-lookit-instructions",
+            "blocks": [
+                {
+                    "title": "1. Overview of what we're doing today",
+                    "listblocks": [
+                        {
+                            "text": "All together, it will take about 8-10 minutes to finish this study."
+                        },
+                        {
+                            "text": "I’m going to ask you some questions and I just want to know what you think."
+                        },
+                        {
+                            "text": "There aren’t any right or wrong answers, so just tell me what you think ! "
+                        }
+                    ]
+                },
+                {
+                    "text": "Please try playing this sample audio to make sure you'll be able to hear the story.",
+                    "title": "2. Adjust your speakers",
+                    "mediaBlock": {
+                        "text": "You should hear 'Ready to go?'",
+                        "isVideo": false,
+                        "sources": [
+                            {
+                                "src": "https://s3.amazonaws.com/lookitcontents/exp-physics-final/audio/ready.mp3",
+                                "type": "audio/mp3"
+                            },
+                            {
+                                "src": "https://s3.amazonaws.com/lookitcontents/exp-physics-final/audio/ready.ogg",
+                                "type": "audio/ogg"
+                            }
+                        ],
+                        "mustPlay": true,
+                        "warningText": "Please try playing the sample audio."
+                    }
+                }
+            ],
+            "showWebcam": true,
+            "webcamBlocks": [
+                {
+                    "title": "3. Make sure we can see you",
+                    "listblocks": [
+                        {
+                            "text": "Take a look at your webcam view above. Get comfy, and adjust your own position or the computer as needed so both you and your child are visible."
+                        },
+                        {
+                            "text": "This isn't a Skype call - no one in the lab can see you - but the recorded video of your participation will be sent to the lab to help with data analysis. It's helpful for us to be able to see if your child was pointing or looking confused, for example."
+                        }
+                    ]
+                }
+            ],
+            "nextButtonText": "Next"
+        },
+        "video-config": {
+            "kind": "exp-video-config"
+        },
+        "video-consent": {
+            "kind": "exp-lookit-video-consent",
+            "template": "consent_005",
+            "PIName": "Lookit Tutorial Participant",
+            "PIContact": "Ellen Markman at markman@stanford.edu",
+            "include_databrary": true,
+            "risk_statement": "There are no expected risks to participation.",
+            "datause": "A research assistant will watch your video and mark down your child's answer to the question at the end of the story, and as well as other information such as interactions between you and your child during the story.",
+            "payment": "After you finish the study, we will email you a $5 Amazon gift card within approximately 3-5 business days. Please note that the gift card is for US residents only, but we still invite non-US residents to participate. To be eligible for the gift card your child must be in the age range for this study, you need to submit a valid consent statement, and we need to see that there is a child with you. But we will send a gift card even if you do not finish the whole study or we are not able to use your child's data! There are no other direct benefits to you or your child from participating, but we hope you will enjoy the experience.",
+            "purpose": "This study is about how children use causal verbs in language and how they think about causation and responsibility.",
+            "procedures": "In this study your child will view a digital 'storybook' about Suzy, Andy, Sophia and Bobby. Suzy and Andy are in the park. One of them is riding the bike very fast and runs into the other one. At the end, someone falls into a fence. After seeing this, your child will be asked a couple of questions. In the other story, Sophia and Bobby are in a room. One of them decides to play a trick on the other one. At the end, someone falls into a mirror. After seeing this, your child will be asked a couple of questions.  We are interested in how children use different causal verbs to describe the two incidents, and how they decide who is responsible for the outcome. We will ask you (the parent) to avoid discussing with your child until the end of the study. There are no anticipated risks associated with participating.",
+            "institution": "The Markman Lab of Stanford University"
+        },
+        "introduction": {
+            "kind": "exp-lookit-video",
+            "baseDir": "https://raw.githubusercontent.com/houxiru/lookit-stimuli/master/",
+            "id": "storybook-group",
+            "videoTypes": [
+                "mp4"
+            ],
+            "autoProceed": false,
+            "doRecording": false,
+            "parentTextBlock": {
+                "css": {
+                    "font-size": "1.5em"
+                },
+                "text": "Please help keep your child's attention, but don't talk with them about what you think.",
+                "title": "For parents"
+            },
+            "video": {
+                "source": "lookit_intro",
+                "top": 0,
+                "left": 0,
+                "width": 120,
+                "loop": false
+            }
+        },
+        "before-we-get-started": {
+            "kind": "exp-lookit-video",
+            "baseDir": "https://raw.githubusercontent.com/houxiru/lookit-stimuli/master/",
+            "id": "storybook-group",
+            "videoTypes": [
+                "mp4"
+            ],
+            "autoProceed": false,
+            "displayFullscreen": true,
+            "doRecording": false,
+            "video": {
+                "source": "reminders",
+                "top": 0,
+                "left": 0,
+                "width": 120,
+                "loop": false
+            }
+        },
+        "end": {
+            "kind": "exp-lookit-video",
+            "baseDir": "https://raw.githubusercontent.com/houxiru/lookit-stimuli/master/",
+            "id": "storybook-group",
+            "videoTypes": [
+                "mp4"
+            ],
+            "autoProceed": false,
+            "doRecording": false,
+            "displayFullscreen": true,
+            "parentTextBlock": {
+                "css": {
+                    "font-size": "1.5 em"
+                },
+                "text": "Thank you very much for your participation. We look forward to seeing you with more research games in the future. ",
+                "title": "For parents"
+            },
+            "video": {
+                "source": "lookit_outro",
+                "top": 0,
+                "left": 0,
+                "width": 120,
+                "loop": false
+            }
+        },
+        "warmup": {
+            "kind": "group",
+            "frameList": [
+                {
+                    "kind": "group",
+                    "frameList": [
+                        {
+                            "autoProceed": false,
+                            "video": {
+                                "source": "warmup_intro1",
+                                "top": 0,
+                                "left": 0,
+                                "width": 120,
+                                "loop": false
+                            }
+                        },
+                        {
+                            "autoProceed": false,
+                            "video": {
+                                "source": "warmup_intro1_question1",
+                                "top": 0,
+                                "left": 0,
+                                "width": 120,
+                                "loop": false
+                            }
+                        },
+                        {
+                            "autoProceed": false,
+                            "video": {
+                                "source": "warmup_intro1_question2",
+                                "top": 0,
+                                "left": 0,
+                                "width": 120,
+                                "loop": false
+                            }
+                        },
+                        {
+                            "autoProceed": false,
+                            "video": {
+                                "source": "warmup_intro2",
+                                "top": 0,
+                                "left": 0,
+                                "width": 120,
+                                "loop": false
+                            }
+                        },
+                        {
+                            "autoProceed": false,
+                            "video": {
+                                "source": "warmup_intro2_question1",
+                                "top": 0,
+                                "left": 0,
+                                "width": 120,
+                                "loop": false
+                            }
+                        },
+                        {
+                            "autoProceed": false,
+                            "video": {
+                                "source": "warmup_intro2_question2",
+                                "top": 0,
+                                "left": 0,
+                                "width": 120,
+                                "loop": false
+                            }
+                        }
+                    ],
+                    "commonFrameProperties": {
+                        "kind": "exp-lookit-video",
+                        "baseDir": "https://raw.githubusercontent.com/houxiru/lookit-stimuli/master/",
+                        "id": "storybook-group",
+                        "videoTypes": [
+                            "mp4"
+                        ],
+                        "autoProceed": true,
+                        "doRecording": false
+                    }
+                }
+            ]
+        },
+        "causal-verb-study-story-book": {
+            "kind": "group",
+            "parameters": {
+                "CANDS": [
+                    [
+                        "fence_intro",
+                        "fence_scenario_boy_bike",
+                        "fence_scenario_boy_bike_break_question",
+                        "fence_scenario_boy_bike_caused_question",
+                        "fence_scenario_boy_bike_fault_question",
+                        "mirror_intro",
+                        "mirror_scenario_girl_chair",
+                        "mirror_scenario_girl_chair_crack_question",
+                        "mirror_scenario_girl_chair_caused_question",
+                        "mirror_scenario_girl_chair_fault_question"
+                    ],
+                    [
+                        "fence_intro",
+                        "fence_scenario_boy_bike",
+                        "fence_scenario_boy_bike_caused_question",
+                        "fence_scenario_boy_bike_break_question",
+                        "fence_scenario_boy_bike_fault_question",
+                        "mirror_intro",
+                        "mirror_scenario_girl_chair",
+                        "mirror_scenario_girl_chair_caused_question",
+                        "mirror_scenario_girl_chair_crack_question",
+                        "mirror_scenario_girl_chair_fault_question"
+                    ],
+                    [
+                        "fence_intro",
+                        "fence_scenario_girl_bike",
+                        "fence_scenario_girl_bike_break_question",
+                        "fence_scenario_girl_bike_cause_question",
+                        "fence_scenario_girl_bike_fault_question",
+                        "mirror_intro",
+                        "mirror_scenario_boy_chair",
+                        "mirror_scenario_boy_chair_crack_question",
+                        "mirror_scenario_boy_chair_cause_question",
+                        "mirror_scenario_boy_chair_fault_question"
+                    ],
+                    [
+                        "fence_intro",
+                        "fence_scenario_girl_bike",
+                        "fence_scenario_girl_bike_cause_question",
+                        "fence_scenario_girl_bike_break_question",
+                        "fence_scenario_girl_bike_fault_question",
+                        "mirror_intro",
+                        "mirror_scenario_boy_chair",
+                        "mirror_scenario_boy_chair_cause_question",
+                        "mirror_scenario_boy_chair_crack_question",
+                        "mirror_scenario_boy_chair_fault_question"
+                    ]
+                ]
+            },
+            "frameList": [
+                {
+                    "kind": "group",
+                    "parameters": {
+                        "TRIAL_DISPLAYED": "CANDS#UNIQ"
+                    },
+                    "frameList": [
+                        {
+                            "kind": "choice",
+                            "sampler": "permute",
+                            "commonFrameProperties": {
+                                "id": "storybook-group"
+                            },
+                            "frameOptions": [
+                                {
+                                    "kind": "group",
+                                    "commonFrameProperties": {},
+                                    "frameList": [
+                                        {
+                                            "kind": "exp-lookit-video",
+                                            "video": {
+                                                "position": "fill",
+                                                "loop": false,
+                                                "source": "TRIAL_DISPLAYED#0"
+                                            },
+                                            "requireVideoCount": 1,
+                                            "doRecording": false,
+                                            "baseDir": "https://raw.githubusercontent.com/houxiru/lookit-stimuli/master/",
+                                            "videoTypes": [
+                                                "mp4"
+                                            ],
+                                            "backgroundColor": "white",
+                                            "autoProceed": false
+                                        },
+                                        {
+                                            "kind": "exp-lookit-stop-recording",
+                                            "baseDir": "https://www.mit.edu/~kimscott/placeholderstimuli/",
+                                            "videoTypes": [
+                                                "webm",
+                                                "mp4"
+                                            ],
+                                            "image": "peekaboo_remy.jpg",
+                                            "imageAnimation": "spin",
+                                            "displayFullscreen": true
+                                        },
+                                        {
+                                            "kind": "exp-lookit-start-recording",
+                                            "baseDir": "https://www.mit.edu/~kimscott/placeholderstimuli/",
+                                            "videoTypes": [
+                                                "webm",
+                                                "mp4"
+                                            ],
+                                            "image": "peekaboo_remy.jpg",
+                                            "imageAnimation": "spin",
+                                            "displayFullscreen": true
+                                        },
+                                        {
+                                            "kind": "exp-lookit-video",
+                                            "video": {
+                                                "position": "fill",
+                                                "loop": false,
+                                                "source": "TRIAL_DISPLAYED#1"
+                                            },
+                                            "requireVideoCount": 1,
+                                            "doRecording": false,
+                                            "baseDir": "https://raw.githubusercontent.com/houxiru/lookit-stimuli/master/",
+                                            "videoTypes": [
+                                                "mp4"
+                                            ],
+                                            "backgroundColor": "white",
+                                            "autoProceed": false
+                                        },
+                                        {
+                                            "kind": "exp-lookit-stop-recording",
+                                            "baseDir": "https://www.mit.edu/~kimscott/placeholderstimuli/",
+                                            "videoTypes": [
+                                                "webm",
+                                                "mp4"
+                                            ],
+                                            "image": "peekaboo_remy.jpg",
+                                            "imageAnimation": "spin",
+                                            "displayFullscreen": true
+                                        },
+                                        {
+                                            "kind": "exp-lookit-start-recording",
+                                            "baseDir": "https://www.mit.edu/~kimscott/placeholderstimuli/",
+                                            "videoTypes": [
+                                                "webm",
+                                                "mp4"
+                                            ],
+                                            "image": "peekaboo_remy.jpg",
+                                            "imageAnimation": "spin",
+                                            "displayFullscreen": true
+                                        },
+                                        {
+                                            "kind": "exp-lookit-video",
+                                            "baseDir": "https://raw.githubusercontent.com/houxiru/lookit-stimuli/master/",
+                                            "video": {
+                                                "source": "TRIAL_DISPLAYED#2",
+                                                "top": 0,
+                                                "left": 0,
+                                                "width": 120,
+                                                "loop": false
+                                            },
+                                            "requireVideoCount": 1,
+                                            "videoTypes": [
+                                                "mp4"
+                                            ],
+                                            "autoProceed": false,
+                                            "doRecording": false,
+                                            "parentTextBlock": {
+                                                "css": {
+                                                    "font-size": "1.3em"
+                                                },
+                                                "text": "Please be sure that your child says their answer out loud. \nPlease remind your child of the characters' names (Andy and Suzy) if needed. Thank you! \n When you finish, click \"next\".",
+                                                "title": "For parents"
+                                            },
+                                            "id": "storybook-group2"
+                                        },
+                                        {
+                                            "kind": "exp-lookit-video",
+                                            "baseDir": "https://raw.githubusercontent.com/houxiru/lookit-stimuli/master/",
+                                            "video": {
+                                                "source": "TRIAL_DISPLAYED#3",
+                                                "top": 0,
+                                                "left": 0,
+                                                "width": 120,
+                                                "loop": false
+                                            },
+                                            "requireVideoCount": 1,
+                                            "videoTypes": [
+                                                "mp4"
+                                            ],
+                                            "autoProceed": false,
+                                            "doRecording": false,
+                                            "parentTextBlock": {
+                                                "css": {
+                                                    "font-size": "1.3em"
+                                                },
+                                                "text": "Please be sure that your child says their answer out loud. \nPlease remind your child of the characters' names (Andy and Suzy) if needed. Thank you! \n When you finish, click \"next\".",
+                                                "title": "For parents"
+                                            },
+                                            "id": "storybook-group3"
+                                        },
+                                        {
+                                            "kind": "exp-lookit-video",
+                                            "baseDir": "https://raw.githubusercontent.com/houxiru/lookit-stimuli/master/",
+                                            "id": "storybook-group4",
+                                            "video": {
+                                                "source": "TRIAL_DISPLAYED#4",
+                                                "top": 0,
+                                                "left": 0,
+                                                "width": 120,
+                                                "loop": false
+                                            },
+                                            "requireVideoCount": 1,
+                                            "videoTypes": [
+                                                "mp4"
+                                            ],
+                                            "autoProceed": false,
+                                            "doRecording": false,
+                                            "parentTextBlock": {
+                                                "css": {
+                                                    "font-size": "1.3em"
+                                                },
+                                                "text": "Please be sure that your child says their answer out loud. \nPlease remind your child of the characters' names (Andy and Suzy) if needed. Thank you! \n When you finish, click \"next\".",
+                                                "title": "For parents"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "kind": "group",
+                                    "commonFrameProperties": {},
+                                    "frameList": [
+                                        {
+                                            "kind": "exp-lookit-video",
+                                            "video": {
+                                                "position": "fill",
+                                                "loop": false,
+                                                "source": "TRIAL_DISPLAYED#5"
+                                            },
+                                            "requireVideoCount": 1,
+                                            "doRecording": false,
+                                            "baseDir": "https://raw.githubusercontent.com/houxiru/lookit-stimuli/master/",
+                                            "videoTypes": [
+                                                "mp4"
+                                            ],
+                                            "backgroundColor": "white",
+                                            "autoProceed": false
+                                        },
+                                        {
+                                            "kind": "exp-lookit-stop-recording",
+                                            "baseDir": "https://www.mit.edu/~kimscott/placeholderstimuli/",
+                                            "videoTypes": [
+                                                "webm",
+                                                "mp4"
+                                            ],
+                                            "image": "peekaboo_remy.jpg",
+                                            "imageAnimation": "spin",
+                                            "displayFullscreen": true
+                                        },
+                                        {
+                                            "kind": "exp-lookit-start-recording",
+                                            "baseDir": "https://www.mit.edu/~kimscott/placeholderstimuli/",
+                                            "videoTypes": [
+                                                "webm",
+                                                "mp4"
+                                            ],
+                                            "image": "peekaboo_remy.jpg",
+                                            "imageAnimation": "spin",
+                                            "displayFullscreen": true
+                                        },
+                                        {
+                                            "kind": "exp-lookit-video",
+                                            "video": {
+                                                "position": "fill",
+                                                "loop": false,
+                                                "source": "TRIAL_DISPLAYED#6"
+                                            },
+                                            "requireVideoCount": 1,
+                                            "doRecording": false,
+                                            "baseDir": "https://raw.githubusercontent.com/houxiru/lookit-stimuli/master/",
+                                            "videoTypes": [
+                                                "mp4"
+                                            ],
+                                            "backgroundColor": "white",
+                                            "autoProceed": false
+                                        },
+                                        {
+                                            "kind": "exp-lookit-stop-recording",
+                                            "baseDir": "https://www.mit.edu/~kimscott/placeholderstimuli/",
+                                            "videoTypes": [
+                                                "webm",
+                                                "mp4"
+                                            ],
+                                            "image": "peekaboo_remy.jpg",
+                                            "imageAnimation": "spin",
+                                            "displayFullscreen": true
+                                        },
+                                        {
+                                            "kind": "exp-lookit-start-recording",
+                                            "baseDir": "https://www.mit.edu/~kimscott/placeholderstimuli/",
+                                            "videoTypes": [
+                                                "webm",
+                                                "mp4"
+                                            ],
+                                            "image": "peekaboo_remy.jpg",
+                                            "imageAnimation": "spin",
+                                            "displayFullscreen": true
+                                        },
+                                        {
+                                            "kind": "exp-lookit-video",
+                                            "baseDir": "https://raw.githubusercontent.com/houxiru/lookit-stimuli/master/",
+                                            "id": "storybook-group7",
+                                            "video": {
+                                                "source": "TRIAL_DISPLAYED#7",
+                                                "top": 0,
+                                                "left": 0,
+                                                "width": 120,
+                                                "loop": false
+                                            },
+                                            "requireVideoCount": 1,
+                                            "videoTypes": [
+                                                "mp4"
+                                            ],
+                                            "autoProceed": false,
+                                            "doRecording": false,
+                                            "parentTextBlock": {
+                                                "css": {
+                                                    "font-size": "1.3em"
+                                                },
+                                                "text": "Please be sure that your child says their answer out loud. \nPlease remind your child of the characters' names (Sophia and Bobby) if needed. Thank you! \n When you finish, click \"next\".",
+                                                "title": "For parents"
+                                            }
+                                        },
+                                        {
+                                            "kind": "exp-lookit-video",
+                                            "baseDir": "https://raw.githubusercontent.com/houxiru/lookit-stimuli/master/",
+                                            "id": "storybook-group8",
+                                            "video": {
+                                                "source": "TRIAL_DISPLAYED#8",
+                                                "top": 0,
+                                                "left": 0,
+                                                "width": 120,
+                                                "loop": false
+                                            },
+                                            "requireVideoCount": 1,
+                                            "videoTypes": [
+                                                "mp4"
+                                            ],
+                                            "autoProceed": false,
+                                            "doRecording": false,
+                                            "parentTextBlock": {
+                                                "css": {
+                                                    "font-size": "1.3em"
+                                                },
+                                                "text": "Please be sure that your child says their answer out loud. \nPlease remind your child of the characters' names (Sophia and Bobby) if needed. Thank you! \n When you finish, click \"next\".",
+                                                "title": "For parents"
+                                            }
+                                        },
+                                        {
+                                            "kind": "exp-lookit-video",
+                                            "baseDir": "https://raw.githubusercontent.com/houxiru/lookit-stimuli/master/",
+                                            "id": "storybook-group9",
+                                            "video": {
+                                                "source": "TRIAL_DISPLAYED#9",
+                                                "top": 0,
+                                                "left": 0,
+                                                "width": 120,
+                                                "loop": false
+                                            },
+                                            "requireVideoCount": 1,
+                                            "videoTypes": [
+                                                "mp4"
+                                            ],
+                                            "autoProceed": false,
+                                            "doRecording": false,
+                                            "parentTextBlock": {
+                                                "css": {
+                                                    "font-size": "1.3em"
+                                                },
+                                                "text": "Please be sure that your child says their answer out loud. \nPlease remind your child of the characters' names (Sophia and Bobby) if needed. Thank you! \n When you finish, click \"next\".",
+                                                "title": "For parents"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "sequence": [
+        "instructions",
+        "video-config",
+        "video-consent",
+        "before-we-get-started",
+        "start-recording-with-image",
+        "introduction",
+        "warmup",
+        "causal-verb-study-story-book",
+        "end",
+        "stop-recording-with-video",
+        "exit-survey"
+    ]
+}
