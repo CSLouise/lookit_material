@@ -102,7 +102,7 @@
         },
         "introduction": {
             "kind": "exp-lookit-video",
-            "baseDir": "https://raw.githubusercontent.com/houxiru/lookit-stimuli/master/",
+            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/",
             "id": "storybook-group",
             "videoTypes": [
                 "mp4"
@@ -126,7 +126,7 @@
         },
         "before-we-get-started": {
             "kind": "exp-lookit-video",
-            "baseDir": "https://raw.githubusercontent.com/houxiru/lookit-stimuli/master/",
+            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/",
             "id": "storybook-group",
             "videoTypes": [
                 "mp4"
@@ -144,7 +144,7 @@
         },
         "end": {
             "kind": "exp-lookit-video",
-            "baseDir": "https://raw.githubusercontent.com/houxiru/lookit-stimuli/master/",
+            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/",
             "id": "storybook-group",
             "videoTypes": [
                 "mp4"
@@ -236,7 +236,7 @@
                     ],
                     "commonFrameProperties": {
                         "kind": "exp-lookit-video",
-                        "baseDir": "https://raw.githubusercontent.com/houxiru/lookit-stimuli/master/",
+                        "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/",
                         "id": "storybook-group",
                         "videoTypes": [
                             "mp4"
@@ -257,11 +257,15 @@
                         "exp1_fence_scenario_boy_bike_break_question",
                         "exp1_fence_scenario_boy_bike_caused_question",
                         "exp1_fence_scenario_boy_bike_fault_question",
+                        "exp1_fence_scenario_boy_bike_should_punish_question",
+                        "exp1_fence_scenario_boy_bike_who_punish_question",
                         "exp1_mirror_intro",
                         "exp1_mirror_scenario_girl_chair",
                         "exp1_mirror_scenario_girl_chair_crack_question",
                         "exp1_mirror_scenario_girl_chair_caused_question",
-                        "exp1_mirror_scenario_girl_chair_fault_question"
+                        "exp1_mirror_scenario_girl_chair_fault_question",
+                        "exp1_mirror_scenario_girl_chair_should_punish_question",
+                        "exp1_mirror_scenario_girl_chair_who_punish_question"
                     ],
                     [
                         "exp1_fence_intro",
@@ -269,11 +273,15 @@
                         "exp1_fence_scenario_boy_bike_caused_question",
                         "exp1_fence_scenario_boy_bike_break_question",
                         "exp1_fence_scenario_boy_bike_fault_question",
+                        "exp1_fence_scenario_boy_bike_should_punish_question",
+                        "exp1_fence_scenario_boy_bike_who_punish_question",
                         "exp1_mirror_intro",
                         "exp1_mirror_scenario_girl_chair",
                         "exp1_mirror_scenario_girl_chair_caused_question",
                         "exp1_mirror_scenario_girl_chair_crack_question",
-                        "exp1_mirror_scenario_girl_chair_fault_question"
+                        "exp1_mirror_scenario_girl_chair_fault_question",
+                        "exp1_mirror_scenario_girl_chair_should_punish_question",
+                        "exp1_mirror_scenario_girl_chair_who_punish_question"
                     ],
                     [
                         "exp1_fence_intro",
@@ -281,11 +289,16 @@
                         "exp1_fence_scenario_girl_bike_break_question",
                         "exp1_fence_scenario_girl_bike_cause_question",
                         "exp1_fence_scenario_girl_bike_fault_question",
+                        "exp1_fence_scenario_girl_bike_should_punish_question",
+                        "exp1_fence_scenario_girl_bike_who_punish_question",
                         "exp1_mirror_intro",
                         "exp1_mirror_scenario_boy_chair",
                         "exp1_mirror_scenario_boy_chair_crack_question",
                         "exp1_mirror_scenario_boy_chair_cause_question",
-                        "exp1_mirror_scenario_boy_chair_fault_question"
+                        "exp1_mirror_scenario_boy_chair_fault_question",
+                        "exp1_mirror_scenario_boy_chair_should_punish_question",
+                        "exp1_mirror_scenario_boy_chair_who_punish_question"
+                        
                     ],
                     [
                         "exp1_fence_intro",
@@ -293,11 +306,15 @@
                         "exp1_fence_scenario_girl_bike_cause_question",
                         "exp1_fence_scenario_girl_bike_break_question",
                         "exp1_fence_scenario_girl_bike_fault_question",
+                        "exp1_fence_scenario_girl_bike_should_punish_question",
+                        "exp1_fence_scenario_girl_bike_who_punish_question",
                         "exp1_mirror_intro",
                         "exp1_mirror_scenario_boy_chair",
                         "exp1_mirror_scenario_boy_chair_cause_question",
                         "exp1_mirror_scenario_boy_chair_crack_question",
-                        "exp1_mirror_scenario_boy_chair_fault_question"
+                        "exp1_mirror_scenario_boy_chair_fault_question",
+                        "exp1_mirror_scenario_boy_chair_should_punish_question",
+                        "exp1_mirror_scenario_boy_chair_who_punish_question"
                     ]
                 ]
             },
@@ -328,7 +345,7 @@
                                             },
                                             "requireVideoCount": 1,
                                             "doRecording": false,
-                                            "baseDir": "https://raw.githubusercontent.com/houxiru/lookit-stimuli/master/",
+                                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/",
                                             "videoTypes": [
                                                 "mp4"
                                             ],
@@ -366,7 +383,7 @@
                                             },
                                             "requireVideoCount": 1,
                                             "doRecording": false,
-                                            "baseDir": "https://raw.githubusercontent.com/houxiru/lookit-stimuli/master/",
+                                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/",
                                             "videoTypes": [
                                                 "mp4"
                                             ],
@@ -397,7 +414,7 @@
                                         },
                                         {
                                             "kind": "exp-lookit-video",
-                                            "baseDir": "https://raw.githubusercontent.com/houxiru/lookit-stimuli/master/",
+                                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/",
                                             "id": "storybook-group4",
                                             "video": {
                                                 "source": "TRIAL_DISPLAYED#4",
@@ -422,7 +439,7 @@
                                         },
                                         {
                                             "kind": "exp-lookit-video",
-                                            "baseDir": "https://raw.githubusercontent.com/houxiru/lookit-stimuli/master/",
+                                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/",
                                             "video": {
                                                 "source": "TRIAL_DISPLAYED#2",
                                                 "top": 0,
@@ -447,7 +464,7 @@
                                         },
                                         {
                                             "kind": "exp-lookit-video",
-                                            "baseDir": "https://raw.githubusercontent.com/houxiru/lookit-stimuli/master/",
+                                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/",
                                             "video": {
                                                 "source": "TRIAL_DISPLAYED#3",
                                                 "top": 0,
@@ -485,7 +502,7 @@
                                             },
                                             "requireVideoCount": 1,
                                             "doRecording": false,
-                                            "baseDir": "https://raw.githubusercontent.com/houxiru/lookit-stimuli/master/",
+                                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/",
                                             "videoTypes": [
                                                 "mp4"
                                             ],
@@ -523,7 +540,7 @@
                                             },
                                             "requireVideoCount": 1,
                                             "doRecording": false,
-                                            "baseDir": "https://raw.githubusercontent.com/houxiru/lookit-stimuli/master/",
+                                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/",
                                             "videoTypes": [
                                                 "mp4"
                                             ],
@@ -554,7 +571,7 @@
                                         },
                                         {
                                             "kind": "exp-lookit-video",
-                                            "baseDir": "https://raw.githubusercontent.com/houxiru/lookit-stimuli/master/",
+                                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/",
                                             "id": "storybook-group9",
                                             "video": {
                                                 "source": "TRIAL_DISPLAYED#9",
@@ -579,7 +596,7 @@
                                         },
                                         {
                                             "kind": "exp-lookit-video",
-                                            "baseDir": "https://raw.githubusercontent.com/houxiru/lookit-stimuli/master/",
+                                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/",
                                             "id": "storybook-group7",
                                             "video": {
                                                 "source": "TRIAL_DISPLAYED#7",
@@ -604,7 +621,7 @@
                                         },
                                         {
                                             "kind": "exp-lookit-video",
-                                            "baseDir": "https://raw.githubusercontent.com/houxiru/lookit-stimuli/master/",
+                                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/",
                                             "id": "storybook-group8",
                                             "video": {
                                                 "source": "TRIAL_DISPLAYED#8",

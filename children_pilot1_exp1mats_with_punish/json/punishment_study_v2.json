@@ -358,7 +358,7 @@
                                     "autoProceed": false,
                                     "doRecording": false,
                                     "video": {
-                                        "source": "fence_intro",
+                                        "source": "test_case_intro",
                                         "loop": false,
                                         "position": "fill"
                                     }
@@ -670,7 +670,7 @@
                                     "autoProceed": false,
                                     "doRecording": false,
                                     "video": {
-                                        "source": "mirror_intro",
+                                        "source": "test_case_intro",
                                         "loop": false,
                                         "position": "fill"
                                     }
@@ -943,7 +943,7 @@
                                     "autoProceed": false,
                                     "doRecording": false,
                                     "video": {
-                                        "source": "fence_intro",
+                                        "source": "test_case_intro",
                                         "loop": false,
                                         "position": "fill"
                                     }
@@ -1255,7 +1255,7 @@
                                     "autoProceed": false,
                                     "doRecording": false,
                                     "video": {
-                                        "source": "mirror_intro",
+                                        "source": "test_case_intro",
                                         "loop": false,
                                         "position": "fill"
                                     }
@@ -1528,7 +1528,7 @@
                                     "autoProceed": false,
                                     "doRecording": false,
                                     "video": {
-                                        "source": "fence_intro",
+                                        "source": "test_case_intro",
                                         "loop": false,
                                         "position": "fill"
                                     }
@@ -1840,7 +1840,7 @@
                                     "autoProceed": false,
                                     "doRecording": false,
                                     "video": {
-                                        "source": "mirror_intro",
+                                        "source": "test_case_intro",
                                         "loop": false,
                                         "position": "fill"
                                     }
@@ -2113,7 +2113,7 @@
                                     "autoProceed": false,
                                     "doRecording": false,
                                     "video": {
-                                        "source": "fence_intro",
+                                        "source": "test_case_intro",
                                         "loop": false,
                                         "position": "fill"
                                     }
@@ -2425,7 +2425,7 @@
                                     "autoProceed": false,
                                     "doRecording": false,
                                     "video": {
-                                        "source": "mirror_intro",
+                                        "source": "test_case_intro",
                                         "loop": false,
                                         "position": "fill"
                                     }
