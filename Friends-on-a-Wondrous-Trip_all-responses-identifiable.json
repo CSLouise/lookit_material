@@ -1,0 +1,4350 @@
+[
+{
+	"response": {
+		"id": "414311",
+		"uuid": "021655c8-18ee-45eb-93c6-4160190d006c",
+		"date_created": "2026-03-16 22:54:13.105378+00:00",
+		"completed": true,
+		"withdrawn": false,
+		"eligibility": [
+			"Eligible"
+		],
+		"parent_feedback": null,
+		"birthdate_difference": 338,
+		"video_privacy": "scientific",
+		"databrary": "yes",
+		"is_preview": true,
+		"sequence": [
+			"0-instructions",
+			"1-video-config",
+			"2-video-consent",
+			"3-start-recording-with-image",
+			"4-storybook-group",
+			"5-null",
+			"6-null",
+			"7-null",
+			"8-null",
+			"9-null",
+			"10-null",
+			"11-null",
+			"12-null",
+			"13-null",
+			"14-null",
+			"15-null",
+			"16-null",
+			"17-null",
+			"18-null",
+			"19-null",
+			"20-null",
+			"21-null",
+			"22-null",
+			"23-null",
+			"24-null",
+			"25-null",
+			"26-null",
+			"27-null",
+			"28-null",
+			"29-null",
+			"30-null",
+			"31-null",
+			"32-null",
+			"33-null",
+			"34-null",
+			"35-null",
+			"36-null",
+			"37-null",
+			"38-null",
+			"39-null",
+			"40-null",
+			"41-null",
+			"44-exit-survey"
+		],
+		"conditions": [
+			{
+				"frameName": "5-warmup",
+				"0": {}
+			},
+			{
+				"frameName": "6-punishment-study-final",
+				"0": {}
+			}
+		],
+		"researcher_payment_status": "",
+		"researcher_session_status": "",
+		"researcher_star": false
+	},
+	"consent": {
+		"ruling": "accepted",
+		"arbiter": "Ying  Li",
+		"time": "2026-03-16 23:19",
+		"comment": null
+	},
+	"study": {
+		"uuid": "a9674add-012c-4509-866a-b4040fee17f4"
+	},
+	"participant": {
+		"hashed_id": "JY7W3U"
+	},
+	"child": {
+		"hashed_id": "J3A46A",
+		"age_rounded": "1830",
+		"gender": "f",
+		"age_at_birth": "Not sure or prefer not to answer",
+		"language_list": "en",
+		"condition_list": "",
+		"additional_information": ""
+	},
+	"exp_data": {
+		"5-null": {
+			"frameType": "DEFAULT",
+			"videoShown": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/mp4/warmup_part1_bird_question.mp4",
+			"audioPlayed": "",
+			"eventTimings": [
+				{
+					"eventType": "exp-lookit-video:videoStarted",
+					"timestamp": "2026-03-16T22:55:08.832Z",
+					"streamTime": null,
+					"currentTime": 0.026017,
+					"sessionStreamTime": 15640
+				},
+				{
+					"eventType": "exp-lookit-video:audioStarted",
+					"timestamp": "2026-03-16T22:55:08.833Z",
+					"streamTime": null,
+					"sessionStreamTime": 15641
+				},
+				{
+					"eventType": "exp-lookit-video:videoPaused",
+					"timestamp": "2026-03-16T22:55:12.746Z",
+					"streamTime": null,
+					"currentTime": 33.99,
+					"sessionStreamTime": 19554
+				},
+				{
+					"eventType": "exp-lookit-video:nextButtonEnabled",
+					"timestamp": "2026-03-16T22:55:12.746Z",
+					"streamTime": null,
+					"sessionStreamTime": 19554
+				},
+				{
+					"eventType": "exp-lookit-video:trialCompleted",
+					"timestamp": "2026-03-16T22:55:13.388Z",
+					"streamTime": null,
+					"sessionStreamTime": 20196
+				},
+				{
+					"eventType": "exp-lookit-video:nextFrame",
+					"timestamp": "2026-03-16T22:55:13.388Z",
+					"streamTime": null,
+					"sessionStreamTime": 20197
+				}
+			],
+			"frameDuration": 5,
+			"generatedProperties": null
+		},
+		"6-null": {
+			"images": [
+				{
+					"id": "left",
+					"src": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/img/bird.png",
+					"top": 20,
+					"left": 5,
+					"width": 40,
+					"height": 60
+				},
+				{
+					"id": "right",
+					"src": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/img/cat.png",
+					"top": 20,
+					"left": 55,
+					"width": 40,
+					"height": 60
+				}
+			],
+			"frameType": "DEFAULT",
+			"eventTimings": [
+				{
+					"eventType": "exp-lookit-images-audio:finishAudio",
+					"timestamp": "2026-03-16T22:55:13.631Z",
+					"streamTime": null,
+					"sessionStreamTime": 20439
+				},
+				{
+					"eventType": "exp-lookit-images-audio:displayImages",
+					"timestamp": "2026-03-16T22:55:13.631Z",
+					"streamTime": null,
+					"sessionStreamTime": 20439
+				},
+				{
+					"imageId": "left",
+					"eventType": "exp-lookit-images-audio:clickImage",
+					"timestamp": "2026-03-16T22:55:14.782Z",
+					"streamTime": null,
+					"sessionStreamTime": 21591
+				},
+				{
+					"eventType": "exp-lookit-images-audio:trialComplete",
+					"timestamp": "2026-03-16T22:55:14.938Z",
+					"streamTime": null,
+					"sessionStreamTime": 21746
+				},
+				{
+					"eventType": "exp-lookit-images-audio:nextFrame",
+					"timestamp": "2026-03-16T22:55:14.938Z",
+					"streamTime": null,
+					"sessionStreamTime": 21746
+				}
+			],
+			"frameDuration": 1.54,
+			"selectedImage": "left",
+			"generatedProperties": null
+		},
+		"7-null": {
+			"frameType": "DEFAULT",
+			"videoShown": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/mp4/warmup_part1_fish_question.mp4",
+			"audioPlayed": "",
+			"eventTimings": [
+				{
+					"eventType": "exp-lookit-video:videoStarted",
+					"timestamp": "2026-03-16T22:55:15.239Z",
+					"streamTime": null,
+					"currentTime": 0,
+					"sessionStreamTime": 22048
+				},
+				{
+					"eventType": "exp-lookit-video:audioStarted",
+					"timestamp": "2026-03-16T22:55:15.242Z",
+					"streamTime": null,
+					"sessionStreamTime": 22050
+				},
+				{
+					"eventType": "exp-lookit-video:videoPaused",
+					"timestamp": "2026-03-16T22:55:18.529Z",
+					"streamTime": null,
+					"currentTime": 28.181667,
+					"sessionStreamTime": 25337
+				},
+				{
+					"eventType": "exp-lookit-video:nextButtonEnabled",
+					"timestamp": "2026-03-16T22:55:18.530Z",
+					"streamTime": null,
+					"sessionStreamTime": 25338
+				},
+				{
+					"eventType": "exp-lookit-video:trialCompleted",
+					"timestamp": "2026-03-16T22:55:19.023Z",
+					"streamTime": null,
+					"sessionStreamTime": 25831
+				},
+				{
+					"eventType": "exp-lookit-video:nextFrame",
+					"timestamp": "2026-03-16T22:55:19.023Z",
+					"streamTime": null,
+					"sessionStreamTime": 25831
+				}
+			],
+			"frameDuration": 4.074,
+			"generatedProperties": null
+		},
+		"8-null": {
+			"images": [
+				{
+					"id": "left",
+					"src": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/img/pig.png",
+					"top": 20,
+					"left": 5,
+					"width": 40,
+					"height": 60
+				},
+				{
+					"id": "right",
+					"src": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/img/fish.png",
+					"top": 20,
+					"left": 55,
+					"width": 40,
+					"height": 60
+				}
+			],
+			"frameType": "DEFAULT",
+			"eventTimings": [
+				{
+					"eventType": "exp-lookit-images-audio:finishAudio",
+					"timestamp": "2026-03-16T22:55:19.398Z",
+					"streamTime": null,
+					"sessionStreamTime": 26206
+				},
+				{
+					"eventType": "exp-lookit-images-audio:displayImages",
+					"timestamp": "2026-03-16T22:55:19.398Z",
+					"streamTime": null,
+					"sessionStreamTime": 26206
+				},
+				{
+					"imageId": "right",
+					"eventType": "exp-lookit-images-audio:clickImage",
+					"timestamp": "2026-03-16T22:55:19.842Z",
+					"streamTime": null,
+					"sessionStreamTime": 26650
+				},
+				{
+					"eventType": "exp-lookit-images-audio:trialComplete",
+					"timestamp": "2026-03-16T22:55:19.996Z",
+					"streamTime": null,
+					"sessionStreamTime": 26804
+				},
+				{
+					"eventType": "exp-lookit-images-audio:nextFrame",
+					"timestamp": "2026-03-16T22:55:19.996Z",
+					"streamTime": null,
+					"sessionStreamTime": 26804
+				}
+			],
+			"frameDuration": 0.961,
+			"selectedImage": "right",
+			"generatedProperties": null
+		},
+		"9-null": {
+			"frameType": "DEFAULT",
+			"videoShown": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/mp4/warmup_part2_yes_question.mp4",
+			"audioPlayed": "",
+			"eventTimings": [
+				{
+					"eventType": "exp-lookit-video:videoStarted",
+					"timestamp": "2026-03-16T22:55:20.463Z",
+					"streamTime": null,
+					"currentTime": 0,
+					"sessionStreamTime": 27271
+				},
+				{
+					"eventType": "exp-lookit-video:audioStarted",
+					"timestamp": "2026-03-16T22:55:20.465Z",
+					"streamTime": null,
+					"sessionStreamTime": 27273
+				},
+				{
+					"eventType": "exp-lookit-video:videoPaused",
+					"timestamp": "2026-03-16T22:55:26.390Z",
+					"streamTime": null,
+					"currentTime": 52.371667,
+					"sessionStreamTime": 33198
+				},
+				{
+					"eventType": "exp-lookit-video:nextButtonEnabled",
+					"timestamp": "2026-03-16T22:55:26.391Z",
+					"streamTime": null,
+					"sessionStreamTime": 33199
+				},
+				{
+					"eventType": "exp-lookit-video:trialCompleted",
+					"timestamp": "2026-03-16T22:55:26.906Z",
+					"streamTime": null,
+					"sessionStreamTime": 33714
+				},
+				{
+					"eventType": "exp-lookit-video:nextFrame",
+					"timestamp": "2026-03-16T22:55:26.906Z",
+					"streamTime": null,
+					"sessionStreamTime": 33714
+				}
+			],
+			"frameDuration": 6.901,
+			"generatedProperties": null
+		},
+		"10-null": {
+			"images": [
+				{
+					"id": "left",
+					"src": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/img/yes.png",
+					"top": 20,
+					"left": 5,
+					"width": 40,
+					"height": 60
+				},
+				{
+					"id": "right",
+					"src": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/img/no.png",
+					"top": 20,
+					"left": 55,
+					"width": 40,
+					"height": 60
+				}
+			],
+			"frameType": "DEFAULT",
+			"eventTimings": [
+				{
+					"eventType": "exp-lookit-images-audio:finishAudio",
+					"timestamp": "2026-03-16T22:55:27.076Z",
+					"streamTime": null,
+					"sessionStreamTime": 33884
+				},
+				{
+					"eventType": "exp-lookit-images-audio:displayImages",
+					"timestamp": "2026-03-16T22:55:27.076Z",
+					"streamTime": null,
+					"sessionStreamTime": 33884
+				},
+				{
+					"imageId": "left",
+					"eventType": "exp-lookit-images-audio:clickImage",
+					"timestamp": "2026-03-16T22:55:27.588Z",
+					"streamTime": null,
+					"sessionStreamTime": 34396
+				},
+				{
+					"eventType": "exp-lookit-images-audio:trialComplete",
+					"timestamp": "2026-03-16T22:55:27.740Z",
+					"streamTime": null,
+					"sessionStreamTime": 34548
+				},
+				{
+					"eventType": "exp-lookit-images-audio:nextFrame",
+					"timestamp": "2026-03-16T22:55:27.740Z",
+					"streamTime": null,
+					"sessionStreamTime": 34548
+				}
+			],
+			"frameDuration": 0.823,
+			"selectedImage": "left",
+			"generatedProperties": null
+		},
+		"11-null": {
+			"frameType": "DEFAULT",
+			"videoShown": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/mp4/warmup_part2_no_question.mp4",
+			"audioPlayed": "",
+			"eventTimings": [
+				{
+					"eventType": "exp-lookit-video:videoStarted",
+					"timestamp": "2026-03-16T22:55:28.084Z",
+					"streamTime": null,
+					"currentTime": 0,
+					"sessionStreamTime": 34892
+				},
+				{
+					"eventType": "exp-lookit-video:audioStarted",
+					"timestamp": "2026-03-16T22:55:28.086Z",
+					"streamTime": null,
+					"sessionStreamTime": 34894
+				},
+				{
+					"eventType": "exp-lookit-video:videoPaused",
+					"timestamp": "2026-03-16T22:55:31.470Z",
+					"streamTime": null,
+					"currentTime": 29.14,
+					"sessionStreamTime": 38278
+				},
+				{
+					"eventType": "exp-lookit-video:nextButtonEnabled",
+					"timestamp": "2026-03-16T22:55:31.471Z",
+					"streamTime": null,
+					"sessionStreamTime": 38279
+				},
+				{
+					"eventType": "exp-lookit-video:trialCompleted",
+					"timestamp": "2026-03-16T22:55:32.047Z",
+					"streamTime": null,
+					"sessionStreamTime": 38855
+				},
+				{
+					"eventType": "exp-lookit-video:nextFrame",
+					"timestamp": "2026-03-16T22:55:32.048Z",
+					"streamTime": null,
+					"sessionStreamTime": 38856
+				}
+			],
+			"frameDuration": 4.299,
+			"generatedProperties": null
+		},
+		"12-null": {
+			"images": [
+				{
+					"id": "left",
+					"src": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/img/yes.png",
+					"top": 20,
+					"left": 5,
+					"width": 40,
+					"height": 60
+				},
+				{
+					"id": "right",
+					"src": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/img/no.png",
+					"top": 20,
+					"left": 55,
+					"width": 40,
+					"height": 60
+				}
+			],
+			"frameType": "DEFAULT",
+			"eventTimings": [
+				{
+					"eventType": "exp-lookit-images-audio:finishAudio",
+					"timestamp": "2026-03-16T22:55:32.063Z",
+					"streamTime": null,
+					"sessionStreamTime": 38871
+				},
+				{
+					"eventType": "exp-lookit-images-audio:displayImages",
+					"timestamp": "2026-03-16T22:55:32.063Z",
+					"streamTime": null,
+					"sessionStreamTime": 38871
+				},
+				{
+					"imageId": "right",
+					"eventType": "exp-lookit-images-audio:clickImage",
+					"timestamp": "2026-03-16T22:55:32.776Z",
+					"streamTime": null,
+					"sessionStreamTime": 39584
+				},
+				{
+					"eventType": "exp-lookit-images-audio:trialComplete",
+					"timestamp": "2026-03-16T22:55:32.928Z",
+					"streamTime": null,
+					"sessionStreamTime": 39736
+				},
+				{
+					"eventType": "exp-lookit-images-audio:nextFrame",
+					"timestamp": "2026-03-16T22:55:32.928Z",
+					"streamTime": null,
+					"sessionStreamTime": 39736
+				}
+			],
+			"frameDuration": 0.869,
+			"selectedImage": "right",
+			"generatedProperties": null
+		},
+		"13-null": {
+			"frameType": "DEFAULT",
+			"videoShown": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/mp4/warmup_finish.mp4",
+			"audioPlayed": "",
+			"eventTimings": [
+				{
+					"eventType": "exp-lookit-video:videoStarted",
+					"timestamp": "2026-03-16T22:55:33.244Z",
+					"streamTime": null,
+					"currentTime": 0,
+					"sessionStreamTime": 40052
+				},
+				{
+					"eventType": "exp-lookit-video:audioStarted",
+					"timestamp": "2026-03-16T22:55:33.246Z",
+					"streamTime": null,
+					"sessionStreamTime": 40054
+				},
+				{
+					"eventType": "exp-lookit-video:videoPaused",
+					"timestamp": "2026-03-16T22:55:34.220Z",
+					"streamTime": null,
+					"currentTime": 6.831667,
+					"sessionStreamTime": 41028
+				},
+				{
+					"eventType": "exp-lookit-video:nextButtonEnabled",
+					"timestamp": "2026-03-16T22:55:34.220Z",
+					"streamTime": null,
+					"sessionStreamTime": 41028
+				},
+				{
+					"eventType": "exp-lookit-video:trialCompleted",
+					"timestamp": "2026-03-16T22:55:35.673Z",
+					"streamTime": null,
+					"sessionStreamTime": 42481
+				},
+				{
+					"eventType": "exp-lookit-video:nextFrame",
+					"timestamp": "2026-03-16T22:55:35.673Z",
+					"streamTime": null,
+					"sessionStreamTime": 42481
+				}
+			],
+			"frameDuration": 2.736,
+			"generatedProperties": null
+		},
+		"14-null": {
+			"frameType": "DEFAULT",
+			"videoShown": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/mp4/test_case_intro.mp4",
+			"audioPlayed": "",
+			"eventTimings": [
+				{
+					"eventType": "exp-lookit-video:videoStarted",
+					"timestamp": "2026-03-16T22:55:36.022Z",
+					"streamTime": null,
+					"currentTime": 0,
+					"sessionStreamTime": 42830
+				},
+				{
+					"eventType": "exp-lookit-video:audioStarted",
+					"timestamp": "2026-03-16T22:55:36.025Z",
+					"streamTime": null,
+					"sessionStreamTime": 42833
+				},
+				{
+					"eventType": "exp-lookit-video:videoPaused",
+					"timestamp": "2026-03-16T22:55:37.103Z",
+					"streamTime": null,
+					"currentTime": 7.918333,
+					"sessionStreamTime": 43911
+				},
+				{
+					"eventType": "exp-lookit-video:nextButtonEnabled",
+					"timestamp": "2026-03-16T22:55:37.103Z",
+					"streamTime": null,
+					"sessionStreamTime": 43911
+				},
+				{
+					"eventType": "exp-lookit-video:trialCompleted",
+					"timestamp": "2026-03-16T22:55:37.801Z",
+					"streamTime": null,
+					"sessionStreamTime": 44609
+				},
+				{
+					"eventType": "exp-lookit-video:nextFrame",
+					"timestamp": "2026-03-16T22:55:37.801Z",
+					"streamTime": null,
+					"sessionStreamTime": 44609
+				}
+			],
+			"frameDuration": 2.121,
+			"generatedProperties": null
+		},
+		"15-null": {
+			"frameType": "DEFAULT",
+			"eventTimings": [
+				{
+					"eventType": "exp-lookit-stop-recording:stopSessionRecording",
+					"timestamp": "2026-03-16T22:55:37.824Z"
+				},
+				{
+					"eventType": "exp-lookit-stop-recording:nextFrame",
+					"timestamp": "2026-03-16T22:55:39.324Z"
+				}
+			],
+			"frameDuration": 1.51,
+			"generatedProperties": null
+		},
+		"16-null": {
+			"frameType": "DEFAULT",
+			"eventTimings": [
+				{
+					"eventType": "exp-lookit-start-recording:setupSessionVideoRecorder",
+					"timestamp": "2026-03-16T22:55:39.331Z",
+					"sessionVideoId": "videoStream_a9674add-012c-4509-866a-b4040fee17f4_16-null-multiframe_021655c8-18ee-45eb-93c6-4160190d006c_1773701739331_778"
+				},
+				{
+					"eventType": "exp-lookit-start-recording:sessionRecorder.hasCamAccess",
+					"timestamp": "2026-03-16T22:55:39.409Z",
+					"hasCamAccess": true
+				},
+				{
+					"eventType": "exp-lookit-start-recording:sessionRecorderReady",
+					"timestamp": "2026-03-16T22:55:39.410Z"
+				},
+				{
+					"status": "connected",
+					"eventType": "exp-lookit-start-recording:videoStreamConnection",
+					"timestamp": "2026-03-16T22:55:39.573Z",
+					"sessionStreamTime": null
+				},
+				{
+					"eventType": "exp-lookit-start-recording:startSessionRecording",
+					"timestamp": "2026-03-16T22:55:39.575Z",
+					"sessionPipeId": "videoStream_a9674add-012c-4509-866a-b4040fee17f4_16-null-multiframe_021655c8-18ee-45eb-93c6-4160190d006c_1773701739331_778",
+					"sessionStreamTime": 0
+				},
+				{
+					"eventType": "exp-lookit-start-recording:startedSessionRecording",
+					"timestamp": "2026-03-16T22:55:39.575Z",
+					"sessionStreamTime": 0
+				},
+				{
+					"eventType": "exp-lookit-start-recording:nextFrame",
+					"timestamp": "2026-03-16T22:55:39.575Z",
+					"sessionStreamTime": 0
+				}
+			],
+			"frameDuration": 0.245,
+			"generatedProperties": null
+		},
+		"17-null": {
+			"frameType": "DEFAULT",
+			"videoShown": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/mp4/fence_scenario_boy_bike.mp4",
+			"audioPlayed": "",
+			"eventTimings": [
+				{
+					"eventType": "exp-lookit-video:videoStarted",
+					"timestamp": "2026-03-16T22:55:40.285Z",
+					"streamTime": null,
+					"currentTime": 0,
+					"sessionStreamTime": 711
+				},
+				{
+					"eventType": "exp-lookit-video:audioStarted",
+					"timestamp": "2026-03-16T22:55:40.286Z",
+					"streamTime": null,
+					"sessionStreamTime": 712
+				},
+				{
+					"eventType": "exp-lookit-video:videoPaused",
+					"timestamp": "2026-03-16T22:55:45.784Z",
+					"streamTime": null,
+					"currentTime": 48.475,
+					"sessionStreamTime": 6210
+				},
+				{
+					"eventType": "exp-lookit-video:nextButtonEnabled",
+					"timestamp": "2026-03-16T22:55:45.785Z",
+					"streamTime": null,
+					"sessionStreamTime": 6210
+				},
+				{
+					"eventType": "exp-lookit-video:trialCompleted",
+					"timestamp": "2026-03-16T22:55:46.268Z",
+					"streamTime": null,
+					"sessionStreamTime": 6693
+				},
+				{
+					"eventType": "exp-lookit-video:nextFrame",
+					"timestamp": "2026-03-16T22:55:46.268Z",
+					"streamTime": null,
+					"sessionStreamTime": 6694
+				}
+			],
+			"frameDuration": 6.687,
+			"generatedProperties": null
+		},
+		"18-null": {
+			"frameType": "DEFAULT",
+			"videoShown": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/mp4/fence_scenario_boy_bike_break_question.mp4",
+			"audioPlayed": "",
+			"eventTimings": [
+				{
+					"eventType": "exp-lookit-video:videoStarted",
+					"timestamp": "2026-03-16T22:55:46.692Z",
+					"streamTime": null,
+					"currentTime": 0,
+					"sessionStreamTime": 7118
+				},
+				{
+					"eventType": "exp-lookit-video:audioStarted",
+					"timestamp": "2026-03-16T22:55:46.694Z",
+					"streamTime": null,
+					"sessionStreamTime": 7119
+				},
+				{
+					"eventType": "exp-lookit-video:videoPaused",
+					"timestamp": "2026-03-16T22:55:47.383Z",
+					"streamTime": null,
+					"currentTime": 4.29,
+					"sessionStreamTime": 7809
+				},
+				{
+					"eventType": "exp-lookit-video:nextButtonEnabled",
+					"timestamp": "2026-03-16T22:55:47.384Z",
+					"streamTime": null,
+					"sessionStreamTime": 7810
+				},
+				{
+					"eventType": "exp-lookit-video:trialCompleted",
+					"timestamp": "2026-03-16T22:55:48.335Z",
+					"streamTime": null,
+					"sessionStreamTime": 8760
+				},
+				{
+					"eventType": "exp-lookit-video:nextFrame",
+					"timestamp": "2026-03-16T22:55:48.335Z",
+					"streamTime": null,
+					"sessionStreamTime": 8761
+				}
+			],
+			"frameDuration": 2.059,
+			"generatedProperties": null
+		},
+		"19-null": {
+			"images": [
+				{
+					"id": "left",
+					"src": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/img/boy_bike_case_suzy.png",
+					"top": 20,
+					"left": 5,
+					"width": 40,
+					"height": 60
+				},
+				{
+					"id": "right",
+					"src": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/img/boy_bike_case_andy.png",
+					"top": 20,
+					"left": 55,
+					"width": 40,
+					"height": 60
+				}
+			],
+			"frameType": "DEFAULT",
+			"eventTimings": [
+				{
+					"eventType": "exp-lookit-images-audio:finishAudio",
+					"timestamp": "2026-03-16T22:55:48.524Z",
+					"streamTime": null,
+					"sessionStreamTime": 8949
+				},
+				{
+					"eventType": "exp-lookit-images-audio:displayImages",
+					"timestamp": "2026-03-16T22:55:48.524Z",
+					"streamTime": null,
+					"sessionStreamTime": 8949
+				},
+				{
+					"imageId": "left",
+					"eventType": "exp-lookit-images-audio:clickImage",
+					"timestamp": "2026-03-16T22:55:50.042Z",
+					"streamTime": null,
+					"sessionStreamTime": 10468
+				},
+				{
+					"eventType": "exp-lookit-images-audio:trialComplete",
+					"timestamp": "2026-03-16T22:55:50.194Z",
+					"streamTime": null,
+					"sessionStreamTime": 10619
+				},
+				{
+					"eventType": "exp-lookit-images-audio:nextFrame",
+					"timestamp": "2026-03-16T22:55:50.194Z",
+					"streamTime": null,
+					"sessionStreamTime": 10619
+				}
+			],
+			"frameDuration": 1.851,
+			"selectedImage": "left",
+			"generatedProperties": null
+		},
+		"20-null": {
+			"frameType": "DEFAULT",
+			"videoShown": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/mp4/fence_scenario_boy_bike_caused_question.mp4",
+			"audioPlayed": "",
+			"eventTimings": [
+				{
+					"eventType": "exp-lookit-video:videoStarted",
+					"timestamp": "2026-03-16T22:55:50.592Z",
+					"streamTime": null,
+					"currentTime": 0,
+					"sessionStreamTime": 11018
+				},
+				{
+					"eventType": "exp-lookit-video:audioStarted",
+					"timestamp": "2026-03-16T22:55:50.593Z",
+					"streamTime": null,
+					"sessionStreamTime": 11019
+				},
+				{
+					"eventType": "exp-lookit-video:videoPaused",
+					"timestamp": "2026-03-16T22:55:51.341Z",
+					"streamTime": null,
+					"currentTime": 4.818333,
+					"sessionStreamTime": 11767
+				},
+				{
+					"eventType": "exp-lookit-video:nextButtonEnabled",
+					"timestamp": "2026-03-16T22:55:51.342Z",
+					"streamTime": null,
+					"sessionStreamTime": 11767
+				},
+				{
+					"eventType": "exp-lookit-video:trialCompleted",
+					"timestamp": "2026-03-16T22:55:51.793Z",
+					"streamTime": null,
+					"sessionStreamTime": 12218
+				},
+				{
+					"eventType": "exp-lookit-video:nextFrame",
+					"timestamp": "2026-03-16T22:55:51.793Z",
+					"streamTime": null,
+					"sessionStreamTime": 12218
+				}
+			],
+			"frameDuration": 1.59,
+			"generatedProperties": null
+		},
+		"21-null": {
+			"images": [
+				{
+					"id": "left",
+					"src": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/img/boy_bike_case_suzy.png",
+					"top": 20,
+					"left": 5,
+					"width": 40,
+					"height": 60
+				},
+				{
+					"id": "right",
+					"src": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/img/boy_bike_case_andy.png",
+					"top": 20,
+					"left": 55,
+					"width": 40,
+					"height": 60
+				}
+			],
+			"frameType": "DEFAULT",
+			"eventTimings": [
+				{
+					"eventType": "exp-lookit-images-audio:finishAudio",
+					"timestamp": "2026-03-16T22:55:51.807Z",
+					"streamTime": null,
+					"sessionStreamTime": 12233
+				},
+				{
+					"eventType": "exp-lookit-images-audio:displayImages",
+					"timestamp": "2026-03-16T22:55:51.807Z",
+					"streamTime": null,
+					"sessionStreamTime": 12233
+				},
+				{
+					"imageId": "right",
+					"eventType": "exp-lookit-images-audio:clickImage",
+					"timestamp": "2026-03-16T22:55:52.402Z",
+					"streamTime": null,
+					"sessionStreamTime": 12827
+				},
+				{
+					"eventType": "exp-lookit-images-audio:trialComplete",
+					"timestamp": "2026-03-16T22:55:52.554Z",
+					"streamTime": null,
+					"sessionStreamTime": 12979
+				},
+				{
+					"eventType": "exp-lookit-images-audio:nextFrame",
+					"timestamp": "2026-03-16T22:55:52.554Z",
+					"streamTime": null,
+					"sessionStreamTime": 12980
+				}
+			],
+			"frameDuration": 0.752,
+			"selectedImage": "right",
+			"generatedProperties": null
+		},
+		"22-null": {
+			"frameType": "DEFAULT",
+			"videoShown": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/mp4/fence_scenario_boy_bike_fault_question.mp4",
+			"audioPlayed": "",
+			"eventTimings": [
+				{
+					"eventType": "exp-lookit-video:videoStarted",
+					"timestamp": "2026-03-16T22:55:52.871Z",
+					"streamTime": null,
+					"currentTime": 0,
+					"sessionStreamTime": 13297
+				},
+				{
+					"eventType": "exp-lookit-video:audioStarted",
+					"timestamp": "2026-03-16T22:55:52.873Z",
+					"streamTime": null,
+					"sessionStreamTime": 13298
+				},
+				{
+					"eventType": "exp-lookit-video:videoPaused",
+					"timestamp": "2026-03-16T22:55:53.600Z",
+					"streamTime": null,
+					"currentTime": 4.62,
+					"sessionStreamTime": 14026
+				},
+				{
+					"eventType": "exp-lookit-video:nextButtonEnabled",
+					"timestamp": "2026-03-16T22:55:53.601Z",
+					"streamTime": null,
+					"sessionStreamTime": 14026
+				},
+				{
+					"eventType": "exp-lookit-video:trialCompleted",
+					"timestamp": "2026-03-16T22:55:54.534Z",
+					"streamTime": null,
+					"sessionStreamTime": 14960
+				},
+				{
+					"eventType": "exp-lookit-video:nextFrame",
+					"timestamp": "2026-03-16T22:55:54.534Z",
+					"streamTime": null,
+					"sessionStreamTime": 14960
+				}
+			],
+			"frameDuration": 1.972,
+			"generatedProperties": null
+		},
+		"23-null": {
+			"images": [
+				{
+					"id": "left",
+					"src": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/img/boy_bike_case_suzy.png",
+					"top": 20,
+					"left": 5,
+					"width": 40,
+					"height": 60
+				},
+				{
+					"id": "right",
+					"src": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/img/boy_bike_case_andy.png",
+					"top": 20,
+					"left": 55,
+					"width": 40,
+					"height": 60
+				}
+			],
+			"frameType": "DEFAULT",
+			"eventTimings": [
+				{
+					"eventType": "exp-lookit-images-audio:finishAudio",
+					"timestamp": "2026-03-16T22:55:54.550Z",
+					"streamTime": null,
+					"sessionStreamTime": 14976
+				},
+				{
+					"eventType": "exp-lookit-images-audio:displayImages",
+					"timestamp": "2026-03-16T22:55:54.551Z",
+					"streamTime": null,
+					"sessionStreamTime": 14976
+				},
+				{
+					"imageId": "right",
+					"eventType": "exp-lookit-images-audio:clickImage",
+					"timestamp": "2026-03-16T22:55:56.379Z",
+					"streamTime": null,
+					"sessionStreamTime": 16805
+				},
+				{
+					"eventType": "exp-lookit-images-audio:trialComplete",
+					"timestamp": "2026-03-16T22:55:56.533Z",
+					"streamTime": null,
+					"sessionStreamTime": 16958
+				},
+				{
+					"eventType": "exp-lookit-images-audio:nextFrame",
+					"timestamp": "2026-03-16T22:55:56.533Z",
+					"streamTime": null,
+					"sessionStreamTime": 16958
+				}
+			],
+			"frameDuration": 1.99,
+			"selectedImage": "right",
+			"generatedProperties": null
+		},
+		"24-null": {
+			"frameType": "DEFAULT",
+			"videoShown": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/mp4/fence_scenario_boy_bike_should_punish_question.mp4",
+			"audioPlayed": "",
+			"eventTimings": [
+				{
+					"eventType": "exp-lookit-video:videoStarted",
+					"timestamp": "2026-03-16T22:55:56.964Z",
+					"streamTime": null,
+					"currentTime": 0,
+					"sessionStreamTime": 17390
+				},
+				{
+					"eventType": "exp-lookit-video:audioStarted",
+					"timestamp": "2026-03-16T22:55:56.966Z",
+					"streamTime": null,
+					"sessionStreamTime": 17391
+				},
+				{
+					"eventType": "exp-lookit-video:videoPaused",
+					"timestamp": "2026-03-16T22:55:57.891Z",
+					"streamTime": null,
+					"currentTime": 6.336667,
+					"sessionStreamTime": 18317
+				},
+				{
+					"eventType": "exp-lookit-video:nextButtonEnabled",
+					"timestamp": "2026-03-16T22:55:57.892Z",
+					"streamTime": null,
+					"sessionStreamTime": 18317
+				},
+				{
+					"eventType": "exp-lookit-video:trialCompleted",
+					"timestamp": "2026-03-16T22:55:58.285Z",
+					"streamTime": null,
+					"sessionStreamTime": 18710
+				},
+				{
+					"eventType": "exp-lookit-video:nextFrame",
+					"timestamp": "2026-03-16T22:55:58.285Z",
+					"streamTime": null,
+					"sessionStreamTime": 18710
+				}
+			],
+			"frameDuration": 1.742,
+			"generatedProperties": null
+		},
+		"25-null": {
+			"images": [
+				{
+					"id": "left",
+					"src": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/img/yes.png",
+					"top": 20,
+					"left": 5,
+					"width": 40,
+					"height": 60
+				},
+				{
+					"id": "right",
+					"src": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/img/no.png",
+					"top": 20,
+					"left": 55,
+					"width": 40,
+					"height": 60
+				}
+			],
+			"frameType": "DEFAULT",
+			"eventTimings": [
+				{
+					"eventType": "exp-lookit-images-audio:finishAudio",
+					"timestamp": "2026-03-16T22:55:58.302Z",
+					"streamTime": null,
+					"sessionStreamTime": 18727
+				},
+				{
+					"eventType": "exp-lookit-images-audio:displayImages",
+					"timestamp": "2026-03-16T22:55:58.302Z",
+					"streamTime": null,
+					"sessionStreamTime": 18727
+				},
+				{
+					"imageId": "right",
+					"eventType": "exp-lookit-images-audio:clickImage",
+					"timestamp": "2026-03-16T22:55:58.892Z",
+					"streamTime": null,
+					"sessionStreamTime": 19318
+				},
+				{
+					"eventType": "exp-lookit-images-audio:trialComplete",
+					"timestamp": "2026-03-16T22:55:59.047Z",
+					"streamTime": null,
+					"sessionStreamTime": 19473
+				},
+				{
+					"eventType": "exp-lookit-images-audio:nextFrame",
+					"timestamp": "2026-03-16T22:55:59.048Z",
+					"streamTime": null,
+					"sessionStreamTime": 19473
+				}
+			],
+			"frameDuration": 0.755,
+			"selectedImage": "right",
+			"generatedProperties": null
+		},
+		"26-null": {
+			"frameType": "DEFAULT",
+			"videoShown": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/mp4/fence_scenario_boy_bike_who_punish_question.mp4",
+			"audioPlayed": "",
+			"eventTimings": [
+				{
+					"eventType": "exp-lookit-video:videoStarted",
+					"timestamp": "2026-03-16T22:55:59.393Z",
+					"streamTime": null,
+					"currentTime": 0,
+					"sessionStreamTime": 19819
+				},
+				{
+					"eventType": "exp-lookit-video:audioStarted",
+					"timestamp": "2026-03-16T22:55:59.394Z",
+					"streamTime": null,
+					"sessionStreamTime": 19820
+				},
+				{
+					"eventType": "exp-lookit-video:videoPaused",
+					"timestamp": "2026-03-16T22:56:00.151Z",
+					"streamTime": null,
+					"currentTime": 4.751667,
+					"sessionStreamTime": 20576
+				},
+				{
+					"eventType": "exp-lookit-video:nextButtonEnabled",
+					"timestamp": "2026-03-16T22:56:00.151Z",
+					"streamTime": null,
+					"sessionStreamTime": 20576
+				},
+				{
+					"eventType": "exp-lookit-video:trialCompleted",
+					"timestamp": "2026-03-16T22:56:01.401Z",
+					"streamTime": null,
+					"sessionStreamTime": 21826
+				},
+				{
+					"eventType": "exp-lookit-video:nextFrame",
+					"timestamp": "2026-03-16T22:56:01.401Z",
+					"streamTime": null,
+					"sessionStreamTime": 21826
+				}
+			],
+			"frameDuration": 2.344,
+			"generatedProperties": null
+		},
+		"27-null": {
+			"images": [
+				{
+					"id": "left",
+					"src": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/img/boy_bike_case_suzy.png",
+					"top": 20,
+					"left": 5,
+					"width": 40,
+					"height": 60
+				},
+				{
+					"id": "right",
+					"src": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/img/boy_bike_case_andy.png",
+					"top": 20,
+					"left": 55,
+					"width": 40,
+					"height": 60
+				}
+			],
+			"frameType": "DEFAULT",
+			"eventTimings": [
+				{
+					"eventType": "exp-lookit-images-audio:finishAudio",
+					"timestamp": "2026-03-16T22:56:01.414Z",
+					"streamTime": null,
+					"sessionStreamTime": 21840
+				},
+				{
+					"eventType": "exp-lookit-images-audio:displayImages",
+					"timestamp": "2026-03-16T22:56:01.415Z",
+					"streamTime": null,
+					"sessionStreamTime": 21840
+				},
+				{
+					"imageId": "right",
+					"eventType": "exp-lookit-images-audio:clickImage",
+					"timestamp": "2026-03-16T22:56:03.460Z",
+					"streamTime": null,
+					"sessionStreamTime": 23885
+				},
+				{
+					"eventType": "exp-lookit-images-audio:trialComplete",
+					"timestamp": "2026-03-16T22:56:03.611Z",
+					"streamTime": null,
+					"sessionStreamTime": 24037
+				},
+				{
+					"eventType": "exp-lookit-images-audio:nextFrame",
+					"timestamp": "2026-03-16T22:56:03.611Z",
+					"streamTime": null,
+					"sessionStreamTime": 24037
+				}
+			],
+			"frameDuration": 2.203,
+			"selectedImage": "right",
+			"generatedProperties": null
+		},
+		"28-null": {
+			"frameType": "DEFAULT",
+			"eventTimings": [
+				{
+					"eventType": "exp-lookit-stop-recording:stopSessionRecording",
+					"timestamp": "2026-03-16T22:56:03.622Z"
+				},
+				{
+					"eventType": "exp-lookit-stop-recording:nextFrame",
+					"timestamp": "2026-03-16T22:56:04.240Z"
+				}
+			],
+			"frameDuration": 0.623,
+			"generatedProperties": null
+		},
+		"29-null": {
+			"frameType": "DEFAULT",
+			"eventTimings": [
+				{
+					"eventType": "exp-lookit-start-recording:setupSessionVideoRecorder",
+					"timestamp": "2026-03-16T22:56:04.245Z",
+					"sessionVideoId": "videoStream_a9674add-012c-4509-866a-b4040fee17f4_29-null-multiframe_021655c8-18ee-45eb-93c6-4160190d006c_1773701764245_300"
+				},
+				{
+					"eventType": "exp-lookit-start-recording:sessionRecorder.hasCamAccess",
+					"timestamp": "2026-03-16T22:56:04.316Z",
+					"hasCamAccess": true
+				},
+				{
+					"eventType": "exp-lookit-start-recording:sessionRecorderReady",
+					"timestamp": "2026-03-16T22:56:04.317Z"
+				},
+				{
+					"status": "connected",
+					"eventType": "exp-lookit-start-recording:videoStreamConnection",
+					"timestamp": "2026-03-16T22:56:04.487Z",
+					"sessionStreamTime": null
+				},
+				{
+					"eventType": "exp-lookit-start-recording:startSessionRecording",
+					"timestamp": "2026-03-16T22:56:04.488Z",
+					"sessionPipeId": "videoStream_a9674add-012c-4509-866a-b4040fee17f4_29-null-multiframe_021655c8-18ee-45eb-93c6-4160190d006c_1773701764245_300",
+					"sessionStreamTime": 0
+				},
+				{
+					"eventType": "exp-lookit-start-recording:startedSessionRecording",
+					"timestamp": "2026-03-16T22:56:04.488Z",
+					"sessionStreamTime": 0
+				},
+				{
+					"eventType": "exp-lookit-start-recording:nextFrame",
+					"timestamp": "2026-03-16T22:56:04.488Z",
+					"sessionStreamTime": 0
+				}
+			],
+			"frameDuration": 0.243,
+			"generatedProperties": null
+		},
+		"30-null": {
+			"frameType": "DEFAULT",
+			"videoShown": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/mp4/test_case_intro.mp4",
+			"audioPlayed": "",
+			"eventTimings": [
+				{
+					"eventType": "exp-lookit-video:videoStarted",
+					"timestamp": "2026-03-16T22:56:04.522Z",
+					"streamTime": null,
+					"currentTime": 0,
+					"sessionStreamTime": 34
+				},
+				{
+					"eventType": "exp-lookit-video:audioStarted",
+					"timestamp": "2026-03-16T22:56:04.524Z",
+					"streamTime": null,
+					"sessionStreamTime": 36
+				},
+				{
+					"eventType": "exp-lookit-video:videoPaused",
+					"timestamp": "2026-03-16T22:56:05.609Z",
+					"streamTime": null,
+					"currentTime": 7.918333,
+					"sessionStreamTime": 1121
+				},
+				{
+					"eventType": "exp-lookit-video:nextButtonEnabled",
+					"timestamp": "2026-03-16T22:56:05.609Z",
+					"streamTime": null,
+					"sessionStreamTime": 1121
+				},
+				{
+					"eventType": "exp-lookit-video:trialCompleted",
+					"timestamp": "2026-03-16T22:56:06.338Z",
+					"streamTime": null,
+					"sessionStreamTime": 1850
+				},
+				{
+					"eventType": "exp-lookit-video:nextFrame",
+					"timestamp": "2026-03-16T22:56:06.338Z",
+					"streamTime": null,
+					"sessionStreamTime": 1851
+				}
+			],
+			"frameDuration": 1.843,
+			"generatedProperties": null
+		},
+		"31-null": {
+			"frameType": "DEFAULT",
+			"videoShown": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/mp4/mirror_scenario_girl_chair.mp4",
+			"audioPlayed": "",
+			"eventTimings": [
+				{
+					"eventType": "exp-lookit-video:videoStarted",
+					"timestamp": "2026-03-16T22:56:09.291Z",
+					"streamTime": null,
+					"currentTime": 0,
+					"sessionStreamTime": 4803
+				},
+				{
+					"eventType": "exp-lookit-video:audioStarted",
+					"timestamp": "2026-03-16T22:56:09.292Z",
+					"streamTime": null,
+					"sessionStreamTime": 4804
+				},
+				{
+					"eventType": "exp-lookit-video:videoPaused",
+					"timestamp": "2026-03-16T22:56:17.555Z",
+					"streamTime": null,
+					"currentTime": 73.755,
+					"sessionStreamTime": 13067
+				},
+				{
+					"eventType": "exp-lookit-video:nextButtonEnabled",
+					"timestamp": "2026-03-16T22:56:17.556Z",
+					"streamTime": null,
+					"sessionStreamTime": 13068
+				},
+				{
+					"eventType": "exp-lookit-video:trialCompleted",
+					"timestamp": "2026-03-16T22:56:18.493Z",
+					"streamTime": null,
+					"sessionStreamTime": 14005
+				},
+				{
+					"eventType": "exp-lookit-video:nextFrame",
+					"timestamp": "2026-03-16T22:56:18.494Z",
+					"streamTime": null,
+					"sessionStreamTime": 14006
+				}
+			],
+			"frameDuration": 12.149,
+			"generatedProperties": null
+		},
+		"32-null": {
+			"frameType": "DEFAULT",
+			"videoShown": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/mp4/mirror_scenario_girl_chair_crack_question.mp4",
+			"audioPlayed": "",
+			"eventTimings": [
+				{
+					"eventType": "exp-lookit-video:videoStarted",
+					"timestamp": "2026-03-16T22:56:19.091Z",
+					"streamTime": null,
+					"currentTime": 0,
+					"sessionStreamTime": 14603
+				},
+				{
+					"eventType": "exp-lookit-video:audioStarted",
+					"timestamp": "2026-03-16T22:56:19.092Z",
+					"streamTime": null,
+					"sessionStreamTime": 14604
+				},
+				{
+					"eventType": "exp-lookit-video:videoPaused",
+					"timestamp": "2026-03-16T22:56:19.688Z",
+					"streamTime": null,
+					"currentTime": 3.43,
+					"sessionStreamTime": 15200
+				},
+				{
+					"eventType": "exp-lookit-video:nextButtonEnabled",
+					"timestamp": "2026-03-16T22:56:19.688Z",
+					"streamTime": null,
+					"sessionStreamTime": 15200
+				},
+				{
+					"eventType": "exp-lookit-video:trialCompleted",
+					"timestamp": "2026-03-16T22:56:20.163Z",
+					"streamTime": null,
+					"sessionStreamTime": 15675
+				},
+				{
+					"eventType": "exp-lookit-video:nextFrame",
+					"timestamp": "2026-03-16T22:56:20.164Z",
+					"streamTime": null,
+					"sessionStreamTime": 15676
+				}
+			],
+			"frameDuration": 1.662,
+			"generatedProperties": null
+		},
+		"33-null": {
+			"images": [
+				{
+					"id": "left",
+					"src": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/img/girl_chair_case_sophia.png",
+					"top": 20,
+					"left": 5,
+					"width": 40,
+					"height": 60
+				},
+				{
+					"id": "right",
+					"src": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/img/girl_chair_case_bobby.png",
+					"top": 20,
+					"left": 55,
+					"width": 40,
+					"height": 60
+				}
+			],
+			"frameType": "DEFAULT",
+			"eventTimings": [
+				{
+					"eventType": "exp-lookit-images-audio:finishAudio",
+					"timestamp": "2026-03-16T22:56:20.497Z",
+					"streamTime": null,
+					"sessionStreamTime": 16009
+				},
+				{
+					"eventType": "exp-lookit-images-audio:displayImages",
+					"timestamp": "2026-03-16T22:56:20.498Z",
+					"streamTime": null,
+					"sessionStreamTime": 16009
+				},
+				{
+					"imageId": "right",
+					"eventType": "exp-lookit-images-audio:clickImage",
+					"timestamp": "2026-03-16T22:56:22.138Z",
+					"streamTime": null,
+					"sessionStreamTime": 17650
+				},
+				{
+					"eventType": "exp-lookit-images-audio:trialComplete",
+					"timestamp": "2026-03-16T22:56:22.290Z",
+					"streamTime": null,
+					"sessionStreamTime": 17802
+				},
+				{
+					"eventType": "exp-lookit-images-audio:nextFrame",
+					"timestamp": "2026-03-16T22:56:22.290Z",
+					"streamTime": null,
+					"sessionStreamTime": 17802
+				}
+			],
+			"frameDuration": 2.119,
+			"selectedImage": "right",
+			"generatedProperties": null
+		},
+		"34-null": {
+			"frameType": "DEFAULT",
+			"videoShown": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/mp4/mirror_scenario_girl_chair_caused_question.mp4",
+			"audioPlayed": "",
+			"eventTimings": [
+				{
+					"eventType": "exp-lookit-video:videoStarted",
+					"timestamp": "2026-03-16T22:56:22.983Z",
+					"streamTime": null,
+					"currentTime": 0,
+					"sessionStreamTime": 18495
+				},
+				{
+					"eventType": "exp-lookit-video:audioStarted",
+					"timestamp": "2026-03-16T22:56:22.984Z",
+					"streamTime": null,
+					"sessionStreamTime": 18496
+				},
+				{
+					"eventType": "exp-lookit-video:videoPaused",
+					"timestamp": "2026-03-16T22:56:23.722Z",
+					"streamTime": null,
+					"currentTime": 4.818333,
+					"sessionStreamTime": 19234
+				},
+				{
+					"eventType": "exp-lookit-video:nextButtonEnabled",
+					"timestamp": "2026-03-16T22:56:23.722Z",
+					"streamTime": null,
+					"sessionStreamTime": 19234
+				},
+				{
+					"eventType": "exp-lookit-video:trialCompleted",
+					"timestamp": "2026-03-16T22:56:24.164Z",
+					"streamTime": null,
+					"sessionStreamTime": 19675
+				},
+				{
+					"eventType": "exp-lookit-video:nextFrame",
+					"timestamp": "2026-03-16T22:56:24.164Z",
+					"streamTime": null,
+					"sessionStreamTime": 19676
+				}
+			],
+			"frameDuration": 1.86,
+			"generatedProperties": null
+		},
+		"35-null": {
+			"images": [
+				{
+					"id": "left",
+					"src": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/img/girl_chair_case_sophia.png",
+					"top": 20,
+					"left": 5,
+					"width": 40,
+					"height": 60
+				},
+				{
+					"id": "right",
+					"src": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/img/girl_chair_case_bobby.png",
+					"top": 20,
+					"left": 55,
+					"width": 40,
+					"height": 60
+				}
+			],
+			"frameType": "DEFAULT",
+			"eventTimings": [
+				{
+					"eventType": "exp-lookit-images-audio:finishAudio",
+					"timestamp": "2026-03-16T22:56:24.183Z",
+					"streamTime": null,
+					"sessionStreamTime": 19695
+				},
+				{
+					"eventType": "exp-lookit-images-audio:displayImages",
+					"timestamp": "2026-03-16T22:56:24.183Z",
+					"streamTime": null,
+					"sessionStreamTime": 19695
+				},
+				{
+					"imageId": "left",
+					"eventType": "exp-lookit-images-audio:clickImage",
+					"timestamp": "2026-03-16T22:56:24.809Z",
+					"streamTime": null,
+					"sessionStreamTime": 20321
+				},
+				{
+					"eventType": "exp-lookit-images-audio:trialComplete",
+					"timestamp": "2026-03-16T22:56:24.960Z",
+					"streamTime": null,
+					"sessionStreamTime": 20472
+				},
+				{
+					"eventType": "exp-lookit-images-audio:nextFrame",
+					"timestamp": "2026-03-16T22:56:24.960Z",
+					"streamTime": null,
+					"sessionStreamTime": 20472
+				}
+			],
+			"frameDuration": 0.787,
+			"selectedImage": "left",
+			"generatedProperties": null
+		},
+		"36-null": {
+			"frameType": "DEFAULT",
+			"videoShown": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/mp4/mirror_scenario_girl_chair_fault_question.mp4",
+			"audioPlayed": "",
+			"eventTimings": [
+				{
+					"eventType": "exp-lookit-video:videoStarted",
+					"timestamp": "2026-03-16T22:56:25.569Z",
+					"streamTime": null,
+					"currentTime": 0,
+					"sessionStreamTime": 21081
+				},
+				{
+					"eventType": "exp-lookit-video:audioStarted",
+					"timestamp": "2026-03-16T22:56:25.571Z",
+					"streamTime": null,
+					"sessionStreamTime": 21083
+				},
+				{
+					"eventType": "exp-lookit-video:videoPaused",
+					"timestamp": "2026-03-16T22:56:26.380Z",
+					"streamTime": null,
+					"currentTime": 5.478333,
+					"sessionStreamTime": 21892
+				},
+				{
+					"eventType": "exp-lookit-video:nextButtonEnabled",
+					"timestamp": "2026-03-16T22:56:26.380Z",
+					"streamTime": null,
+					"sessionStreamTime": 21892
+				},
+				{
+					"eventType": "exp-lookit-video:trialCompleted",
+					"timestamp": "2026-03-16T22:56:26.689Z",
+					"streamTime": null,
+					"sessionStreamTime": 22201
+				},
+				{
+					"eventType": "exp-lookit-video:nextFrame",
+					"timestamp": "2026-03-16T22:56:26.689Z",
+					"streamTime": null,
+					"sessionStreamTime": 22201
+				}
+			],
+			"frameDuration": 1.719,
+			"generatedProperties": null
+		},
+		"37-null": {
+			"images": [
+				{
+					"id": "left",
+					"src": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/img/girl_chair_case_sophia.png",
+					"top": 20,
+					"left": 5,
+					"width": 40,
+					"height": 60
+				},
+				{
+					"id": "right",
+					"src": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/img/girl_chair_case_bobby.png",
+					"top": 20,
+					"left": 55,
+					"width": 40,
+					"height": 60
+				}
+			],
+			"frameType": "DEFAULT",
+			"eventTimings": [
+				{
+					"eventType": "exp-lookit-images-audio:finishAudio",
+					"timestamp": "2026-03-16T22:56:26.706Z",
+					"streamTime": null,
+					"sessionStreamTime": 22217
+				},
+				{
+					"eventType": "exp-lookit-images-audio:displayImages",
+					"timestamp": "2026-03-16T22:56:26.706Z",
+					"streamTime": null,
+					"sessionStreamTime": 22218
+				},
+				{
+					"imageId": "right",
+					"eventType": "exp-lookit-images-audio:clickImage",
+					"timestamp": "2026-03-16T22:56:27.543Z",
+					"streamTime": null,
+					"sessionStreamTime": 23055
+				},
+				{
+					"eventType": "exp-lookit-images-audio:trialComplete",
+					"timestamp": "2026-03-16T22:56:27.695Z",
+					"streamTime": null,
+					"sessionStreamTime": 23207
+				},
+				{
+					"eventType": "exp-lookit-images-audio:nextFrame",
+					"timestamp": "2026-03-16T22:56:27.695Z",
+					"streamTime": null,
+					"sessionStreamTime": 23207
+				}
+			],
+			"frameDuration": 0.995,
+			"selectedImage": "right",
+			"generatedProperties": null
+		},
+		"38-null": {
+			"frameType": "DEFAULT",
+			"videoShown": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/mp4/mirror_scenario_girl_chair_should_punish_question.mp4",
+			"audioPlayed": "",
+			"eventTimings": [
+				{
+					"eventType": "exp-lookit-video:videoStarted",
+					"timestamp": "2026-03-16T22:56:28.315Z",
+					"streamTime": null,
+					"currentTime": 0,
+					"sessionStreamTime": 23827
+				},
+				{
+					"eventType": "exp-lookit-video:audioStarted",
+					"timestamp": "2026-03-16T22:56:28.317Z",
+					"streamTime": null,
+					"sessionStreamTime": 23829
+				},
+				{
+					"eventType": "exp-lookit-video:videoPaused",
+					"timestamp": "2026-03-16T22:56:29.330Z",
+					"streamTime": null,
+					"currentTime": 7.126667,
+					"sessionStreamTime": 24842
+				},
+				{
+					"eventType": "exp-lookit-video:nextButtonEnabled",
+					"timestamp": "2026-03-16T22:56:29.330Z",
+					"streamTime": null,
+					"sessionStreamTime": 24842
+				},
+				{
+					"eventType": "exp-lookit-video:trialCompleted",
+					"timestamp": "2026-03-16T22:56:29.693Z",
+					"streamTime": null,
+					"sessionStreamTime": 25204
+				},
+				{
+					"eventType": "exp-lookit-video:nextFrame",
+					"timestamp": "2026-03-16T22:56:29.693Z",
+					"streamTime": null,
+					"sessionStreamTime": 25205
+				}
+			],
+			"frameDuration": 1.99,
+			"generatedProperties": null
+		},
+		"39-null": {
+			"images": [
+				{
+					"id": "left",
+					"src": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/img/yes.png",
+					"top": 20,
+					"left": 5,
+					"width": 40,
+					"height": 60
+				},
+				{
+					"id": "right",
+					"src": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/img/no.png",
+					"top": 20,
+					"left": 55,
+					"width": 40,
+					"height": 60
+				}
+			],
+			"frameType": "DEFAULT",
+			"eventTimings": [
+				{
+					"eventType": "exp-lookit-images-audio:finishAudio",
+					"timestamp": "2026-03-16T22:56:29.707Z",
+					"streamTime": null,
+					"sessionStreamTime": 25219
+				},
+				{
+					"eventType": "exp-lookit-images-audio:displayImages",
+					"timestamp": "2026-03-16T22:56:29.707Z",
+					"streamTime": null,
+					"sessionStreamTime": 25219
+				},
+				{
+					"imageId": "right",
+					"eventType": "exp-lookit-images-audio:clickImage",
+					"timestamp": "2026-03-16T22:56:30.326Z",
+					"streamTime": null,
+					"sessionStreamTime": 25837
+				},
+				{
+					"eventType": "exp-lookit-images-audio:trialComplete",
+					"timestamp": "2026-03-16T22:56:30.479Z",
+					"streamTime": null,
+					"sessionStreamTime": 25991
+				},
+				{
+					"eventType": "exp-lookit-images-audio:nextFrame",
+					"timestamp": "2026-03-16T22:56:30.479Z",
+					"streamTime": null,
+					"sessionStreamTime": 25991
+				}
+			],
+			"frameDuration": 0.778,
+			"selectedImage": "right",
+			"generatedProperties": null
+		},
+		"40-null": {
+			"frameType": "DEFAULT",
+			"videoShown": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/mp4/mirror_scenario_girl_chair_who_punish_question.mp4",
+			"audioPlayed": "",
+			"eventTimings": [
+				{
+					"eventType": "exp-lookit-video:videoStarted",
+					"timestamp": "2026-03-16T22:56:31.353Z",
+					"streamTime": null,
+					"currentTime": 0,
+					"sessionStreamTime": 26864
+				},
+				{
+					"eventType": "exp-lookit-video:audioStarted",
+					"timestamp": "2026-03-16T22:56:31.357Z",
+					"streamTime": null,
+					"sessionStreamTime": 26869
+				},
+				{
+					"eventType": "exp-lookit-video:videoPaused",
+					"timestamp": "2026-03-16T22:56:32.079Z",
+					"streamTime": null,
+					"currentTime": 4.488333,
+					"sessionStreamTime": 27591
+				},
+				{
+					"eventType": "exp-lookit-video:nextButtonEnabled",
+					"timestamp": "2026-03-16T22:56:32.080Z",
+					"streamTime": null,
+					"sessionStreamTime": 27591
+				},
+				{
+					"eventType": "exp-lookit-video:trialCompleted",
+					"timestamp": "2026-03-16T22:56:32.501Z",
+					"streamTime": null,
+					"sessionStreamTime": 28013
+				},
+				{
+					"eventType": "exp-lookit-video:nextFrame",
+					"timestamp": "2026-03-16T22:56:32.501Z",
+					"streamTime": null,
+					"sessionStreamTime": 28013
+				}
+			],
+			"frameDuration": 2.011,
+			"generatedProperties": null
+		},
+		"41-null": {
+			"images": [
+				{
+					"id": "left",
+					"src": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/img/girl_chair_case_sophia.png",
+					"top": 20,
+					"left": 5,
+					"width": 40,
+					"height": 60
+				},
+				{
+					"id": "right",
+					"src": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/img/girl_chair_case_bobby.png",
+					"top": 20,
+					"left": 55,
+					"width": 40,
+					"height": 60
+				}
+			],
+			"frameType": "DEFAULT",
+			"eventTimings": [
+				{
+					"eventType": "exp-lookit-images-audio:finishAudio",
+					"timestamp": "2026-03-16T22:56:32.527Z",
+					"streamTime": null,
+					"sessionStreamTime": 28038
+				},
+				{
+					"eventType": "exp-lookit-images-audio:displayImages",
+					"timestamp": "2026-03-16T22:56:32.527Z",
+					"streamTime": null,
+					"sessionStreamTime": 28038
+				},
+				{
+					"imageId": "right",
+					"eventType": "exp-lookit-images-audio:clickImage",
+					"timestamp": "2026-03-16T22:56:33.379Z",
+					"streamTime": null,
+					"sessionStreamTime": 28891
+				},
+				{
+					"eventType": "exp-lookit-images-audio:trialComplete",
+					"timestamp": "2026-03-16T22:56:33.531Z",
+					"streamTime": null,
+					"sessionStreamTime": 29043
+				},
+				{
+					"eventType": "exp-lookit-images-audio:nextFrame",
+					"timestamp": "2026-03-16T22:56:33.531Z",
+					"streamTime": null,
+					"sessionStreamTime": 29043
+				}
+			],
+			"frameDuration": 1.01,
+			"selectedImage": "right",
+			"generatedProperties": null
+		},
+		"0-instructions": {
+			"frameType": "DEFAULT",
+			"eventTimings": [
+				{
+					"videoId": "videoStream_a9674add-012c-4509-866a-b4040fee17f4_0-instructions_021655c8-18ee-45eb-93c6-4160190d006c_1773701653936_888",
+					"eventType": "exp-lookit-instructions:setupVideoRecorder",
+					"timestamp": "2026-03-16T22:54:13.938Z",
+					"streamTime": null
+				},
+				{
+					"eventType": "exp-lookit-instructions:recorder.hasCamAccess",
+					"timestamp": "2026-03-16T22:54:14.078Z",
+					"streamTime": null,
+					"hasCamAccess": true
+				},
+				{
+					"eventType": "exp-lookit-instructions:recorderReady",
+					"timestamp": "2026-03-16T22:54:14.078Z",
+					"streamTime": null
+				},
+				{
+					"eventType": "exp-lookit-instructions:nextFrame",
+					"timestamp": "2026-03-16T22:54:17.414Z",
+					"streamTime": null
+				},
+				{
+					"eventType": "exp-lookit-instructions:destroyingRecorder",
+					"timestamp": "2026-03-16T22:54:17.414Z",
+					"streamTime": null
+				}
+			],
+			"frameDuration": 3.476,
+			"generatedProperties": null
+		},
+		"1-video-config": {
+			"frameType": "DEFAULT",
+			"screenWidth": 1512,
+			"eventTimings": [
+				{
+					"videoId": "videoStream_a9674add-012c-4509-866a-b4040fee17f4_1-video-config_021655c8-18ee-45eb-93c6-4160190d006c_1773701657429_791",
+					"eventType": "exp-video-config:setupVideoRecorder",
+					"timestamp": "2026-03-16T22:54:17.430Z",
+					"streamTime": null
+				},
+				{
+					"eventType": "exp-video-config:recorder.hasCamAccess",
+					"timestamp": "2026-03-16T22:54:17.511Z",
+					"streamTime": null,
+					"hasCamAccess": true
+				},
+				{
+					"eventType": "exp-video-config:recorderReady",
+					"timestamp": "2026-03-16T22:54:17.954Z",
+					"streamTime": null
+				},
+				{
+					"eventType": "exp-video-config:destroyingRecorder",
+					"timestamp": "2026-03-16T22:54:28.434Z",
+					"streamTime": null
+				},
+				{
+					"videoId": "videoStream_a9674add-012c-4509-866a-b4040fee17f4_1-video-config_021655c8-18ee-45eb-93c6-4160190d006c_1773701668435_283",
+					"eventType": "exp-video-config:setupVideoRecorder",
+					"timestamp": "2026-03-16T22:54:28.435Z",
+					"streamTime": null
+				},
+				{
+					"eventType": "exp-video-config:recorder.hasCamAccess",
+					"timestamp": "2026-03-16T22:54:28.515Z",
+					"streamTime": null,
+					"hasCamAccess": true
+				},
+				{
+					"eventType": "exp-video-config:nextFrame",
+					"timestamp": "2026-03-16T22:54:39.529Z",
+					"streamTime": null
+				},
+				{
+					"eventType": "exp-video-config:destroyingRecorder",
+					"timestamp": "2026-03-16T22:54:39.530Z",
+					"streamTime": null
+				}
+			],
+			"screenHeight": 982,
+			"frameDuration": 22.099,
+			"generatedProperties": null
+		},
+		"44-exit-survey": {
+			"birthDate": "2022-02-02T23:56:36.489Z",
+			"frameType": "EXIT",
+			"useOfMedia": "scientific",
+			"eventTimings": [
+				{
+					"eventType": "exp-lookit-exit-survey:leftFullscreen",
+					"timestamp": "2026-03-16T22:56:33.572Z",
+					"sessionStreamTime": 29083
+				},
+				{
+					"eventType": "exp-lookit-exit-survey:nextFrame",
+					"timestamp": "2026-03-16T22:57:30.086Z",
+					"sessionStreamTime": 85597
+				},
+				{
+					"eventType": "exp-lookit-exit-survey:nextFrame",
+					"timestamp": "2026-03-16T22:57:34.606Z",
+					"sessionStreamTime": 90117
+				}
+			],
+			"frameDuration": 61.054,
+			"databraryShare": "yes",
+			"generatedProperties": null
+		},
+		"2-video-consent": {
+			"videoId": "consent-videoStream_a9674add-012c-4509-866a-b4040fee17f4_2-video-consent_021655c8-18ee-45eb-93c6-4160190d006c_1773701679547_860",
+			"frameType": "CONSENT",
+			"videoList": [
+				"consent-videoStream_a9674add-012c-4509-866a-b4040fee17f4_2-video-consent_021655c8-18ee-45eb-93c6-4160190d006c_1773701679547_860"
+			],
+			"eventTimings": [
+				{
+					"videoId": "consent-videoStream_a9674add-012c-4509-866a-b4040fee17f4_2-video-consent_021655c8-18ee-45eb-93c6-4160190d006c_1773701679547_860",
+					"eventType": "exp-lookit-video-consent:setupVideoRecorder",
+					"timestamp": "2026-03-16T22:54:39.548Z",
+					"streamTime": null
+				},
+				{
+					"eventType": "exp-lookit-video-consent:recorder.hasCamAccess",
+					"timestamp": "2026-03-16T22:54:39.626Z",
+					"streamTime": null,
+					"hasCamAccess": true
+				},
+				{
+					"eventType": "exp-lookit-video-consent:recorderReady",
+					"timestamp": "2026-03-16T22:54:39.627Z",
+					"streamTime": null
+				},
+				{
+					"status": "connected",
+					"eventType": "exp-lookit-video-consent:videoStreamConnection",
+					"timestamp": "2026-03-16T22:54:42.298Z",
+					"streamTime": null
+				},
+				{
+					"pipeId": "consent-videoStream_a9674add-012c-4509-866a-b4040fee17f4_2-video-consent_021655c8-18ee-45eb-93c6-4160190d006c_1773701679547_860",
+					"eventType": "exp-lookit-video-consent:startRecording",
+					"timestamp": "2026-03-16T22:54:42.299Z",
+					"streamTime": 0
+				},
+				{
+					"eventType": "exp-lookit-video-consent:stoppingCapture",
+					"timestamp": "2026-03-16T22:54:44.951Z",
+					"streamTime": 2652
+				},
+				{
+					"status": "disconnected",
+					"eventType": "exp-lookit-video-consent:videoStreamConnection",
+					"timestamp": "2026-03-16T22:54:46.014Z",
+					"streamTime": 3715
+				},
+				{
+					"eventType": "exp-lookit-video-consent:nextFrame",
+					"timestamp": "2026-03-16T22:54:52.480Z",
+					"streamTime": 10181
+				}
+			],
+			"frameDuration": 12.932,
+			"consentFormText": "\n\n\n                    \n    \n        Consent to participate in research: Friends on a Wondrous Trip\n    \n\n\n\n\n\n     Researchers led by Lookit Tutorial Participant at The Markman Lab of Stanford University are running this study, \"Friends on a Wondrous Trip,\" on Lookit.  \n\n      Why we are running this study \n     This study is about how children use causal verbs in language and how they think about causation and responsibility. \n\n      What happens during this study \n     This study takes about 10 minutes to complete. In this study your child will watch a digital story and answer questions by selecting pictures on the screen. \n\n      Participation is voluntary \n    \n        You and your child are free to choose whether to be in this study. If you do choose to participate, it's okay to stop at any point during the session. Please do pause or stop the session if your child becomes fussy or does not want to participate!\n    \n    \n\n          What are the risks? \n         There are no expected risks to participation. \n\n      What are the benefits?  \n     After you finish the study, we will email you a $5 Amazon gift card within approximately 3-5 business days. \n\n     Data collection and webcam recording \n    \n        During the session, you and your child will be recorded by your computer's webcam and microphone. These webcam recordings, and other data like answers you enter in forms, are sent securely to the Lookit platform. You can view your past recordings on Lookit at any time.\n    \n    \n        Data are stored securely on Lookit servers and by researchers, and are only shared as described in this document. However, there is always a small risk that data transmitted over the internet may be intercepted or that the security of stored data may be compromised.\n    \n\n     Who will be able to see your webcam recordings?\n    \n        We will first check that you really agreed to participate by watching your consent recording. If we cannot confirm that you agreed to participate, no one will view any other recordings from this session.\n    \n\n        \n            At the end of the session, you will choose a privacy level for your webcam recordings. You can choose one of the following privacy levels for your videos:\n            \n                \"Private\": Researchers with access to your recordings will not share them with anyone else.\n                \"Scientific\": Researchers with access to your recordings may share them for scientific or educational purposes, for instance showing an example in a class or during a scientific conference.\n                \n                \"Publicity\": Researchers with access to your recordings may also share them for publicity, for instance in a news segment about the research or to recruit more participants.\n                \n            \n            You will also have the option to withdraw your recordings. If you do, only your consent recording will be kept and all other recordings will be deleted.\n        \n\n        \n            Separately, you can opt in to give access to your recordings and other data to authorized users of the secure data library Databrary. This means that other researchers besides the ones running this study will have access to your recordings, and may be able to use them to answer other questions about child development. Data sharing can lead to faster progress in research on human development and behavior. Authorized Databrary researchers have to agree to maintain confidentiality and not use the data for commercial purposes. If you have any questions about this data-sharing library, visit Databrary or email ethics@databrary.org.\n        \n\n     How we use your data \n    \n        If you participate in this study, we (the research group led by Lookit Tutorial Participant at The Markman Lab of Stanford University) will have access to\n        \n             webcam recordings and other data collected during this session\n             your account profile and demographic survey\n             the child profile for the child who is participating\n        \n        This includes changes you make in the future to any of this information. We may put different types of information together to learn more about child development. For instance, if your child participates in multiple studies from our group, we may look at how his or her responses compare across studies, or we may look at whether siblings tend to respond similarly. We may also study connections between children's responses and family demographic survey data.\n    \n        \n            A research assistant will watch your video and mark down your child's answers as well as other information such as interactions between you and your child during the story.\n        \n\n     How Lookit uses your data\n    \n        The Lookit core team at MIT will also have access to the data collected during this session, in addition to your account data. They use this data to run and improve Lookit, for instance to provide technical support, check how well data collection is working, or see whether Lookit is reaching a diverse group of families. Lookit stores data indefinitely unless you withdraw your recordings at the end of the study.\n    \n\n\n\n     Publishing the results of this study\n    \n        The results of this study may be presented at scientific meetings or published in scientific journals. We may publish individual responses that cannot identify children, like looking times or sequences of button presses. We never publish children's birthdates or names. Even if you choose to share your recordings, we never publish information that would make it possible to link recordings with your demographic data.\n    \n\n\n     Your rights as a participant\n      \n\n\n     How to reach us\n    \n        This study is run by Lookit Tutorial Participant at The Markman Lab of Stanford University. If you or your child have any questions or concerns about this study, or in the very unlikely event of a research-related injury, please contact Ellen Markman at markman@stanford.edu.\n    \n    \n        If you or your child have any questions or concerns about the Lookit platform, please contact Lookit staff at lookit@mit.edu.\n    \n\n\n\n\n            ",
+			"generatedProperties": null
+		},
+		"4-storybook-group": {
+			"frameType": "DEFAULT",
+			"videoShown": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/mp4/overall_study_intro.mp4",
+			"audioPlayed": "",
+			"eventTimings": [
+				{
+					"eventType": "exp-lookit-video:videoStarted",
+					"timestamp": "2026-03-16T22:54:53.890Z",
+					"streamTime": null,
+					"currentTime": 0,
+					"sessionStreamTime": 698
+				},
+				{
+					"eventType": "exp-lookit-video:audioStarted",
+					"timestamp": "2026-03-16T22:54:53.892Z",
+					"streamTime": null,
+					"sessionStreamTime": 700
+				},
+				{
+					"eventType": "exp-lookit-video:videoPaused",
+					"timestamp": "2026-03-16T22:55:05.081Z",
+					"streamTime": null,
+					"currentTime": 54.151667,
+					"sessionStreamTime": 11889
+				},
+				{
+					"eventType": "exp-lookit-video:nextButtonEnabled",
+					"timestamp": "2026-03-16T22:55:05.081Z",
+					"streamTime": null,
+					"sessionStreamTime": 11890
+				},
+				{
+					"eventType": "exp-lookit-video:trialCompleted",
+					"timestamp": "2026-03-16T22:55:08.384Z",
+					"streamTime": null,
+					"sessionStreamTime": 15192
+				},
+				{
+					"eventType": "exp-lookit-video:nextFrame",
+					"timestamp": "2026-03-16T22:55:08.384Z",
+					"streamTime": null,
+					"sessionStreamTime": 15192
+				}
+			],
+			"frameDuration": 15.141,
+			"generatedProperties": null
+		},
+		"3-start-recording-with-image": {
+			"frameType": "DEFAULT",
+			"eventTimings": [
+				{
+					"eventType": "exp-lookit-start-recording:setupSessionVideoRecorder",
+					"timestamp": "2026-03-16T22:54:52.487Z",
+					"sessionVideoId": "videoStream_a9674add-012c-4509-866a-b4040fee17f4_3-start-recording-with-image-multiframe_021655c8-18ee-45eb-93c6-4160190d006c_1773701692487_866"
+				},
+				{
+					"eventType": "exp-lookit-start-recording:enteredFullscreen",
+					"timestamp": "2026-03-16T22:54:52.498Z"
+				},
+				{
+					"eventType": "exp-lookit-start-recording:sessionRecorder.hasCamAccess",
+					"timestamp": "2026-03-16T22:54:52.793Z",
+					"hasCamAccess": true
+				},
+				{
+					"eventType": "exp-lookit-start-recording:sessionRecorderReady",
+					"timestamp": "2026-03-16T22:54:52.793Z"
+				},
+				{
+					"status": "connected",
+					"eventType": "exp-lookit-start-recording:videoStreamConnection",
+					"timestamp": "2026-03-16T22:54:53.191Z",
+					"sessionStreamTime": null
+				},
+				{
+					"eventType": "exp-lookit-start-recording:startSessionRecording",
+					"timestamp": "2026-03-16T22:54:53.192Z",
+					"sessionPipeId": "videoStream_a9674add-012c-4509-866a-b4040fee17f4_3-start-recording-with-image-multiframe_021655c8-18ee-45eb-93c6-4160190d006c_1773701692487_866",
+					"sessionStreamTime": 0
+				},
+				{
+					"eventType": "exp-lookit-start-recording:startedSessionRecording",
+					"timestamp": "2026-03-16T22:54:53.192Z",
+					"sessionStreamTime": 0
+				},
+				{
+					"eventType": "exp-lookit-start-recording:nextFrame",
+					"timestamp": "2026-03-16T22:54:53.192Z",
+					"sessionStreamTime": 1
+				}
+			],
+			"frameDuration": 0.705,
+			"generatedProperties": null
+		}
+	}
+},
+{
+	"response": {
+		"id": "414325",
+		"uuid": "8f4d74ca-534d-4d12-bf52-15a7558116ea",
+		"date_created": "2026-03-16 23:12:15.873933+00:00",
+		"completed": true,
+		"withdrawn": false,
+		"eligibility": [
+			"Eligible"
+		],
+		"parent_feedback": null,
+		"birthdate_difference": -58,
+		"video_privacy": "scientific",
+		"databrary": "yes",
+		"is_preview": true,
+		"sequence": [
+			"0-instructions",
+			"1-video-config",
+			"2-video-consent",
+			"3-start-recording-with-image",
+			"4-storybook-group",
+			"5-null",
+			"6-null",
+			"7-null",
+			"8-null",
+			"9-null",
+			"10-null",
+			"11-null",
+			"12-null",
+			"13-null",
+			"14-null",
+			"15-null",
+			"16-null",
+			"17-null",
+			"18-null",
+			"19-null",
+			"20-null",
+			"21-null",
+			"22-null",
+			"23-null",
+			"24-null",
+			"25-null",
+			"26-null",
+			"27-null",
+			"28-null",
+			"29-null",
+			"30-null",
+			"31-null",
+			"32-null",
+			"33-null",
+			"34-null",
+			"35-null",
+			"36-null",
+			"37-null",
+			"38-null",
+			"39-null",
+			"40-null",
+			"41-null",
+			"44-exit-survey"
+		],
+		"conditions": [
+			{
+				"frameName": "5-warmup",
+				"0": {}
+			},
+			{
+				"frameName": "6-punishment-study-final",
+				"0": {}
+			}
+		],
+		"researcher_payment_status": "",
+		"researcher_session_status": "",
+		"researcher_star": false
+	},
+	"consent": {
+		"ruling": "accepted",
+		"arbiter": "Ying  Li",
+		"time": "2026-03-16 23:19",
+		"comment": null
+	},
+	"study": {
+		"uuid": "a9674add-012c-4509-866a-b4040fee17f4"
+	},
+	"participant": {
+		"hashed_id": "JY7W3U"
+	},
+	"child": {
+		"hashed_id": "J3A46A",
+		"age_rounded": "1830",
+		"gender": "f",
+		"age_at_birth": "Not sure or prefer not to answer",
+		"language_list": "en",
+		"condition_list": "",
+		"additional_information": ""
+	},
+	"exp_data": {
+		"5-null": {
+			"frameType": "DEFAULT",
+			"videoShown": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/mp4/warmup_part1_bird_question.mp4",
+			"audioPlayed": "",
+			"eventTimings": [
+				{
+					"eventType": "exp-lookit-video:videoStarted",
+					"timestamp": "2026-03-16T23:12:48.853Z",
+					"streamTime": null,
+					"currentTime": 0,
+					"sessionStreamTime": 10847
+				},
+				{
+					"eventType": "exp-lookit-video:audioStarted",
+					"timestamp": "2026-03-16T23:12:48.854Z",
+					"streamTime": null,
+					"sessionStreamTime": 10848
+				},
+				{
+					"eventType": "exp-lookit-video:videoPaused",
+					"timestamp": "2026-03-16T23:12:52.774Z",
+					"streamTime": null,
+					"currentTime": 33.99,
+					"sessionStreamTime": 14769
+				},
+				{
+					"eventType": "exp-lookit-video:nextButtonEnabled",
+					"timestamp": "2026-03-16T23:12:52.775Z",
+					"streamTime": null,
+					"sessionStreamTime": 14769
+				},
+				{
+					"eventType": "exp-lookit-video:trialCompleted",
+					"timestamp": "2026-03-16T23:12:54.033Z",
+					"streamTime": null,
+					"sessionStreamTime": 16027
+				},
+				{
+					"eventType": "exp-lookit-video:nextFrame",
+					"timestamp": "2026-03-16T23:12:54.033Z",
+					"streamTime": null,
+					"sessionStreamTime": 16028
+				}
+			],
+			"frameDuration": 8.732,
+			"generatedProperties": null
+		},
+		"6-null": {
+			"images": [
+				{
+					"id": "left",
+					"src": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/img/bird.png",
+					"top": 20,
+					"left": 5,
+					"width": 40,
+					"height": 60
+				},
+				{
+					"id": "right",
+					"src": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/img/cat.png",
+					"top": 20,
+					"left": 55,
+					"width": 40,
+					"height": 60
+				}
+			],
+			"frameType": "DEFAULT",
+			"eventTimings": [
+				{
+					"eventType": "exp-lookit-images-audio:finishAudio",
+					"timestamp": "2026-03-16T23:12:54.190Z",
+					"streamTime": null,
+					"sessionStreamTime": 16184
+				},
+				{
+					"eventType": "exp-lookit-images-audio:displayImages",
+					"timestamp": "2026-03-16T23:12:54.190Z",
+					"streamTime": null,
+					"sessionStreamTime": 16185
+				},
+				{
+					"imageId": "left",
+					"eventType": "exp-lookit-images-audio:clickImage",
+					"timestamp": "2026-03-16T23:12:54.887Z",
+					"streamTime": null,
+					"sessionStreamTime": 16881
+				},
+				{
+					"eventType": "exp-lookit-images-audio:trialComplete",
+					"timestamp": "2026-03-16T23:12:55.039Z",
+					"streamTime": null,
+					"sessionStreamTime": 17033
+				},
+				{
+					"eventType": "exp-lookit-images-audio:nextFrame",
+					"timestamp": "2026-03-16T23:12:55.039Z",
+					"streamTime": null,
+					"sessionStreamTime": 17033
+				}
+			],
+			"frameDuration": 0.994,
+			"selectedImage": "left",
+			"generatedProperties": null
+		},
+		"7-null": {
+			"frameType": "DEFAULT",
+			"videoShown": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/mp4/warmup_part1_fish_question.mp4",
+			"audioPlayed": "",
+			"eventTimings": [
+				{
+					"eventType": "exp-lookit-video:videoStarted",
+					"timestamp": "2026-03-16T23:12:55.406Z",
+					"streamTime": null,
+					"currentTime": 0,
+					"sessionStreamTime": 17401
+				},
+				{
+					"eventType": "exp-lookit-video:audioStarted",
+					"timestamp": "2026-03-16T23:12:55.408Z",
+					"streamTime": null,
+					"sessionStreamTime": 17403
+				},
+				{
+					"eventType": "exp-lookit-video:videoPaused",
+					"timestamp": "2026-03-16T23:12:58.704Z",
+					"streamTime": null,
+					"currentTime": 28.181667,
+					"sessionStreamTime": 20699
+				},
+				{
+					"eventType": "exp-lookit-video:nextButtonEnabled",
+					"timestamp": "2026-03-16T23:12:58.705Z",
+					"streamTime": null,
+					"sessionStreamTime": 20699
+				},
+				{
+					"eventType": "exp-lookit-video:trialCompleted",
+					"timestamp": "2026-03-16T23:12:59.414Z",
+					"streamTime": null,
+					"sessionStreamTime": 21409
+				},
+				{
+					"eventType": "exp-lookit-video:nextFrame",
+					"timestamp": "2026-03-16T23:12:59.415Z",
+					"streamTime": null,
+					"sessionStreamTime": 21409
+				}
+			],
+			"frameDuration": 4.372,
+			"generatedProperties": null
+		},
+		"8-null": {
+			"images": [
+				{
+					"id": "left",
+					"src": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/img/pig.png",
+					"top": 20,
+					"left": 5,
+					"width": 40,
+					"height": 60
+				},
+				{
+					"id": "right",
+					"src": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/img/fish.png",
+					"top": 20,
+					"left": 55,
+					"width": 40,
+					"height": 60
+				}
+			],
+			"frameType": "DEFAULT",
+			"eventTimings": [
+				{
+					"eventType": "exp-lookit-images-audio:finishAudio",
+					"timestamp": "2026-03-16T23:12:59.818Z",
+					"streamTime": null,
+					"sessionStreamTime": 21813
+				},
+				{
+					"eventType": "exp-lookit-images-audio:displayImages",
+					"timestamp": "2026-03-16T23:12:59.819Z",
+					"streamTime": null,
+					"sessionStreamTime": 21813
+				},
+				{
+					"imageId": "right",
+					"eventType": "exp-lookit-images-audio:clickImage",
+					"timestamp": "2026-03-16T23:13:00.531Z",
+					"streamTime": null,
+					"sessionStreamTime": 22526
+				},
+				{
+					"eventType": "exp-lookit-images-audio:trialComplete",
+					"timestamp": "2026-03-16T23:13:00.683Z",
+					"streamTime": null,
+					"sessionStreamTime": 22677
+				},
+				{
+					"eventType": "exp-lookit-images-audio:nextFrame",
+					"timestamp": "2026-03-16T23:13:00.683Z",
+					"streamTime": null,
+					"sessionStreamTime": 22678
+				}
+			],
+			"frameDuration": 1.262,
+			"selectedImage": "right",
+			"generatedProperties": null
+		},
+		"9-null": {
+			"frameType": "DEFAULT",
+			"videoShown": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/mp4/warmup_part2_yes_question.mp4",
+			"audioPlayed": "",
+			"eventTimings": [
+				{
+					"eventType": "exp-lookit-video:videoStarted",
+					"timestamp": "2026-03-16T23:13:01.043Z",
+					"streamTime": null,
+					"currentTime": 0,
+					"sessionStreamTime": 23038
+				},
+				{
+					"eventType": "exp-lookit-video:audioStarted",
+					"timestamp": "2026-03-16T23:13:01.045Z",
+					"streamTime": null,
+					"sessionStreamTime": 23039
+				},
+				{
+					"eventType": "exp-lookit-video:videoPaused",
+					"timestamp": "2026-03-16T23:13:06.955Z",
+					"streamTime": null,
+					"currentTime": 52.371667,
+					"sessionStreamTime": 28949
+				},
+				{
+					"eventType": "exp-lookit-video:nextButtonEnabled",
+					"timestamp": "2026-03-16T23:13:06.956Z",
+					"streamTime": null,
+					"sessionStreamTime": 28950
+				},
+				{
+					"eventType": "exp-lookit-video:trialCompleted",
+					"timestamp": "2026-03-16T23:13:07.414Z",
+					"streamTime": null,
+					"sessionStreamTime": 29409
+				},
+				{
+					"eventType": "exp-lookit-video:nextFrame",
+					"timestamp": "2026-03-16T23:13:07.415Z",
+					"streamTime": null,
+					"sessionStreamTime": 29409
+				}
+			],
+			"frameDuration": 6.721,
+			"generatedProperties": null
+		},
+		"10-null": {
+			"images": [
+				{
+					"id": "left",
+					"src": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/img/yes.png",
+					"top": 20,
+					"left": 5,
+					"width": 40,
+					"height": 60
+				},
+				{
+					"id": "right",
+					"src": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/img/no.png",
+					"top": 20,
+					"left": 55,
+					"width": 40,
+					"height": 60
+				}
+			],
+			"frameType": "DEFAULT",
+			"eventTimings": [
+				{
+					"eventType": "exp-lookit-images-audio:finishAudio",
+					"timestamp": "2026-03-16T23:13:07.563Z",
+					"streamTime": null,
+					"sessionStreamTime": 29557
+				},
+				{
+					"eventType": "exp-lookit-images-audio:displayImages",
+					"timestamp": "2026-03-16T23:13:07.563Z",
+					"streamTime": null,
+					"sessionStreamTime": 29557
+				},
+				{
+					"imageId": "left",
+					"eventType": "exp-lookit-images-audio:clickImage",
+					"timestamp": "2026-03-16T23:13:08.083Z",
+					"streamTime": null,
+					"sessionStreamTime": 30077
+				},
+				{
+					"eventType": "exp-lookit-images-audio:trialComplete",
+					"timestamp": "2026-03-16T23:13:08.233Z",
+					"streamTime": null,
+					"sessionStreamTime": 30228
+				},
+				{
+					"eventType": "exp-lookit-images-audio:nextFrame",
+					"timestamp": "2026-03-16T23:13:08.233Z",
+					"streamTime": null,
+					"sessionStreamTime": 30228
+				}
+			],
+			"frameDuration": 0.811,
+			"selectedImage": "left",
+			"generatedProperties": null
+		},
+		"11-null": {
+			"frameType": "DEFAULT",
+			"videoShown": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/mp4/warmup_part2_no_question.mp4",
+			"audioPlayed": "",
+			"eventTimings": [
+				{
+					"eventType": "exp-lookit-video:videoStarted",
+					"timestamp": "2026-03-16T23:13:09.335Z",
+					"streamTime": null,
+					"currentTime": 0,
+					"sessionStreamTime": 31329
+				},
+				{
+					"eventType": "exp-lookit-video:audioStarted",
+					"timestamp": "2026-03-16T23:13:09.336Z",
+					"streamTime": null,
+					"sessionStreamTime": 31331
+				},
+				{
+					"eventType": "exp-lookit-video:videoPaused",
+					"timestamp": "2026-03-16T23:13:12.735Z",
+					"streamTime": null,
+					"currentTime": 29.14,
+					"sessionStreamTime": 34729
+				},
+				{
+					"eventType": "exp-lookit-video:nextButtonEnabled",
+					"timestamp": "2026-03-16T23:13:12.736Z",
+					"streamTime": null,
+					"sessionStreamTime": 34730
+				},
+				{
+					"eventType": "exp-lookit-video:trialCompleted",
+					"timestamp": "2026-03-16T23:13:13.523Z",
+					"streamTime": null,
+					"sessionStreamTime": 35518
+				},
+				{
+					"eventType": "exp-lookit-video:nextFrame",
+					"timestamp": "2026-03-16T23:13:13.524Z",
+					"streamTime": null,
+					"sessionStreamTime": 35518
+				}
+			],
+			"frameDuration": 5.281,
+			"generatedProperties": null
+		},
+		"12-null": {
+			"images": [
+				{
+					"id": "left",
+					"src": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/img/yes.png",
+					"top": 20,
+					"left": 5,
+					"width": 40,
+					"height": 60
+				},
+				{
+					"id": "right",
+					"src": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/img/no.png",
+					"top": 20,
+					"left": 55,
+					"width": 40,
+					"height": 60
+				}
+			],
+			"frameType": "DEFAULT",
+			"eventTimings": [
+				{
+					"eventType": "exp-lookit-images-audio:finishAudio",
+					"timestamp": "2026-03-16T23:13:13.543Z",
+					"streamTime": null,
+					"sessionStreamTime": 35537
+				},
+				{
+					"eventType": "exp-lookit-images-audio:displayImages",
+					"timestamp": "2026-03-16T23:13:13.543Z",
+					"streamTime": null,
+					"sessionStreamTime": 35537
+				},
+				{
+					"imageId": "right",
+					"eventType": "exp-lookit-images-audio:clickImage",
+					"timestamp": "2026-03-16T23:13:14.384Z",
+					"streamTime": null,
+					"sessionStreamTime": 36378
+				},
+				{
+					"eventType": "exp-lookit-images-audio:trialComplete",
+					"timestamp": "2026-03-16T23:13:14.535Z",
+					"streamTime": null,
+					"sessionStreamTime": 36530
+				},
+				{
+					"eventType": "exp-lookit-images-audio:nextFrame",
+					"timestamp": "2026-03-16T23:13:14.536Z",
+					"streamTime": null,
+					"sessionStreamTime": 36530
+				}
+			],
+			"frameDuration": 0.997,
+			"selectedImage": "right",
+			"generatedProperties": null
+		},
+		"13-null": {
+			"frameType": "DEFAULT",
+			"videoShown": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/mp4/warmup_finish.mp4",
+			"audioPlayed": "",
+			"eventTimings": [
+				{
+					"eventType": "exp-lookit-video:videoStarted",
+					"timestamp": "2026-03-16T23:13:14.780Z",
+					"streamTime": null,
+					"currentTime": 0,
+					"sessionStreamTime": 36774
+				},
+				{
+					"eventType": "exp-lookit-video:audioStarted",
+					"timestamp": "2026-03-16T23:13:14.782Z",
+					"streamTime": null,
+					"sessionStreamTime": 36776
+				},
+				{
+					"eventType": "exp-lookit-video:videoPaused",
+					"timestamp": "2026-03-16T23:13:15.744Z",
+					"streamTime": null,
+					"currentTime": 6.831667,
+					"sessionStreamTime": 37739
+				},
+				{
+					"eventType": "exp-lookit-video:nextButtonEnabled",
+					"timestamp": "2026-03-16T23:13:15.745Z",
+					"streamTime": null,
+					"sessionStreamTime": 37739
+				},
+				{
+					"eventType": "exp-lookit-video:trialCompleted",
+					"timestamp": "2026-03-16T23:13:16.426Z",
+					"streamTime": null,
+					"sessionStreamTime": 38421
+				},
+				{
+					"eventType": "exp-lookit-video:nextFrame",
+					"timestamp": "2026-03-16T23:13:16.428Z",
+					"streamTime": null,
+					"sessionStreamTime": 38422
+				}
+			],
+			"frameDuration": 1.884,
+			"generatedProperties": null
+		},
+		"14-null": {
+			"frameType": "DEFAULT",
+			"videoShown": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/mp4/test_case_intro.mp4",
+			"audioPlayed": "",
+			"eventTimings": [
+				{
+					"eventType": "exp-lookit-video:videoStarted",
+					"timestamp": "2026-03-16T23:13:16.643Z",
+					"streamTime": null,
+					"currentTime": 0,
+					"sessionStreamTime": 38637
+				},
+				{
+					"eventType": "exp-lookit-video:audioStarted",
+					"timestamp": "2026-03-16T23:13:16.645Z",
+					"streamTime": null,
+					"sessionStreamTime": 38639
+				},
+				{
+					"eventType": "exp-lookit-video:videoPaused",
+					"timestamp": "2026-03-16T23:13:17.712Z",
+					"streamTime": null,
+					"currentTime": 7.918333,
+					"sessionStreamTime": 39706
+				},
+				{
+					"eventType": "exp-lookit-video:nextButtonEnabled",
+					"timestamp": "2026-03-16T23:13:17.712Z",
+					"streamTime": null,
+					"sessionStreamTime": 39706
+				},
+				{
+					"eventType": "exp-lookit-video:trialCompleted",
+					"timestamp": "2026-03-16T23:13:18.244Z",
+					"streamTime": null,
+					"sessionStreamTime": 40239
+				},
+				{
+					"eventType": "exp-lookit-video:nextFrame",
+					"timestamp": "2026-03-16T23:13:18.245Z",
+					"streamTime": null,
+					"sessionStreamTime": 40239
+				}
+			],
+			"frameDuration": 1.807,
+			"generatedProperties": null
+		},
+		"15-null": {
+			"frameType": "DEFAULT",
+			"eventTimings": [
+				{
+					"eventType": "exp-lookit-stop-recording:stopSessionRecording",
+					"timestamp": "2026-03-16T23:13:18.262Z"
+				},
+				{
+					"eventType": "exp-lookit-stop-recording:nextFrame",
+					"timestamp": "2026-03-16T23:13:18.961Z"
+				}
+			],
+			"frameDuration": 0.706,
+			"generatedProperties": null
+		},
+		"16-null": {
+			"frameType": "DEFAULT",
+			"eventTimings": [
+				{
+					"eventType": "exp-lookit-start-recording:setupSessionVideoRecorder",
+					"timestamp": "2026-03-16T23:13:18.969Z",
+					"sessionVideoId": "videoStream_a9674add-012c-4509-866a-b4040fee17f4_16-null-multiframe_8f4d74ca-534d-4d12-bf52-15a7558116ea_1773702798969_37"
+				},
+				{
+					"eventType": "exp-lookit-start-recording:sessionRecorder.hasCamAccess",
+					"timestamp": "2026-03-16T23:13:19.044Z",
+					"hasCamAccess": true
+				},
+				{
+					"eventType": "exp-lookit-start-recording:sessionRecorderReady",
+					"timestamp": "2026-03-16T23:13:19.044Z"
+				},
+				{
+					"status": "connected",
+					"eventType": "exp-lookit-start-recording:videoStreamConnection",
+					"timestamp": "2026-03-16T23:13:19.216Z",
+					"sessionStreamTime": null
+				},
+				{
+					"eventType": "exp-lookit-start-recording:startSessionRecording",
+					"timestamp": "2026-03-16T23:13:19.217Z",
+					"sessionPipeId": "videoStream_a9674add-012c-4509-866a-b4040fee17f4_16-null-multiframe_8f4d74ca-534d-4d12-bf52-15a7558116ea_1773702798969_37",
+					"sessionStreamTime": 0
+				},
+				{
+					"eventType": "exp-lookit-start-recording:startedSessionRecording",
+					"timestamp": "2026-03-16T23:13:19.217Z",
+					"sessionStreamTime": 0
+				},
+				{
+					"eventType": "exp-lookit-start-recording:nextFrame",
+					"timestamp": "2026-03-16T23:13:19.218Z",
+					"sessionStreamTime": 0
+				}
+			],
+			"frameDuration": 0.25,
+			"generatedProperties": null
+		},
+		"17-null": {
+			"frameType": "DEFAULT",
+			"videoShown": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/mp4/fence_scenario_girl_bike.mp4",
+			"audioPlayed": "",
+			"eventTimings": [
+				{
+					"eventType": "exp-lookit-video:videoStarted",
+					"timestamp": "2026-03-16T23:13:19.657Z",
+					"streamTime": null,
+					"currentTime": 0,
+					"sessionStreamTime": 440
+				},
+				{
+					"eventType": "exp-lookit-video:audioStarted",
+					"timestamp": "2026-03-16T23:13:19.658Z",
+					"streamTime": null,
+					"sessionStreamTime": 440
+				},
+				{
+					"eventType": "exp-lookit-video:videoPaused",
+					"timestamp": "2026-03-16T23:13:23.920Z",
+					"streamTime": null,
+					"currentTime": 37.09,
+					"sessionStreamTime": 4703
+				},
+				{
+					"eventType": "exp-lookit-video:nextButtonEnabled",
+					"timestamp": "2026-03-16T23:13:23.920Z",
+					"streamTime": null,
+					"sessionStreamTime": 4703
+				},
+				{
+					"eventType": "exp-lookit-video:trialCompleted",
+					"timestamp": "2026-03-16T23:13:24.727Z",
+					"streamTime": null,
+					"sessionStreamTime": 5510
+				},
+				{
+					"eventType": "exp-lookit-video:nextFrame",
+					"timestamp": "2026-03-16T23:13:24.728Z",
+					"streamTime": null,
+					"sessionStreamTime": 5511
+				}
+			],
+			"frameDuration": 5.505,
+			"generatedProperties": null
+		},
+		"18-null": {
+			"frameType": "DEFAULT",
+			"videoShown": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/mp4/fence_scenario_girl_bike_cause_question.mp4",
+			"audioPlayed": "",
+			"eventTimings": [
+				{
+					"eventType": "exp-lookit-video:videoStarted",
+					"timestamp": "2026-03-16T23:13:24.997Z",
+					"streamTime": null,
+					"currentTime": 0,
+					"sessionStreamTime": 5780
+				},
+				{
+					"eventType": "exp-lookit-video:audioStarted",
+					"timestamp": "2026-03-16T23:13:24.998Z",
+					"streamTime": null,
+					"sessionStreamTime": 5781
+				},
+				{
+					"eventType": "exp-lookit-video:videoPaused",
+					"timestamp": "2026-03-16T23:13:25.665Z",
+					"streamTime": null,
+					"currentTime": 4.191667,
+					"sessionStreamTime": 6447
+				},
+				{
+					"eventType": "exp-lookit-video:nextButtonEnabled",
+					"timestamp": "2026-03-16T23:13:25.665Z",
+					"streamTime": null,
+					"sessionStreamTime": 6448
+				},
+				{
+					"eventType": "exp-lookit-video:trialCompleted",
+					"timestamp": "2026-03-16T23:13:26.096Z",
+					"streamTime": null,
+					"sessionStreamTime": 6879
+				},
+				{
+					"eventType": "exp-lookit-video:nextFrame",
+					"timestamp": "2026-03-16T23:13:26.097Z",
+					"streamTime": null,
+					"sessionStreamTime": 6880
+				}
+			],
+			"frameDuration": 1.357,
+			"generatedProperties": null
+		},
+		"19-null": {
+			"images": [
+				{
+					"id": "left",
+					"src": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/img/girl_bike_case_suzy.png",
+					"top": 20,
+					"left": 5,
+					"width": 40,
+					"height": 60
+				},
+				{
+					"id": "right",
+					"src": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/img/girl_bike_case_andy.png",
+					"top": 20,
+					"left": 55,
+					"width": 40,
+					"height": 60
+				}
+			],
+			"frameType": "DEFAULT",
+			"eventTimings": [
+				{
+					"eventType": "exp-lookit-images-audio:finishAudio",
+					"timestamp": "2026-03-16T23:13:26.291Z",
+					"streamTime": null,
+					"sessionStreamTime": 7073
+				},
+				{
+					"eventType": "exp-lookit-images-audio:displayImages",
+					"timestamp": "2026-03-16T23:13:26.291Z",
+					"streamTime": null,
+					"sessionStreamTime": 7073
+				},
+				{
+					"imageId": "right",
+					"eventType": "exp-lookit-images-audio:clickImage",
+					"timestamp": "2026-03-16T23:13:26.870Z",
+					"streamTime": null,
+					"sessionStreamTime": 7653
+				},
+				{
+					"eventType": "exp-lookit-images-audio:trialComplete",
+					"timestamp": "2026-03-16T23:13:27.022Z",
+					"streamTime": null,
+					"sessionStreamTime": 7805
+				},
+				{
+					"eventType": "exp-lookit-images-audio:nextFrame",
+					"timestamp": "2026-03-16T23:13:27.022Z",
+					"streamTime": null,
+					"sessionStreamTime": 7805
+				}
+			],
+			"frameDuration": 0.915,
+			"selectedImage": "right",
+			"generatedProperties": null
+		},
+		"20-null": {
+			"frameType": "DEFAULT",
+			"videoShown": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/mp4/fence_scenario_girl_bike_break_question.mp4",
+			"audioPlayed": "",
+			"eventTimings": [
+				{
+					"eventType": "exp-lookit-video:videoStarted",
+					"timestamp": "2026-03-16T23:13:27.285Z",
+					"streamTime": null,
+					"currentTime": 0,
+					"sessionStreamTime": 8067
+				},
+				{
+					"eventType": "exp-lookit-video:audioStarted",
+					"timestamp": "2026-03-16T23:13:27.286Z",
+					"streamTime": null,
+					"sessionStreamTime": 8068
+				},
+				{
+					"eventType": "exp-lookit-video:videoPaused",
+					"timestamp": "2026-03-16T23:13:27.929Z",
+					"streamTime": null,
+					"currentTime": 3.76,
+					"sessionStreamTime": 8711
+				},
+				{
+					"eventType": "exp-lookit-video:nextButtonEnabled",
+					"timestamp": "2026-03-16T23:13:27.929Z",
+					"streamTime": null,
+					"sessionStreamTime": 8712
+				},
+				{
+					"eventType": "exp-lookit-video:trialCompleted",
+					"timestamp": "2026-03-16T23:13:29.347Z",
+					"streamTime": null,
+					"sessionStreamTime": 10130
+				},
+				{
+					"eventType": "exp-lookit-video:nextFrame",
+					"timestamp": "2026-03-16T23:13:29.348Z",
+					"streamTime": null,
+					"sessionStreamTime": 10130
+				}
+			],
+			"frameDuration": 2.317,
+			"generatedProperties": null
+		},
+		"21-null": {
+			"images": [
+				{
+					"id": "left",
+					"src": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/img/girl_bike_case_suzy.png",
+					"top": 20,
+					"left": 5,
+					"width": 40,
+					"height": 60
+				},
+				{
+					"id": "right",
+					"src": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/img/girl_bike_case_andy.png",
+					"top": 20,
+					"left": 55,
+					"width": 40,
+					"height": 60
+				}
+			],
+			"frameType": "DEFAULT",
+			"eventTimings": [
+				{
+					"eventType": "exp-lookit-images-audio:finishAudio",
+					"timestamp": "2026-03-16T23:13:29.364Z",
+					"streamTime": null,
+					"sessionStreamTime": 10147
+				},
+				{
+					"eventType": "exp-lookit-images-audio:displayImages",
+					"timestamp": "2026-03-16T23:13:29.364Z",
+					"streamTime": null,
+					"sessionStreamTime": 10147
+				},
+				{
+					"imageId": "right",
+					"eventType": "exp-lookit-images-audio:clickImage",
+					"timestamp": "2026-03-16T23:13:30.563Z",
+					"streamTime": null,
+					"sessionStreamTime": 11346
+				},
+				{
+					"eventType": "exp-lookit-images-audio:trialComplete",
+					"timestamp": "2026-03-16T23:13:30.716Z",
+					"streamTime": null,
+					"sessionStreamTime": 11499
+				},
+				{
+					"eventType": "exp-lookit-images-audio:nextFrame",
+					"timestamp": "2026-03-16T23:13:30.716Z",
+					"streamTime": null,
+					"sessionStreamTime": 11499
+				}
+			],
+			"frameDuration": 1.359,
+			"selectedImage": "right",
+			"generatedProperties": null
+		},
+		"22-null": {
+			"frameType": "DEFAULT",
+			"videoShown": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/mp4/fence_scenario_girl_bike_fault_question.mp4",
+			"audioPlayed": "",
+			"eventTimings": [
+				{
+					"eventType": "exp-lookit-video:videoStarted",
+					"timestamp": "2026-03-16T23:13:30.933Z",
+					"streamTime": null,
+					"currentTime": 0,
+					"sessionStreamTime": 11716
+				},
+				{
+					"eventType": "exp-lookit-video:audioStarted",
+					"timestamp": "2026-03-16T23:13:30.934Z",
+					"streamTime": null,
+					"sessionStreamTime": 11717
+				},
+				{
+					"eventType": "exp-lookit-video:videoPaused",
+					"timestamp": "2026-03-16T23:13:31.595Z",
+					"streamTime": null,
+					"currentTime": 4.125,
+					"sessionStreamTime": 12378
+				},
+				{
+					"eventType": "exp-lookit-video:nextButtonEnabled",
+					"timestamp": "2026-03-16T23:13:31.596Z",
+					"streamTime": null,
+					"sessionStreamTime": 12378
+				},
+				{
+					"eventType": "exp-lookit-video:trialCompleted",
+					"timestamp": "2026-03-16T23:13:32.059Z",
+					"streamTime": null,
+					"sessionStreamTime": 12842
+				},
+				{
+					"eventType": "exp-lookit-video:nextFrame",
+					"timestamp": "2026-03-16T23:13:32.060Z",
+					"streamTime": null,
+					"sessionStreamTime": 12843
+				}
+			],
+			"frameDuration": 1.334,
+			"generatedProperties": null
+		},
+		"23-null": {
+			"images": [
+				{
+					"id": "left",
+					"src": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/img/girl_bike_case_suzy.png",
+					"top": 20,
+					"left": 5,
+					"width": 40,
+					"height": 60
+				},
+				{
+					"id": "right",
+					"src": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/img/girl_bike_case_andy.png",
+					"top": 20,
+					"left": 55,
+					"width": 40,
+					"height": 60
+				}
+			],
+			"frameType": "DEFAULT",
+			"eventTimings": [
+				{
+					"eventType": "exp-lookit-images-audio:finishAudio",
+					"timestamp": "2026-03-16T23:13:32.080Z",
+					"streamTime": null,
+					"sessionStreamTime": 12863
+				},
+				{
+					"eventType": "exp-lookit-images-audio:displayImages",
+					"timestamp": "2026-03-16T23:13:32.081Z",
+					"streamTime": null,
+					"sessionStreamTime": 12863
+				},
+				{
+					"imageId": "right",
+					"eventType": "exp-lookit-images-audio:clickImage",
+					"timestamp": "2026-03-16T23:13:32.922Z",
+					"streamTime": null,
+					"sessionStreamTime": 13704
+				},
+				{
+					"eventType": "exp-lookit-images-audio:trialComplete",
+					"timestamp": "2026-03-16T23:13:33.073Z",
+					"streamTime": null,
+					"sessionStreamTime": 13855
+				},
+				{
+					"eventType": "exp-lookit-images-audio:nextFrame",
+					"timestamp": "2026-03-16T23:13:33.073Z",
+					"streamTime": null,
+					"sessionStreamTime": 13855
+				}
+			],
+			"frameDuration": 0.999,
+			"selectedImage": "right",
+			"generatedProperties": null
+		},
+		"24-null": {
+			"frameType": "DEFAULT",
+			"videoShown": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/mp4/fence_scenario_girl_bike_should_punish_question.mp4",
+			"audioPlayed": "",
+			"eventTimings": [
+				{
+					"eventType": "exp-lookit-video:videoStarted",
+					"timestamp": "2026-03-16T23:13:33.385Z",
+					"streamTime": null,
+					"currentTime": 0.002097,
+					"sessionStreamTime": 14167
+				},
+				{
+					"eventType": "exp-lookit-video:audioStarted",
+					"timestamp": "2026-03-16T23:13:33.386Z",
+					"streamTime": null,
+					"sessionStreamTime": 14168
+				},
+				{
+					"eventType": "exp-lookit-video:videoPaused",
+					"timestamp": "2026-03-16T23:13:34.345Z",
+					"streamTime": null,
+					"currentTime": 6.798333,
+					"sessionStreamTime": 15127
+				},
+				{
+					"eventType": "exp-lookit-video:nextButtonEnabled",
+					"timestamp": "2026-03-16T23:13:34.345Z",
+					"streamTime": null,
+					"sessionStreamTime": 15128
+				},
+				{
+					"eventType": "exp-lookit-video:trialCompleted",
+					"timestamp": "2026-03-16T23:13:35.339Z",
+					"streamTime": null,
+					"sessionStreamTime": 16122
+				},
+				{
+					"eventType": "exp-lookit-video:nextFrame",
+					"timestamp": "2026-03-16T23:13:35.339Z",
+					"streamTime": null,
+					"sessionStreamTime": 16122
+				}
+			],
+			"frameDuration": 2.259,
+			"generatedProperties": null
+		},
+		"25-null": {
+			"images": [
+				{
+					"id": "left",
+					"src": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/img/yes.png",
+					"top": 20,
+					"left": 5,
+					"width": 40,
+					"height": 60
+				},
+				{
+					"id": "right",
+					"src": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/img/no.png",
+					"top": 20,
+					"left": 55,
+					"width": 40,
+					"height": 60
+				}
+			],
+			"frameType": "DEFAULT",
+			"eventTimings": [
+				{
+					"eventType": "exp-lookit-images-audio:finishAudio",
+					"timestamp": "2026-03-16T23:13:35.350Z",
+					"streamTime": null,
+					"sessionStreamTime": 16132
+				},
+				{
+					"eventType": "exp-lookit-images-audio:displayImages",
+					"timestamp": "2026-03-16T23:13:35.350Z",
+					"streamTime": null,
+					"sessionStreamTime": 16132
+				},
+				{
+					"imageId": "right",
+					"eventType": "exp-lookit-images-audio:clickImage",
+					"timestamp": "2026-03-16T23:13:36.062Z",
+					"streamTime": null,
+					"sessionStreamTime": 16845
+				},
+				{
+					"eventType": "exp-lookit-images-audio:trialComplete",
+					"timestamp": "2026-03-16T23:13:36.213Z",
+					"streamTime": null,
+					"sessionStreamTime": 16996
+				},
+				{
+					"eventType": "exp-lookit-images-audio:nextFrame",
+					"timestamp": "2026-03-16T23:13:36.213Z",
+					"streamTime": null,
+					"sessionStreamTime": 16996
+				}
+			],
+			"frameDuration": 0.867,
+			"selectedImage": "right",
+			"generatedProperties": null
+		},
+		"26-null": {
+			"frameType": "DEFAULT",
+			"videoShown": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/mp4/fence_scenario_girl_bike_who_punish_question.mp4",
+			"audioPlayed": "",
+			"eventTimings": [
+				{
+					"eventType": "exp-lookit-video:videoStarted",
+					"timestamp": "2026-03-16T23:13:36.537Z",
+					"streamTime": null,
+					"currentTime": 0,
+					"sessionStreamTime": 17319
+				},
+				{
+					"eventType": "exp-lookit-video:audioStarted",
+					"timestamp": "2026-03-16T23:13:36.538Z",
+					"streamTime": null,
+					"sessionStreamTime": 17321
+				},
+				{
+					"eventType": "exp-lookit-video:videoPaused",
+					"timestamp": "2026-03-16T23:13:37.299Z",
+					"streamTime": null,
+					"currentTime": 5.016667,
+					"sessionStreamTime": 18082
+				},
+				{
+					"eventType": "exp-lookit-video:nextButtonEnabled",
+					"timestamp": "2026-03-16T23:13:37.301Z",
+					"streamTime": null,
+					"sessionStreamTime": 18083
+				},
+				{
+					"eventType": "exp-lookit-video:trialCompleted",
+					"timestamp": "2026-03-16T23:13:38.189Z",
+					"streamTime": null,
+					"sessionStreamTime": 18971
+				},
+				{
+					"eventType": "exp-lookit-video:nextFrame",
+					"timestamp": "2026-03-16T23:13:38.189Z",
+					"streamTime": null,
+					"sessionStreamTime": 18972
+				}
+			],
+			"frameDuration": 1.968,
+			"generatedProperties": null
+		},
+		"27-null": {
+			"images": [
+				{
+					"id": "left",
+					"src": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/img/girl_bike_case_suzy.png",
+					"top": 20,
+					"left": 5,
+					"width": 40,
+					"height": 60
+				},
+				{
+					"id": "right",
+					"src": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/img/girl_bike_case_andy.png",
+					"top": 20,
+					"left": 55,
+					"width": 40,
+					"height": 60
+				}
+			],
+			"frameType": "DEFAULT",
+			"eventTimings": [
+				{
+					"eventType": "exp-lookit-images-audio:finishAudio",
+					"timestamp": "2026-03-16T23:13:38.206Z",
+					"streamTime": null,
+					"sessionStreamTime": 18989
+				},
+				{
+					"eventType": "exp-lookit-images-audio:displayImages",
+					"timestamp": "2026-03-16T23:13:38.206Z",
+					"streamTime": null,
+					"sessionStreamTime": 18989
+				},
+				{
+					"imageId": "right",
+					"eventType": "exp-lookit-images-audio:clickImage",
+					"timestamp": "2026-03-16T23:13:39.525Z",
+					"streamTime": null,
+					"sessionStreamTime": 20308
+				},
+				{
+					"eventType": "exp-lookit-images-audio:trialComplete",
+					"timestamp": "2026-03-16T23:13:39.678Z",
+					"streamTime": null,
+					"sessionStreamTime": 20460
+				},
+				{
+					"eventType": "exp-lookit-images-audio:nextFrame",
+					"timestamp": "2026-03-16T23:13:39.678Z",
+					"streamTime": null,
+					"sessionStreamTime": 20461
+				}
+			],
+			"frameDuration": 1.481,
+			"selectedImage": "right",
+			"generatedProperties": null
+		},
+		"28-null": {
+			"frameType": "DEFAULT",
+			"eventTimings": [
+				{
+					"eventType": "exp-lookit-stop-recording:stopSessionRecording",
+					"timestamp": "2026-03-16T23:13:39.701Z"
+				},
+				{
+					"eventType": "exp-lookit-stop-recording:nextFrame",
+					"timestamp": "2026-03-16T23:13:40.265Z"
+				}
+			],
+			"frameDuration": 0.58,
+			"generatedProperties": null
+		},
+		"29-null": {
+			"frameType": "DEFAULT",
+			"eventTimings": [
+				{
+					"eventType": "exp-lookit-start-recording:setupSessionVideoRecorder",
+					"timestamp": "2026-03-16T23:13:40.275Z",
+					"sessionVideoId": "videoStream_a9674add-012c-4509-866a-b4040fee17f4_29-null-multiframe_8f4d74ca-534d-4d12-bf52-15a7558116ea_1773702820274_718"
+				},
+				{
+					"eventType": "exp-lookit-start-recording:sessionRecorder.hasCamAccess",
+					"timestamp": "2026-03-16T23:13:40.349Z",
+					"hasCamAccess": true
+				},
+				{
+					"eventType": "exp-lookit-start-recording:sessionRecorderReady",
+					"timestamp": "2026-03-16T23:13:40.349Z"
+				},
+				{
+					"status": "connected",
+					"eventType": "exp-lookit-start-recording:videoStreamConnection",
+					"timestamp": "2026-03-16T23:13:40.960Z",
+					"sessionStreamTime": null
+				},
+				{
+					"eventType": "exp-lookit-start-recording:startSessionRecording",
+					"timestamp": "2026-03-16T23:13:40.960Z",
+					"sessionPipeId": "videoStream_a9674add-012c-4509-866a-b4040fee17f4_29-null-multiframe_8f4d74ca-534d-4d12-bf52-15a7558116ea_1773702820274_718",
+					"sessionStreamTime": 0
+				},
+				{
+					"eventType": "exp-lookit-start-recording:startedSessionRecording",
+					"timestamp": "2026-03-16T23:13:40.960Z",
+					"sessionStreamTime": 0
+				},
+				{
+					"eventType": "exp-lookit-start-recording:nextFrame",
+					"timestamp": "2026-03-16T23:13:40.960Z",
+					"sessionStreamTime": 0
+				}
+			],
+			"frameDuration": 0.686,
+			"generatedProperties": null
+		},
+		"30-null": {
+			"frameType": "DEFAULT",
+			"videoShown": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/mp4/test_case_intro.mp4",
+			"audioPlayed": "",
+			"eventTimings": [
+				{
+					"eventType": "exp-lookit-video:videoStarted",
+					"timestamp": "2026-03-16T23:13:41.003Z",
+					"streamTime": null,
+					"currentTime": 0,
+					"sessionStreamTime": 43
+				},
+				{
+					"eventType": "exp-lookit-video:audioStarted",
+					"timestamp": "2026-03-16T23:13:41.004Z",
+					"streamTime": null,
+					"sessionStreamTime": 44
+				},
+				{
+					"eventType": "exp-lookit-video:videoPaused",
+					"timestamp": "2026-03-16T23:13:42.074Z",
+					"streamTime": null,
+					"currentTime": 7.918333,
+					"sessionStreamTime": 1114
+				},
+				{
+					"eventType": "exp-lookit-video:nextButtonEnabled",
+					"timestamp": "2026-03-16T23:13:42.075Z",
+					"streamTime": null,
+					"sessionStreamTime": 1114
+				},
+				{
+					"eventType": "exp-lookit-video:trialCompleted",
+					"timestamp": "2026-03-16T23:13:42.650Z",
+					"streamTime": null,
+					"sessionStreamTime": 1690
+				},
+				{
+					"eventType": "exp-lookit-video:nextFrame",
+					"timestamp": "2026-03-16T23:13:42.650Z",
+					"streamTime": null,
+					"sessionStreamTime": 1690
+				}
+			],
+			"frameDuration": 1.682,
+			"generatedProperties": null
+		},
+		"31-null": {
+			"frameType": "DEFAULT",
+			"videoShown": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/mp4/mirror_scenario_boy_chair.mp4",
+			"audioPlayed": "",
+			"eventTimings": [
+				{
+					"eventType": "exp-lookit-video:videoStarted",
+					"timestamp": "2026-03-16T23:13:44.027Z",
+					"streamTime": null,
+					"currentTime": 0,
+					"sessionStreamTime": 3067
+				},
+				{
+					"eventType": "exp-lookit-video:audioStarted",
+					"timestamp": "2026-03-16T23:13:44.029Z",
+					"streamTime": null,
+					"sessionStreamTime": 3068
+				},
+				{
+					"eventType": "exp-lookit-video:videoPaused",
+					"timestamp": "2026-03-16T23:13:50.141Z",
+					"streamTime": null,
+					"currentTime": 54.186667,
+					"sessionStreamTime": 9181
+				},
+				{
+					"eventType": "exp-lookit-video:nextButtonEnabled",
+					"timestamp": "2026-03-16T23:13:50.142Z",
+					"streamTime": null,
+					"sessionStreamTime": 9181
+				},
+				{
+					"eventType": "exp-lookit-video:trialCompleted",
+					"timestamp": "2026-03-16T23:13:50.658Z",
+					"streamTime": null,
+					"sessionStreamTime": 9698
+				},
+				{
+					"eventType": "exp-lookit-video:nextFrame",
+					"timestamp": "2026-03-16T23:13:50.659Z",
+					"streamTime": null,
+					"sessionStreamTime": 9698
+				}
+			],
+			"frameDuration": 8.002,
+			"generatedProperties": null
+		},
+		"32-null": {
+			"frameType": "DEFAULT",
+			"videoShown": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/mp4/mirror_scenario_boy_chair_cause_question.mp4",
+			"audioPlayed": "",
+			"eventTimings": [
+				{
+					"eventType": "exp-lookit-video:videoStarted",
+					"timestamp": "2026-03-16T23:13:50.885Z",
+					"streamTime": null,
+					"currentTime": 0,
+					"sessionStreamTime": 9925
+				},
+				{
+					"eventType": "exp-lookit-video:audioStarted",
+					"timestamp": "2026-03-16T23:13:50.886Z",
+					"streamTime": null,
+					"sessionStreamTime": 9925
+				},
+				{
+					"eventType": "exp-lookit-video:videoPaused",
+					"timestamp": "2026-03-16T23:13:51.566Z",
+					"streamTime": null,
+					"currentTime": 4.125,
+					"sessionStreamTime": 10605
+				},
+				{
+					"eventType": "exp-lookit-video:nextButtonEnabled",
+					"timestamp": "2026-03-16T23:13:51.566Z",
+					"streamTime": null,
+					"sessionStreamTime": 10606
+				},
+				{
+					"eventType": "exp-lookit-video:trialCompleted",
+					"timestamp": "2026-03-16T23:13:52.075Z",
+					"streamTime": null,
+					"sessionStreamTime": 11115
+				},
+				{
+					"eventType": "exp-lookit-video:nextFrame",
+					"timestamp": "2026-03-16T23:13:52.076Z",
+					"streamTime": null,
+					"sessionStreamTime": 11115
+				}
+			],
+			"frameDuration": 1.412,
+			"generatedProperties": null
+		},
+		"33-null": {
+			"images": [
+				{
+					"id": "left",
+					"src": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/img/boy_chair_case_sophia.png",
+					"top": 20,
+					"left": 5,
+					"width": 40,
+					"height": 60
+				},
+				{
+					"id": "right",
+					"src": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/img/boy_chair_case_bobby.png",
+					"top": 20,
+					"left": 55,
+					"width": 40,
+					"height": 60
+				}
+			],
+			"frameType": "DEFAULT",
+			"eventTimings": [
+				{
+					"eventType": "exp-lookit-images-audio:finishAudio",
+					"timestamp": "2026-03-16T23:13:52.299Z",
+					"streamTime": null,
+					"sessionStreamTime": 11339
+				},
+				{
+					"eventType": "exp-lookit-images-audio:displayImages",
+					"timestamp": "2026-03-16T23:13:52.299Z",
+					"streamTime": null,
+					"sessionStreamTime": 11339
+				},
+				{
+					"imageId": "right",
+					"eventType": "exp-lookit-images-audio:clickImage",
+					"timestamp": "2026-03-16T23:13:53.750Z",
+					"streamTime": null,
+					"sessionStreamTime": 12789
+				},
+				{
+					"eventType": "exp-lookit-images-audio:trialComplete",
+					"timestamp": "2026-03-16T23:13:53.901Z",
+					"streamTime": null,
+					"sessionStreamTime": 12941
+				},
+				{
+					"eventType": "exp-lookit-images-audio:nextFrame",
+					"timestamp": "2026-03-16T23:13:53.901Z",
+					"streamTime": null,
+					"sessionStreamTime": 12941
+				}
+			],
+			"frameDuration": 1.815,
+			"selectedImage": "right",
+			"generatedProperties": null
+		},
+		"34-null": {
+			"frameType": "DEFAULT",
+			"videoShown": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/mp4/mirror_scenario_boy_chair_crack_question.mp4",
+			"audioPlayed": "",
+			"eventTimings": [
+				{
+					"eventType": "exp-lookit-video:videoStarted",
+					"timestamp": "2026-03-16T23:13:54.160Z",
+					"streamTime": null,
+					"currentTime": 0,
+					"sessionStreamTime": 13200
+				},
+				{
+					"eventType": "exp-lookit-video:audioStarted",
+					"timestamp": "2026-03-16T23:13:54.162Z",
+					"streamTime": null,
+					"sessionStreamTime": 13202
+				},
+				{
+					"eventType": "exp-lookit-video:videoPaused",
+					"timestamp": "2026-03-16T23:13:54.745Z",
+					"streamTime": null,
+					"currentTime": 3.3,
+					"sessionStreamTime": 13784
+				},
+				{
+					"eventType": "exp-lookit-video:nextButtonEnabled",
+					"timestamp": "2026-03-16T23:13:54.745Z",
+					"streamTime": null,
+					"sessionStreamTime": 13785
+				},
+				{
+					"eventType": "exp-lookit-video:trialCompleted",
+					"timestamp": "2026-03-16T23:13:55.214Z",
+					"streamTime": null,
+					"sessionStreamTime": 14253
+				},
+				{
+					"eventType": "exp-lookit-video:nextFrame",
+					"timestamp": "2026-03-16T23:13:55.214Z",
+					"streamTime": null,
+					"sessionStreamTime": 14254
+				}
+			],
+			"frameDuration": 1.303,
+			"generatedProperties": null
+		},
+		"35-null": {
+			"images": [
+				{
+					"id": "left",
+					"src": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/img/boy_chair_case_sophia.png",
+					"top": 20,
+					"left": 5,
+					"width": 40,
+					"height": 60
+				},
+				{
+					"id": "right",
+					"src": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/img/boy_chair_case_bobby.png",
+					"top": 20,
+					"left": 55,
+					"width": 40,
+					"height": 60
+				}
+			],
+			"frameType": "DEFAULT",
+			"eventTimings": [
+				{
+					"eventType": "exp-lookit-images-audio:finishAudio",
+					"timestamp": "2026-03-16T23:13:55.231Z",
+					"streamTime": null,
+					"sessionStreamTime": 14270
+				},
+				{
+					"eventType": "exp-lookit-images-audio:displayImages",
+					"timestamp": "2026-03-16T23:13:55.231Z",
+					"streamTime": null,
+					"sessionStreamTime": 14270
+				},
+				{
+					"imageId": "left",
+					"eventType": "exp-lookit-images-audio:clickImage",
+					"timestamp": "2026-03-16T23:13:55.959Z",
+					"streamTime": null,
+					"sessionStreamTime": 14999
+				},
+				{
+					"eventType": "exp-lookit-images-audio:trialComplete",
+					"timestamp": "2026-03-16T23:13:56.111Z",
+					"streamTime": null,
+					"sessionStreamTime": 15151
+				},
+				{
+					"eventType": "exp-lookit-images-audio:nextFrame",
+					"timestamp": "2026-03-16T23:13:56.111Z",
+					"streamTime": null,
+					"sessionStreamTime": 15151
+				}
+			],
+			"frameDuration": 0.888,
+			"selectedImage": "left",
+			"generatedProperties": null
+		},
+		"36-null": {
+			"frameType": "DEFAULT",
+			"videoShown": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/mp4/mirror_scenario_boy_chair_fault_question.mp4",
+			"audioPlayed": "",
+			"eventTimings": [
+				{
+					"eventType": "exp-lookit-video:videoStarted",
+					"timestamp": "2026-03-16T23:13:56.713Z",
+					"streamTime": null,
+					"currentTime": 0,
+					"sessionStreamTime": 15753
+				},
+				{
+					"eventType": "exp-lookit-video:audioStarted",
+					"timestamp": "2026-03-16T23:13:56.714Z",
+					"streamTime": null,
+					"sessionStreamTime": 15754
+				},
+				{
+					"eventType": "exp-lookit-video:videoPaused",
+					"timestamp": "2026-03-16T23:13:57.495Z",
+					"streamTime": null,
+					"currentTime": 5.05,
+					"sessionStreamTime": 16535
+				},
+				{
+					"eventType": "exp-lookit-video:nextButtonEnabled",
+					"timestamp": "2026-03-16T23:13:57.495Z",
+					"streamTime": null,
+					"sessionStreamTime": 16535
+				},
+				{
+					"eventType": "exp-lookit-video:trialCompleted",
+					"timestamp": "2026-03-16T23:13:57.834Z",
+					"streamTime": null,
+					"sessionStreamTime": 16874
+				},
+				{
+					"eventType": "exp-lookit-video:nextFrame",
+					"timestamp": "2026-03-16T23:13:57.835Z",
+					"streamTime": null,
+					"sessionStreamTime": 16875
+				}
+			],
+			"frameDuration": 1.714,
+			"generatedProperties": null
+		},
+		"37-null": {
+			"images": [
+				{
+					"id": "left",
+					"src": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/img/boy_chair_case_sophia.png",
+					"top": 20,
+					"left": 5,
+					"width": 40,
+					"height": 60
+				},
+				{
+					"id": "right",
+					"src": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/img/boy_chair_case_bobby.png",
+					"top": 20,
+					"left": 55,
+					"width": 40,
+					"height": 60
+				}
+			],
+			"frameType": "DEFAULT",
+			"eventTimings": [
+				{
+					"eventType": "exp-lookit-images-audio:finishAudio",
+					"timestamp": "2026-03-16T23:13:57.852Z",
+					"streamTime": null,
+					"sessionStreamTime": 16891
+				},
+				{
+					"eventType": "exp-lookit-images-audio:displayImages",
+					"timestamp": "2026-03-16T23:13:57.852Z",
+					"streamTime": null,
+					"sessionStreamTime": 16892
+				},
+				{
+					"imageId": "right",
+					"eventType": "exp-lookit-images-audio:clickImage",
+					"timestamp": "2026-03-16T23:13:58.489Z",
+					"streamTime": null,
+					"sessionStreamTime": 17529
+				},
+				{
+					"eventType": "exp-lookit-images-audio:trialComplete",
+					"timestamp": "2026-03-16T23:13:58.643Z",
+					"streamTime": null,
+					"sessionStreamTime": 17683
+				},
+				{
+					"eventType": "exp-lookit-images-audio:nextFrame",
+					"timestamp": "2026-03-16T23:13:58.643Z",
+					"streamTime": null,
+					"sessionStreamTime": 17683
+				}
+			],
+			"frameDuration": 0.797,
+			"selectedImage": "right",
+			"generatedProperties": null
+		},
+		"38-null": {
+			"frameType": "DEFAULT",
+			"videoShown": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/mp4/mirror_scenario_boy_chair_should_punish_question.mp4",
+			"audioPlayed": "",
+			"eventTimings": [
+				{
+					"eventType": "exp-lookit-video:videoStarted",
+					"timestamp": "2026-03-16T23:13:59.129Z",
+					"streamTime": null,
+					"currentTime": 0,
+					"sessionStreamTime": 18169
+				},
+				{
+					"eventType": "exp-lookit-video:audioStarted",
+					"timestamp": "2026-03-16T23:13:59.130Z",
+					"streamTime": null,
+					"sessionStreamTime": 18170
+				},
+				{
+					"eventType": "exp-lookit-video:videoPaused",
+					"timestamp": "2026-03-16T23:14:00.075Z",
+					"streamTime": null,
+					"currentTime": 6.633333,
+					"sessionStreamTime": 19115
+				},
+				{
+					"eventType": "exp-lookit-video:nextButtonEnabled",
+					"timestamp": "2026-03-16T23:14:00.076Z",
+					"streamTime": null,
+					"sessionStreamTime": 19115
+				},
+				{
+					"eventType": "exp-lookit-video:trialCompleted",
+					"timestamp": "2026-03-16T23:14:00.508Z",
+					"streamTime": null,
+					"sessionStreamTime": 19548
+				},
+				{
+					"eventType": "exp-lookit-video:nextFrame",
+					"timestamp": "2026-03-16T23:14:00.509Z",
+					"streamTime": null,
+					"sessionStreamTime": 19548
+				}
+			],
+			"frameDuration": 1.856,
+			"generatedProperties": null
+		},
+		"39-null": {
+			"images": [
+				{
+					"id": "left",
+					"src": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/img/yes.png",
+					"top": 20,
+					"left": 5,
+					"width": 40,
+					"height": 60
+				},
+				{
+					"id": "right",
+					"src": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/img/no.png",
+					"top": 20,
+					"left": 55,
+					"width": 40,
+					"height": 60
+				}
+			],
+			"frameType": "DEFAULT",
+			"eventTimings": [
+				{
+					"eventType": "exp-lookit-images-audio:finishAudio",
+					"timestamp": "2026-03-16T23:14:00.524Z",
+					"streamTime": null,
+					"sessionStreamTime": 19564
+				},
+				{
+					"eventType": "exp-lookit-images-audio:displayImages",
+					"timestamp": "2026-03-16T23:14:00.524Z",
+					"streamTime": null,
+					"sessionStreamTime": 19564
+				},
+				{
+					"imageId": "right",
+					"eventType": "exp-lookit-images-audio:clickImage",
+					"timestamp": "2026-03-16T23:14:01.121Z",
+					"streamTime": null,
+					"sessionStreamTime": 20160
+				},
+				{
+					"eventType": "exp-lookit-images-audio:trialComplete",
+					"timestamp": "2026-03-16T23:14:01.272Z",
+					"streamTime": null,
+					"sessionStreamTime": 20312
+				},
+				{
+					"eventType": "exp-lookit-images-audio:nextFrame",
+					"timestamp": "2026-03-16T23:14:01.272Z",
+					"streamTime": null,
+					"sessionStreamTime": 20312
+				}
+			],
+			"frameDuration": 0.756,
+			"selectedImage": "right",
+			"generatedProperties": null
+		},
+		"40-null": {
+			"frameType": "DEFAULT",
+			"videoShown": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/mp4/mirror_scenario_boy_chair_who_punish_question.mp4",
+			"audioPlayed": "",
+			"eventTimings": [
+				{
+					"eventType": "exp-lookit-video:videoStarted",
+					"timestamp": "2026-03-16T23:14:01.620Z",
+					"streamTime": null,
+					"currentTime": 0,
+					"sessionStreamTime": 20660
+				},
+				{
+					"eventType": "exp-lookit-video:audioStarted",
+					"timestamp": "2026-03-16T23:14:01.621Z",
+					"streamTime": null,
+					"sessionStreamTime": 20661
+				},
+				{
+					"eventType": "exp-lookit-video:videoPaused",
+					"timestamp": "2026-03-16T23:14:02.385Z",
+					"streamTime": null,
+					"currentTime": 4.851667,
+					"sessionStreamTime": 21425
+				},
+				{
+					"eventType": "exp-lookit-video:nextButtonEnabled",
+					"timestamp": "2026-03-16T23:14:02.386Z",
+					"streamTime": null,
+					"sessionStreamTime": 21425
+				},
+				{
+					"eventType": "exp-lookit-video:trialCompleted",
+					"timestamp": "2026-03-16T23:14:02.784Z",
+					"streamTime": null,
+					"sessionStreamTime": 21823
+				},
+				{
+					"eventType": "exp-lookit-video:nextFrame",
+					"timestamp": "2026-03-16T23:14:02.784Z",
+					"streamTime": null,
+					"sessionStreamTime": 21824
+				}
+			],
+			"frameDuration": 1.502,
+			"generatedProperties": null
+		},
+		"41-null": {
+			"images": [
+				{
+					"id": "left",
+					"src": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/img/boy_chair_case_sophia.png",
+					"top": 20,
+					"left": 5,
+					"width": 40,
+					"height": 60
+				},
+				{
+					"id": "right",
+					"src": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/img/boy_chair_case_bobby.png",
+					"top": 20,
+					"left": 55,
+					"width": 40,
+					"height": 60
+				}
+			],
+			"frameType": "DEFAULT",
+			"eventTimings": [
+				{
+					"eventType": "exp-lookit-images-audio:finishAudio",
+					"timestamp": "2026-03-16T23:14:02.795Z",
+					"streamTime": null,
+					"sessionStreamTime": 21834
+				},
+				{
+					"eventType": "exp-lookit-images-audio:displayImages",
+					"timestamp": "2026-03-16T23:14:02.795Z",
+					"streamTime": null,
+					"sessionStreamTime": 21835
+				},
+				{
+					"imageId": "right",
+					"eventType": "exp-lookit-images-audio:clickImage",
+					"timestamp": "2026-03-16T23:14:03.399Z",
+					"streamTime": null,
+					"sessionStreamTime": 22439
+				},
+				{
+					"eventType": "exp-lookit-images-audio:trialComplete",
+					"timestamp": "2026-03-16T23:14:03.555Z",
+					"streamTime": null,
+					"sessionStreamTime": 22595
+				},
+				{
+					"eventType": "exp-lookit-images-audio:nextFrame",
+					"timestamp": "2026-03-16T23:14:03.555Z",
+					"streamTime": null,
+					"sessionStreamTime": 22595
+				}
+			],
+			"frameDuration": 0.766,
+			"selectedImage": "right",
+			"generatedProperties": null
+		},
+		"0-instructions": {
+			"frameType": "DEFAULT",
+			"eventTimings": [
+				{
+					"videoId": "videoStream_a9674add-012c-4509-866a-b4040fee17f4_0-instructions_8f4d74ca-534d-4d12-bf52-15a7558116ea_1773702736837_645",
+					"eventType": "exp-lookit-instructions:setupVideoRecorder",
+					"timestamp": "2026-03-16T23:12:16.839Z",
+					"streamTime": null
+				},
+				{
+					"eventType": "exp-lookit-instructions:recorder.hasCamAccess",
+					"timestamp": "2026-03-16T23:12:16.980Z",
+					"streamTime": null,
+					"hasCamAccess": true
+				},
+				{
+					"eventType": "exp-lookit-instructions:recorderReady",
+					"timestamp": "2026-03-16T23:12:16.980Z",
+					"streamTime": null
+				},
+				{
+					"eventType": "exp-lookit-instructions:nextFrame",
+					"timestamp": "2026-03-16T23:12:18.455Z",
+					"streamTime": null
+				},
+				{
+					"eventType": "exp-lookit-instructions:destroyingRecorder",
+					"timestamp": "2026-03-16T23:12:18.456Z",
+					"streamTime": null
+				}
+			],
+			"frameDuration": 1.616,
+			"generatedProperties": null
+		},
+		"1-video-config": {
+			"frameType": "DEFAULT",
+			"screenWidth": 1512,
+			"eventTimings": [
+				{
+					"videoId": "videoStream_a9674add-012c-4509-866a-b4040fee17f4_1-video-config_8f4d74ca-534d-4d12-bf52-15a7558116ea_1773702738472_966",
+					"eventType": "exp-video-config:setupVideoRecorder",
+					"timestamp": "2026-03-16T23:12:18.472Z",
+					"streamTime": null
+				},
+				{
+					"eventType": "exp-video-config:recorder.hasCamAccess",
+					"timestamp": "2026-03-16T23:12:19.557Z",
+					"streamTime": null,
+					"hasCamAccess": true
+				},
+				{
+					"eventType": "exp-video-config:recorderReady",
+					"timestamp": "2026-03-16T23:12:20.013Z",
+					"streamTime": null
+				},
+				{
+					"eventType": "exp-video-config:destroyingRecorder",
+					"timestamp": "2026-03-16T23:12:21.183Z",
+					"streamTime": null
+				},
+				{
+					"videoId": "videoStream_a9674add-012c-4509-866a-b4040fee17f4_1-video-config_8f4d74ca-534d-4d12-bf52-15a7558116ea_1773702741184_944",
+					"eventType": "exp-video-config:setupVideoRecorder",
+					"timestamp": "2026-03-16T23:12:21.184Z",
+					"streamTime": null
+				},
+				{
+					"eventType": "exp-video-config:recorder.hasCamAccess",
+					"timestamp": "2026-03-16T23:12:21.266Z",
+					"streamTime": null,
+					"hasCamAccess": true
+				},
+				{
+					"eventType": "exp-video-config:destroyingRecorder",
+					"timestamp": "2026-03-16T23:12:25.517Z",
+					"streamTime": null
+				},
+				{
+					"videoId": "videoStream_a9674add-012c-4509-866a-b4040fee17f4_1-video-config_8f4d74ca-534d-4d12-bf52-15a7558116ea_1773702745517_318",
+					"eventType": "exp-video-config:setupVideoRecorder",
+					"timestamp": "2026-03-16T23:12:25.518Z",
+					"streamTime": null
+				},
+				{
+					"eventType": "exp-video-config:recorder.hasCamAccess",
+					"timestamp": "2026-03-16T23:12:25.616Z",
+					"streamTime": null,
+					"hasCamAccess": true
+				},
+				{
+					"eventType": "exp-video-config:nextFrame",
+					"timestamp": "2026-03-16T23:12:29.329Z",
+					"streamTime": null
+				},
+				{
+					"eventType": "exp-video-config:destroyingRecorder",
+					"timestamp": "2026-03-16T23:12:29.330Z",
+					"streamTime": null
+				}
+			],
+			"screenHeight": 982,
+			"frameDuration": 10.856,
+			"generatedProperties": null
+		},
+		"44-exit-survey": {
+			"birthDate": "2021-01-02T00:14:05.284Z",
+			"frameType": "EXIT",
+			"useOfMedia": "scientific",
+			"eventTimings": [
+				{
+					"eventType": "exp-lookit-exit-survey:leftFullscreen",
+					"timestamp": "2026-03-16T23:14:03.605Z",
+					"sessionStreamTime": 22645
+				},
+				{
+					"eventType": "exp-lookit-exit-survey:nextFrame",
+					"timestamp": "2026-03-16T23:14:34.901Z",
+					"sessionStreamTime": 53941
+				}
+			],
+			"frameDuration": 31.33,
+			"databraryShare": "yes",
+			"generatedProperties": null
+		},
+		"2-video-consent": {
+			"videoId": "consent-videoStream_a9674add-012c-4509-866a-b4040fee17f4_2-video-consent_8f4d74ca-534d-4d12-bf52-15a7558116ea_1773702749346_606",
+			"frameType": "CONSENT",
+			"videoList": [
+				"consent-videoStream_a9674add-012c-4509-866a-b4040fee17f4_2-video-consent_8f4d74ca-534d-4d12-bf52-15a7558116ea_1773702749346_606"
+			],
+			"eventTimings": [
+				{
+					"videoId": "consent-videoStream_a9674add-012c-4509-866a-b4040fee17f4_2-video-consent_8f4d74ca-534d-4d12-bf52-15a7558116ea_1773702749346_606",
+					"eventType": "exp-lookit-video-consent:setupVideoRecorder",
+					"timestamp": "2026-03-16T23:12:29.347Z",
+					"streamTime": null
+				},
+				{
+					"eventType": "exp-lookit-video-consent:recorder.hasCamAccess",
+					"timestamp": "2026-03-16T23:12:29.422Z",
+					"streamTime": null,
+					"hasCamAccess": true
+				},
+				{
+					"eventType": "exp-lookit-video-consent:recorderReady",
+					"timestamp": "2026-03-16T23:12:29.422Z",
+					"streamTime": null
+				},
+				{
+					"status": "connected",
+					"eventType": "exp-lookit-video-consent:videoStreamConnection",
+					"timestamp": "2026-03-16T23:12:31.839Z",
+					"streamTime": null
+				},
+				{
+					"pipeId": "consent-videoStream_a9674add-012c-4509-866a-b4040fee17f4_2-video-consent_8f4d74ca-534d-4d12-bf52-15a7558116ea_1773702749346_606",
+					"eventType": "exp-lookit-video-consent:startRecording",
+					"timestamp": "2026-03-16T23:12:31.839Z",
+					"streamTime": 0
+				},
+				{
+					"eventType": "exp-lookit-video-consent:stoppingCapture",
+					"timestamp": "2026-03-16T23:12:34.962Z",
+					"streamTime": 3123
+				},
+				{
+					"status": "disconnected",
+					"eventType": "exp-lookit-video-consent:videoStreamConnection",
+					"timestamp": "2026-03-16T23:12:35.934Z",
+					"streamTime": 4095
+				},
+				{
+					"eventType": "exp-lookit-video-consent:nextFrame",
+					"timestamp": "2026-03-16T23:12:37.524Z",
+					"streamTime": 5685
+				}
+			],
+			"frameDuration": 8.178,
+			"consentFormText": "\n\n\n                    \n    \n        Consent to participate in research: Friends on a Wondrous Trip\n    \n\n\n\n\n\n     Researchers led by Lookit Tutorial Participant at The Markman Lab of Stanford University are running this study, \"Friends on a Wondrous Trip,\" on Lookit.  \n\n      Why we are running this study \n     This study is about how children use causal verbs in language and how they think about causation and responsibility. \n\n      What happens during this study \n     This study takes about 10 minutes to complete. In this study your child will watch a digital story and answer questions by selecting pictures on the screen. \n\n      Participation is voluntary \n    \n        You and your child are free to choose whether to be in this study. If you do choose to participate, it's okay to stop at any point during the session. Please do pause or stop the session if your child becomes fussy or does not want to participate!\n    \n    \n\n          What are the risks? \n         There are no expected risks to participation. \n\n      What are the benefits?  \n     After you finish the study, we will email you a $5 Amazon gift card within approximately 3-5 business days. \n\n     Data collection and webcam recording \n    \n        During the session, you and your child will be recorded by your computer's webcam and microphone. These webcam recordings, and other data like answers you enter in forms, are sent securely to the Lookit platform. You can view your past recordings on Lookit at any time.\n    \n    \n        Data are stored securely on Lookit servers and by researchers, and are only shared as described in this document. However, there is always a small risk that data transmitted over the internet may be intercepted or that the security of stored data may be compromised.\n    \n\n     Who will be able to see your webcam recordings?\n    \n        We will first check that you really agreed to participate by watching your consent recording. If we cannot confirm that you agreed to participate, no one will view any other recordings from this session.\n    \n\n        \n            At the end of the session, you will choose a privacy level for your webcam recordings. You can choose one of the following privacy levels for your videos:\n            \n                \"Private\": Researchers with access to your recordings will not share them with anyone else.\n                \"Scientific\": Researchers with access to your recordings may share them for scientific or educational purposes, for instance showing an example in a class or during a scientific conference.\n                \n                \"Publicity\": Researchers with access to your recordings may also share them for publicity, for instance in a news segment about the research or to recruit more participants.\n                \n            \n            You will also have the option to withdraw your recordings. If you do, only your consent recording will be kept and all other recordings will be deleted.\n        \n\n        \n            Separately, you can opt in to give access to your recordings and other data to authorized users of the secure data library Databrary. This means that other researchers besides the ones running this study will have access to your recordings, and may be able to use them to answer other questions about child development. Data sharing can lead to faster progress in research on human development and behavior. Authorized Databrary researchers have to agree to maintain confidentiality and not use the data for commercial purposes. If you have any questions about this data-sharing library, visit Databrary or email ethics@databrary.org.\n        \n\n     How we use your data \n    \n        If you participate in this study, we (the research group led by Lookit Tutorial Participant at The Markman Lab of Stanford University) will have access to\n        \n             webcam recordings and other data collected during this session\n             your account profile and demographic survey\n             the child profile for the child who is participating\n        \n        This includes changes you make in the future to any of this information. We may put different types of information together to learn more about child development. For instance, if your child participates in multiple studies from our group, we may look at how his or her responses compare across studies, or we may look at whether siblings tend to respond similarly. We may also study connections between children's responses and family demographic survey data.\n    \n        \n            A research assistant will watch your video and mark down your child's answers as well as other information such as interactions between you and your child during the story.\n        \n\n     How Lookit uses your data\n    \n        The Lookit core team at MIT will also have access to the data collected during this session, in addition to your account data. They use this data to run and improve Lookit, for instance to provide technical support, check how well data collection is working, or see whether Lookit is reaching a diverse group of families. Lookit stores data indefinitely unless you withdraw your recordings at the end of the study.\n    \n\n\n\n     Publishing the results of this study\n    \n        The results of this study may be presented at scientific meetings or published in scientific journals. We may publish individual responses that cannot identify children, like looking times or sequences of button presses. We never publish children's birthdates or names. Even if you choose to share your recordings, we never publish information that would make it possible to link recordings with your demographic data.\n    \n\n\n     Your rights as a participant\n      \n\n\n     How to reach us\n    \n        This study is run by Lookit Tutorial Participant at The Markman Lab of Stanford University. If you or your child have any questions or concerns about this study, or in the very unlikely event of a research-related injury, please contact Ellen Markman at markman@stanford.edu.\n    \n    \n        If you or your child have any questions or concerns about the Lookit platform, please contact Lookit staff at lookit@mit.edu.\n    \n\n\n\n\n            ",
+			"generatedProperties": null
+		},
+		"4-storybook-group": {
+			"frameType": "DEFAULT",
+			"videoShown": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/mp4/overall_study_intro.mp4",
+			"audioPlayed": "",
+			"eventTimings": [
+				{
+					"eventType": "exp-lookit-video:videoStarted",
+					"timestamp": "2026-03-16T23:12:38.608Z",
+					"streamTime": null,
+					"currentTime": 0,
+					"sessionStreamTime": 603
+				},
+				{
+					"eventType": "exp-lookit-video:audioStarted",
+					"timestamp": "2026-03-16T23:12:38.609Z",
+					"streamTime": null,
+					"sessionStreamTime": 604
+				},
+				{
+					"eventType": "exp-lookit-video:videoPaused",
+					"timestamp": "2026-03-16T23:12:44.725Z",
+					"streamTime": null,
+					"currentTime": 54.151667,
+					"sessionStreamTime": 6719
+				},
+				{
+					"eventType": "exp-lookit-video:nextButtonEnabled",
+					"timestamp": "2026-03-16T23:12:44.726Z",
+					"streamTime": null,
+					"sessionStreamTime": 6721
+				},
+				{
+					"eventType": "exp-lookit-video:trialCompleted",
+					"timestamp": "2026-03-16T23:12:45.293Z",
+					"streamTime": null,
+					"sessionStreamTime": 7287
+				},
+				{
+					"eventType": "exp-lookit-video:nextFrame",
+					"timestamp": "2026-03-16T23:12:45.293Z",
+					"streamTime": null,
+					"sessionStreamTime": 7288
+				}
+			],
+			"frameDuration": 7.281,
+			"generatedProperties": null
+		},
+		"3-start-recording-with-image": {
+			"frameType": "DEFAULT",
+			"eventTimings": [
+				{
+					"eventType": "exp-lookit-start-recording:setupSessionVideoRecorder",
+					"timestamp": "2026-03-16T23:12:37.530Z",
+					"sessionVideoId": "videoStream_a9674add-012c-4509-866a-b4040fee17f4_3-start-recording-with-image-multiframe_8f4d74ca-534d-4d12-bf52-15a7558116ea_1773702757530_681"
+				},
+				{
+					"eventType": "exp-lookit-start-recording:enteredFullscreen",
+					"timestamp": "2026-03-16T23:12:37.538Z"
+				},
+				{
+					"eventType": "exp-lookit-start-recording:sessionRecorder.hasCamAccess",
+					"timestamp": "2026-03-16T23:12:37.840Z",
+					"hasCamAccess": true
+				},
+				{
+					"eventType": "exp-lookit-start-recording:sessionRecorderReady",
+					"timestamp": "2026-03-16T23:12:37.840Z"
+				},
+				{
+					"status": "connected",
+					"eventType": "exp-lookit-start-recording:videoStreamConnection",
+					"timestamp": "2026-03-16T23:12:38.005Z",
+					"sessionStreamTime": null
+				},
+				{
+					"eventType": "exp-lookit-start-recording:startSessionRecording",
+					"timestamp": "2026-03-16T23:12:38.006Z",
+					"sessionPipeId": "videoStream_a9674add-012c-4509-866a-b4040fee17f4_3-start-recording-with-image-multiframe_8f4d74ca-534d-4d12-bf52-15a7558116ea_1773702757530_681",
+					"sessionStreamTime": 0
+				},
+				{
+					"eventType": "exp-lookit-start-recording:startedSessionRecording",
+					"timestamp": "2026-03-16T23:12:38.006Z",
+					"sessionStreamTime": 0
+				},
+				{
+					"eventType": "exp-lookit-start-recording:nextFrame",
+					"timestamp": "2026-03-16T23:12:38.006Z",
+					"sessionStreamTime": 0
+				}
+			],
+			"frameDuration": 0.477,
+			"generatedProperties": null
+		}
+	}
+}
+]

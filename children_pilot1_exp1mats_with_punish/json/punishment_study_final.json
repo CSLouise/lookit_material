@@ -703,6 +703,7 @@
                             ],
                             "autoProceed": true,
                             "choiceRequired": true,
+                            "selectNextFrame": "function(frames, frameIndex, expData, sequence, child, pastSessions) { var current = expData[sequence[frameIndex]] || {}; return current.selectedImage === 'right' ? Math.min(frameIndex + 3, frames.length) : frameIndex + 1; }",
                             "doRecording": false
                         },
                         {
@@ -993,6 +994,7 @@
                             ],
                             "autoProceed": true,
                             "choiceRequired": true,
+                            "selectNextFrame": "function(frames, frameIndex, expData, sequence, child, pastSessions) { var current = expData[sequence[frameIndex]] || {}; return current.selectedImage === 'right' ? Math.min(frameIndex + 3, frames.length) : frameIndex + 1; }",
                             "doRecording": false
                         },
                         {
