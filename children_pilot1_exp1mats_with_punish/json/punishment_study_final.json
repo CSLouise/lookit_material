@@ -143,20 +143,29 @@
                             "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/",
                             "images": [
                                 {
+                                    "id": "question",
+                                    "src": "warmup_question.png",
+                                    "left": 5,
+                                    "top": 0,
+                                    "width": 90,
+                                    "height": 42,
+                                    "nonChoiceOption": true
+                                },
+                                {
                                     "id": "left",
                                     "src": "bird.png",
                                     "left": 5,
-                                    "top": 20,
+                                    "top": 47,
                                     "width": 40,
-                                    "height": 60
+                                    "height": 38
                                 },
                                 {
                                     "id": "right",
                                     "src": "cat.png",
                                     "left": 55,
-                                    "top": 20,
+                                    "top": 47,
                                     "width": 40,
-                                    "height": 60
+                                    "height": 38
                                 }
                             ],
                             "autoProceed": true,
@@ -184,20 +193,29 @@
                             "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/",
                             "images": [
                                 {
+                                    "id": "question",
+                                    "src": "warmup_question.png",
+                                    "left": 5,
+                                    "top": 0,
+                                    "width": 90,
+                                    "height": 42,
+                                    "nonChoiceOption": true
+                                },
+                                {
                                     "id": "left",
                                     "src": "pig.png",
                                     "left": 5,
-                                    "top": 20,
+                                    "top": 47,
                                     "width": 40,
-                                    "height": 60
+                                    "height": 38
                                 },
                                 {
                                     "id": "right",
                                     "src": "fish.png",
                                     "left": 55,
-                                    "top": 20,
+                                    "top": 47,
                                     "width": 40,
-                                    "height": 60
+                                    "height": 38
                                 }
                             ],
                             "autoProceed": true,
@@ -225,20 +243,29 @@
                             "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/",
                             "images": [
                                 {
+                                    "id": "question",
+                                    "src": "warmup_question.png",
+                                    "left": 5,
+                                    "top": 0,
+                                    "width": 90,
+                                    "height": 42,
+                                    "nonChoiceOption": true
+                                },
+                                {
                                     "id": "left",
                                     "src": "yes.png",
                                     "left": 5,
-                                    "top": 20,
+                                    "top": 47,
                                     "width": 40,
-                                    "height": 60
+                                    "height": 38
                                 },
                                 {
                                     "id": "right",
                                     "src": "no.png",
                                     "left": 55,
-                                    "top": 20,
+                                    "top": 47,
                                     "width": 40,
-                                    "height": 60
+                                    "height": 38
                                 }
                             ],
                             "autoProceed": true,
@@ -266,20 +293,29 @@
                             "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/",
                             "images": [
                                 {
+                                    "id": "question",
+                                    "src": "warmup_question.png",
+                                    "left": 5,
+                                    "top": 0,
+                                    "width": 90,
+                                    "height": 42,
+                                    "nonChoiceOption": true
+                                },
+                                {
                                     "id": "left",
                                     "src": "yes.png",
                                     "left": 5,
-                                    "top": 20,
+                                    "top": 47,
                                     "width": 40,
-                                    "height": 60
+                                    "height": 38
                                 },
                                 {
                                     "id": "right",
                                     "src": "no.png",
                                     "left": 55,
-                                    "top": 20,
+                                    "top": 47,
                                     "width": 40,
-                                    "height": 60
+                                    "height": 38
                                 }
                             ],
                             "autoProceed": true,
@@ -703,7 +739,7 @@
                             ],
                             "autoProceed": true,
                             "choiceRequired": true,
-                            "selectNextFrame": "function(frames, frameIndex, expData, sequence, child, pastSessions) { var current = expData[sequence[frameIndex]] || {}; return current.selectedImage === 'right' ? Math.min(frameIndex + 3, frames.length) : frameIndex + 1; }",
+                            "selectNextFrame": "function(frames, frameIndex, frameData, expData, sequence, child, pastSessions) { return frameData.selectedImage === 'right' ? frameIndex + 3 : frameIndex + 1; }",
                             "doRecording": false
                         },
                         {
@@ -994,7 +1030,7 @@
                             ],
                             "autoProceed": true,
                             "choiceRequired": true,
-                            "selectNextFrame": "function(frames, frameIndex, expData, sequence, child, pastSessions) { var current = expData[sequence[frameIndex]] || {}; return current.selectedImage === 'right' ? Math.min(frameIndex + 3, frames.length) : frameIndex + 1; }",
+                            "selectNextFrame": "function(frames, frameIndex, frameData, expData, sequence, child, pastSessions) { return frameData.selectedImage === 'right' ? frameIndex + 3 : frameIndex + 1; }",
                             "doRecording": false
                         },
                         {

@@ -69,7 +69,7 @@
         },
         "introduction": {
             "kind": "exp-lookit-video",
-            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp1/mp4/",
+            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp1/",
             "id": "storybook-group",
             "videoTypes": [
                 "mp4"
@@ -93,7 +93,7 @@
         },
         "end": {
             "kind": "exp-lookit-video",
-            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp1/mp4/",
+            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp1/",
             "id": "storybook-group",
             "videoTypes": [
                 "mp4"
@@ -117,7 +117,7 @@
                     "frameList": [
                         {
                             "kind": "exp-lookit-video",
-                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp1/mp4/",
+                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp1/",
                             "videoTypes": [
                                 "mp4"
                             ],
@@ -133,7 +133,7 @@
                         },
                         {
                             "kind": "exp-lookit-images-audio",
-                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp1/img/",
+                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp1/",
                             "images": [
                                 {
                                     "id": "distal",
@@ -158,7 +158,7 @@
                         },
                         {
                             "kind": "exp-lookit-video",
-                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp1/mp4/",
+                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp1/",
                             "videoTypes": [
                                 "mp4"
                             ],
@@ -174,7 +174,7 @@
                         },
                         {
                             "kind": "exp-lookit-images-audio",
-                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp1/img/",
+                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp1/",
                             "images": [
                                 {
                                     "id": "distal",
@@ -199,7 +199,7 @@
                         },
                         {
                             "kind": "exp-lookit-video",
-                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp1/mp4/",
+                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp1/",
                             "videoTypes": [
                                 "mp4"
                             ],
@@ -456,7 +456,7 @@
                     "frameList": [
                         {
                             "kind": "exp-lookit-video",
-                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp1/mp4/",
+                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp1/",
                             "videoTypes": [
                                 "mp4"
                             ],
@@ -472,7 +472,7 @@
                         },
                         {
                             "kind": "exp-lookit-video",
-                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp1/mp4/",
+                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp1/",
                             "videoTypes": [
                                 "mp4"
                             ],
@@ -488,7 +488,7 @@
                         },
                         {
                             "kind": "exp-lookit-video",
-                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp1/mp4/",
+                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp1/",
                             "videoTypes": [
                                 "mp4"
                             ],
@@ -511,7 +511,7 @@
                         },
                         {
                             "kind": "exp-lookit-images-audio",
-                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp1/img/",
+                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp1/",
                             "images": [
                                 {
                                     "id": "distal",
@@ -536,7 +536,7 @@
                         },
                         {
                             "kind": "exp-lookit-video",
-                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp1/mp4/",
+                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp1/",
                             "videoTypes": [
                                 "mp4"
                             ],
@@ -559,7 +559,7 @@
                         },
                         {
                             "kind": "exp-lookit-images-audio",
-                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp1/img/",
+                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp1/",
                             "images": [
                                 {
                                     "id": "distal",
@@ -584,7 +584,7 @@
                         },
                         {
                             "kind": "exp-lookit-video",
-                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp1/mp4/",
+                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp1/",
                             "videoTypes": [
                                 "mp4"
                             ],
@@ -607,7 +607,7 @@
                         },
                         {
                             "kind": "exp-lookit-images-audio",
-                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp1/img/",
+                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp1/",
                             "images": [
                                 {
                                     "id": "distal",
@@ -632,7 +632,7 @@
                         },
                         {
                             "kind": "exp-lookit-video",
-                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp1/mp4/",
+                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp1/",
                             "videoTypes": [
                                 "mp4"
                             ],
@@ -655,7 +655,7 @@
                         },
                         {
                             "kind": "exp-lookit-images-audio",
-                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp1/img/",
+                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp1/",
                             "images": [
                                 {
                                     "id": "distal",
@@ -680,7 +680,7 @@
                         },
                         {
                             "kind": "exp-lookit-video",
-                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp1/mp4/",
+                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp1/",
                             "videoTypes": [
                                 "mp4"
                             ],
@@ -696,7 +696,7 @@
                         },
                         {
                             "kind": "exp-lookit-video",
-                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp1/mp4/",
+                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp1/",
                             "videoTypes": [
                                 "mp4"
                             ],
@@ -712,7 +712,7 @@
                         },
                         {
                             "kind": "exp-lookit-video",
-                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp1/mp4/",
+                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp1/",
                             "videoTypes": [
                                 "mp4"
                             ],
@@ -735,7 +735,7 @@
                         },
                         {
                             "kind": "exp-lookit-images-audio",
-                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp1/img/",
+                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp1/",
                             "images": [
                                 {
                                     "id": "distal",
@@ -760,7 +760,7 @@
                         },
                         {
                             "kind": "exp-lookit-video",
-                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp1/mp4/",
+                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp1/",
                             "videoTypes": [
                                 "mp4"
                             ],
@@ -783,7 +783,7 @@
                         },
                         {
                             "kind": "exp-lookit-images-audio",
-                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp1/img/",
+                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp1/",
                             "images": [
                                 {
                                     "id": "distal",
@@ -808,7 +808,7 @@
                         },
                         {
                             "kind": "exp-lookit-video",
-                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp1/mp4/",
+                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp1/",
                             "videoTypes": [
                                 "mp4"
                             ],
@@ -831,7 +831,7 @@
                         },
                         {
                             "kind": "exp-lookit-images-audio",
-                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp1/img/",
+                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp1/",
                             "images": [
                                 {
                                     "id": "distal",
@@ -856,7 +856,7 @@
                         },
                         {
                             "kind": "exp-lookit-video",
-                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp1/mp4/",
+                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp1/",
                             "videoTypes": [
                                 "mp4"
                             ],
@@ -879,7 +879,7 @@
                         },
                         {
                             "kind": "exp-lookit-images-audio",
-                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp1/img/",
+                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp1/",
                             "images": [
                                 {
                                     "id": "distal",
