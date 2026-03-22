@@ -1,0 +1,439 @@
+// ════════════════════════════════════════════════════════════════════
+//  PSYCH VERB EXP 1 — CHS jsPsych version
+//
+//  Paste the contents of this file directly into the
+//  "jsPsych Experiment Code" editor on childrenhelpingscience.com.
+//
+//  Scenarios: drum (break / angry)  ×  balloon (pop / sad)
+//  8 counterbalancing conditions:
+//    scenario order (drum first | balloon first)
+//    × verb-type order (causal first | psych first)
+//    × question order (caused first | lexical first)
+//
+//  Each scenario: test_case_intro → scenario video → 4 questions
+//  Each question: question video + distal/proximal choice images simultaneously
+// ════════════════════════════════════════════════════════════════════
+
+
+// ── Inject CSS ──────────────────────────────────────────────────────
+const _style = document.createElement('style');
+_style.textContent = `
+    .jspsych-content-wrapper {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 0 !important;
+    }
+    .jspsych-content {
+        max-width: 98% !important;
+        width: 98% !important;
+        margin: 0 auto !important;
+    }
+    .trial-video {
+        display: block;
+        width: 100%;
+        max-height: 70vh;
+        margin: 0 auto;
+        object-fit: contain;
+    }
+    #jspsych-html-button-response-btngroup {
+        display: flex;
+        justify-content: center;
+        gap: 65px;
+        margin-top: 8px;
+    }
+    .image-choice-btn {
+        border: 3px solid #ccc !important;
+        background: none !important;
+        padding: 4px !important;
+        border-radius: 10px !important;
+        cursor: pointer !important;
+        outline: none !important;
+        transition: border-color 0.15s, transform 0.1s !important;
+    }
+    .image-choice-btn:hover:not(:disabled) {
+        border-color: #4a90d9 !important;
+        transform: scale(1.05) !important;
+    }
+    .image-choice-btn:disabled { cursor: default !important; }
+    .choice-img {
+        height: 20vh;
+        max-width: 35vw;
+        width: auto;
+        object-fit: contain;
+        display: block;
+        pointer-events: none;
+    }
+    .continue-btn-group {
+        position: fixed !important;
+        bottom: 24px !important;
+        right: 28px !important;
+        margin: 0 !important;
+        justify-content: flex-end !important;
+    }
+    .continue-btn-group .jspsych-btn {
+        font-size: 1.3em !important;
+        padding: 14px 44px !important;
+    }
+    .instructions-box {
+        max-width: 680px;
+        margin: 30px auto;
+        font-size: 1.1em;
+        line-height: 1.7;
+        text-align: left;
+    }
+    .instructions-box h2 { margin-bottom: 10px; }
+    .instructions-box ul  { padding-left: 1.4em; }
+`;
+document.head.appendChild(_style);
+
+
+// ════════════════════════════════════════════════════════════════════
+//  CONFIG
+// ════════════════════════════════════════════════════════════════════
+
+const BASE = 'https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp1/';
+const IMG  = src => BASE + 'response_images/' + src;
+const VID  = src => BASE + 'mp4/' + src + '.mp4';
+
+// Derive question type label from video name
+// e.g. 'drum_break_caused' → 'break_caused'
+function qtype(videoName) {
+    return videoName.replace(/^[^_]+_/, '');  // strip leading token (scenario name)
+}
+
+
+// ════════════════════════════════════════════════════════════════════
+//  COUNTERBALANCING CONDITIONS  (8 total)
+//
+//  Each condition: array of 2 scenario objects.
+//  Each scenario: { scenario, questions: [{video, distal, proximal}] }
+//
+//  Conditions vary along 3 axes:
+//    1. scenario order:   drum first (0–3) | balloon first (4–7)
+//    2. verb-type order:  causal verb first (break/pop) | psych verb first (angry/sad)
+//    3. question order:   caused first | lexical first
+// ════════════════════════════════════════════════════════════════════
+
+const CONDITIONS = [
+
+    // ── Cond 0: drum first | break first | caused first ───────────────
+    [
+        { scenario: 'drum_scenario',
+          questions: [
+            { video: 'drum_break_caused',  distal: 'drum_distal.png',    proximal: 'drum_proximal.png'    },
+            { video: 'drum_break_lexical',  distal: 'drum_distal.png',    proximal: 'drum_proximal.png'    },
+            { video: 'drum_angry_caused',   distal: 'drum_distal.png',    proximal: 'drum_proximal.png'    },
+            { video: 'drum_angry_lexical',  distal: 'drum_distal.png',    proximal: 'drum_proximal.png'    }
+          ]
+        },
+        { scenario: 'balloon_scenario',
+          questions: [
+            { video: 'balloon_pop_caused',  distal: 'balloon_distal.png', proximal: 'balloon_proximal.png' },
+            { video: 'balloon_pop_lexical',  distal: 'balloon_distal.png', proximal: 'balloon_proximal.png' },
+            { video: 'balloon_sad_caused',   distal: 'balloon_distal.png', proximal: 'balloon_proximal.png' },
+            { video: 'balloon_sad_lexical',  distal: 'balloon_distal.png', proximal: 'balloon_proximal.png' }
+          ]
+        }
+    ],
+
+    // ── Cond 1: drum first | psych first | caused first ───────────────
+    [
+        { scenario: 'drum_scenario',
+          questions: [
+            { video: 'drum_angry_caused',   distal: 'drum_distal.png',    proximal: 'drum_proximal.png'    },
+            { video: 'drum_angry_lexical',  distal: 'drum_distal.png',    proximal: 'drum_proximal.png'    },
+            { video: 'drum_break_caused',  distal: 'drum_distal.png',    proximal: 'drum_proximal.png'    },
+            { video: 'drum_break_lexical',  distal: 'drum_distal.png',    proximal: 'drum_proximal.png'    }
+          ]
+        },
+        { scenario: 'balloon_scenario',
+          questions: [
+            { video: 'balloon_sad_caused',   distal: 'balloon_distal.png', proximal: 'balloon_proximal.png' },
+            { video: 'balloon_sad_lexical',  distal: 'balloon_distal.png', proximal: 'balloon_proximal.png' },
+            { video: 'balloon_pop_caused',  distal: 'balloon_distal.png', proximal: 'balloon_proximal.png' },
+            { video: 'balloon_pop_lexical',  distal: 'balloon_distal.png', proximal: 'balloon_proximal.png' }
+          ]
+        }
+    ],
+
+    // ── Cond 2: drum first | break first | lexical first ─────────────
+    [
+        { scenario: 'drum_scenario',
+          questions: [
+            { video: 'drum_break_lexical',  distal: 'drum_distal.png',    proximal: 'drum_proximal.png'    },
+            { video: 'drum_break_caused',  distal: 'drum_distal.png',    proximal: 'drum_proximal.png'    },
+            { video: 'drum_angry_lexical',  distal: 'drum_distal.png',    proximal: 'drum_proximal.png'    },
+            { video: 'drum_angry_caused',   distal: 'drum_distal.png',    proximal: 'drum_proximal.png'    }
+          ]
+        },
+        { scenario: 'balloon_scenario',
+          questions: [
+            { video: 'balloon_pop_lexical',  distal: 'balloon_distal.png', proximal: 'balloon_proximal.png' },
+            { video: 'balloon_pop_caused',  distal: 'balloon_distal.png', proximal: 'balloon_proximal.png' },
+            { video: 'balloon_sad_lexical',  distal: 'balloon_distal.png', proximal: 'balloon_proximal.png' },
+            { video: 'balloon_sad_caused',   distal: 'balloon_distal.png', proximal: 'balloon_proximal.png' }
+          ]
+        }
+    ],
+
+    // ── Cond 3: drum first | psych first | lexical first ─────────────
+    [
+        { scenario: 'drum_scenario',
+          questions: [
+            { video: 'drum_angry_lexical',  distal: 'drum_distal.png',    proximal: 'drum_proximal.png'    },
+            { video: 'drum_angry_caused',   distal: 'drum_distal.png',    proximal: 'drum_proximal.png'    },
+            { video: 'drum_break_lexical',  distal: 'drum_distal.png',    proximal: 'drum_proximal.png'    },
+            { video: 'drum_break_caused',  distal: 'drum_distal.png',    proximal: 'drum_proximal.png'    }
+          ]
+        },
+        { scenario: 'balloon_scenario',
+          questions: [
+            { video: 'balloon_sad_lexical',  distal: 'balloon_distal.png', proximal: 'balloon_proximal.png' },
+            { video: 'balloon_sad_caused',   distal: 'balloon_distal.png', proximal: 'balloon_proximal.png' },
+            { video: 'balloon_pop_lexical',  distal: 'balloon_distal.png', proximal: 'balloon_proximal.png' },
+            { video: 'balloon_pop_caused',  distal: 'balloon_distal.png', proximal: 'balloon_proximal.png' }
+          ]
+        }
+    ],
+
+    // ── Cond 4: balloon first | pop first | caused first ─────────────
+    [
+        { scenario: 'balloon_scenario',
+          questions: [
+            { video: 'balloon_pop_caused',  distal: 'balloon_distal.png', proximal: 'balloon_proximal.png' },
+            { video: 'balloon_pop_lexical',  distal: 'balloon_distal.png', proximal: 'balloon_proximal.png' },
+            { video: 'balloon_sad_caused',   distal: 'balloon_distal.png', proximal: 'balloon_proximal.png' },
+            { video: 'balloon_sad_lexical',  distal: 'balloon_distal.png', proximal: 'balloon_proximal.png' }
+          ]
+        },
+        { scenario: 'drum_scenario',
+          questions: [
+            { video: 'drum_break_caused',  distal: 'drum_distal.png',    proximal: 'drum_proximal.png'    },
+            { video: 'drum_break_lexical',  distal: 'drum_distal.png',    proximal: 'drum_proximal.png'    },
+            { video: 'drum_angry_caused',   distal: 'drum_distal.png',    proximal: 'drum_proximal.png'    },
+            { video: 'drum_angry_lexical',  distal: 'drum_distal.png',    proximal: 'drum_proximal.png'    }
+          ]
+        }
+    ],
+
+    // ── Cond 5: balloon first | sad first | caused first ─────────────
+    [
+        { scenario: 'balloon_scenario',
+          questions: [
+            { video: 'balloon_sad_caused',   distal: 'balloon_distal.png', proximal: 'balloon_proximal.png' },
+            { video: 'balloon_sad_lexical',  distal: 'balloon_distal.png', proximal: 'balloon_proximal.png' },
+            { video: 'balloon_pop_caused',  distal: 'balloon_distal.png', proximal: 'balloon_proximal.png' },
+            { video: 'balloon_pop_lexical',  distal: 'balloon_distal.png', proximal: 'balloon_proximal.png' }
+          ]
+        },
+        { scenario: 'drum_scenario',
+          questions: [
+            { video: 'drum_angry_caused',   distal: 'drum_distal.png',    proximal: 'drum_proximal.png'    },
+            { video: 'drum_angry_lexical',  distal: 'drum_distal.png',    proximal: 'drum_proximal.png'    },
+            { video: 'drum_break_caused',  distal: 'drum_distal.png',    proximal: 'drum_proximal.png'    },
+            { video: 'drum_break_lexical',  distal: 'drum_distal.png',    proximal: 'drum_proximal.png'    }
+          ]
+        }
+    ],
+
+    // ── Cond 6: balloon first | pop first | lexical first ─────────────
+    [
+        { scenario: 'balloon_scenario',
+          questions: [
+            { video: 'balloon_pop_lexical',  distal: 'balloon_distal.png', proximal: 'balloon_proximal.png' },
+            { video: 'balloon_pop_caused',  distal: 'balloon_distal.png', proximal: 'balloon_proximal.png' },
+            { video: 'balloon_sad_lexical',  distal: 'balloon_distal.png', proximal: 'balloon_proximal.png' },
+            { video: 'balloon_sad_caused',   distal: 'balloon_distal.png', proximal: 'balloon_proximal.png' }
+          ]
+        },
+        { scenario: 'drum_scenario',
+          questions: [
+            { video: 'drum_break_lexical',  distal: 'drum_distal.png',    proximal: 'drum_proximal.png'    },
+            { video: 'drum_break_caused',  distal: 'drum_distal.png',    proximal: 'drum_proximal.png'    },
+            { video: 'drum_angry_lexical',  distal: 'drum_distal.png',    proximal: 'drum_proximal.png'    },
+            { video: 'drum_angry_caused',   distal: 'drum_distal.png',    proximal: 'drum_proximal.png'    }
+          ]
+        }
+    ],
+
+    // ── Cond 7: balloon first | sad first | lexical first ─────────────
+    [
+        { scenario: 'balloon_scenario',
+          questions: [
+            { video: 'balloon_sad_lexical',  distal: 'balloon_distal.png', proximal: 'balloon_proximal.png' },
+            { video: 'balloon_sad_caused',   distal: 'balloon_distal.png', proximal: 'balloon_proximal.png' },
+            { video: 'balloon_pop_lexical',  distal: 'balloon_distal.png', proximal: 'balloon_proximal.png' },
+            { video: 'balloon_pop_caused',  distal: 'balloon_distal.png', proximal: 'balloon_proximal.png' }
+          ]
+        },
+        { scenario: 'drum_scenario',
+          questions: [
+            { video: 'drum_angry_lexical',  distal: 'drum_distal.png',    proximal: 'drum_proximal.png'    },
+            { video: 'drum_angry_caused',   distal: 'drum_distal.png',    proximal: 'drum_proximal.png'    },
+            { video: 'drum_break_lexical',  distal: 'drum_distal.png',    proximal: 'drum_proximal.png'    },
+            { video: 'drum_break_caused',  distal: 'drum_distal.png',    proximal: 'drum_proximal.png'    }
+          ]
+        }
+    ]
+];
+
+
+// ════════════════════════════════════════════════════════════════════
+//  INIT jsPsych
+// ════════════════════════════════════════════════════════════════════
+
+const jsPsych = initJsPsych();
+
+const conditionIndex = Math.floor(Math.random() * CONDITIONS.length);
+const condition      = CONDITIONS[conditionIndex];
+
+
+// ════════════════════════════════════════════════════════════════════
+//  TRIAL BUILDERS
+// ════════════════════════════════════════════════════════════════════
+
+function videoTrial(videoName, trialType) {
+    return {
+        type: jsPsychHtmlButtonResponse,
+        stimulus: `<video id="trial-video" class="trial-video"
+                         src="${VID(videoName)}" autoplay playsinline></video>`,
+        choices: ['Continue ▶'],
+        on_load: function () {
+            const group = document.getElementById('jspsych-html-button-response-btngroup');
+            if (group) group.classList.add('continue-btn-group');
+            const btn = group && group.querySelector('button');
+            if (btn) {
+                btn.disabled = true;
+                document.getElementById('trial-video').addEventListener('ended', () => {
+                    btn.disabled = false;
+                });
+                setTimeout(() => { btn.disabled = false; }, 300_000);
+            }
+        },
+        data: { trial_type: trialType, video: videoName, condition: conditionIndex }
+    };
+}
+
+function questionTrial({ videoName, leftImgSrc, rightImgSrc, questionType, scenarioId }) {
+    return {
+        type: jsPsychHtmlButtonResponse,
+        stimulus: `<video id="q-audio" src="${VID(videoName)}"
+                         class="trial-video" autoplay playsinline></video>`,
+        choices: [
+            `<img src="${leftImgSrc}"  class="choice-img" alt="distal">`,
+            `<img src="${rightImgSrc}" class="choice-img" alt="proximal">`
+        ],
+        on_load: function () {
+            const group = document.getElementById('jspsych-html-button-response-btngroup');
+            if (group) {
+                group.querySelectorAll('button').forEach(b => b.classList.add('image-choice-btn'));
+            }
+        },
+        data: {
+            trial_type:  questionType,
+            scenario:    scenarioId,
+            condition:   conditionIndex,
+            left_label:  'distal',
+            right_label: 'proximal',
+            video:       videoName
+        },
+        response_ends_trial: true
+    };
+}
+
+
+// ════════════════════════════════════════════════════════════════════
+//  BUILD SCENARIO TIMELINE
+// ════════════════════════════════════════════════════════════════════
+
+function buildScenarioTimeline(scenarioData, scenarioId) {
+    const trials = [
+        videoTrial('test_case_intro',      'intro'),
+        videoTrial(scenarioData.scenario,  'scenario')
+    ];
+    for (const q of scenarioData.questions) {
+        trials.push(questionTrial({
+            videoName:    q.video,
+            leftImgSrc:   IMG(q.distal),
+            rightImgSrc:  IMG(q.proximal),
+            questionType: qtype(q.video),
+            scenarioId
+        }));
+    }
+    return trials;
+}
+
+
+// ════════════════════════════════════════════════════════════════════
+//  WARMUP TIMELINE
+// ════════════════════════════════════════════════════════════════════
+
+const warmupTimeline = [
+    questionTrial({ videoName: 'warmup_part1_bird_question', leftImgSrc: IMG('bird.png'), rightImgSrc: IMG('cat.png'),  questionType: 'warmup', scenarioId: 'warmup' }),
+    questionTrial({ videoName: 'warmup_part2_fish_question', leftImgSrc: IMG('pig.png'),  rightImgSrc: IMG('fish.png'), questionType: 'warmup', scenarioId: 'warmup' }),
+    videoTrial('warmup_finish', 'warmup_video')
+];
+
+
+// ════════════════════════════════════════════════════════════════════
+//  CHS-SPECIFIC FRAMES
+// ════════════════════════════════════════════════════════════════════
+
+const video_config = { type: chsRecord.VideoConfigPlugin };
+
+const video_consent = {
+    type: chsRecord.VideoConsentPlugin,
+    PIName:      'Ellen Markman',
+    institution: 'The Markman Lab of Stanford University',
+    PIContact:   'Ellen Markman at markman@stanford.edu',
+    purpose:     'This study is about how children understand causal and psychological verbs.',
+    procedures:  'Your child will watch short videos and answer questions by clicking on pictures on the screen.',
+    risk_statement: 'There are no expected risks to participation.',
+    payment:     'After you finish the study, we will email you a $5 Amazon gift card within approximately 3–5 business days.',
+    include_databrary: true
+};
+
+const instructions = {
+    type: jsPsychHtmlButtonResponse,
+    stimulus: `
+        <div class="instructions-box">
+            <h2>Overview</h2>
+            <ul>
+                <li>The study takes about 5–8 minutes.</li>
+                <li>Your child will watch short videos and answer questions by clicking on pictures.</li>
+                <li>There are no right or wrong answers.</li>
+            </ul>
+            <p><strong>For parents:</strong> Please help keep your child's attention,
+               but don't tell them which answer to choose.</p>
+        </div>`,
+    choices: ['Start ▶'],
+    data: { trial_type: 'instructions' }
+};
+
+const start_recording = { type: chsRecord.StartRecordPlugin };
+const stop_recording  = { type: chsRecord.StopRecordPlugin  };
+
+
+// ════════════════════════════════════════════════════════════════════
+//  RUN THE EXPERIMENT
+// ════════════════════════════════════════════════════════════════════
+
+jsPsych.run([
+    { type: jsPsychFullscreen, fullscreen_mode: true },
+    video_config,
+    video_consent,
+    instructions,
+
+    start_recording,
+    videoTrial('overall_study_intro', 'intro_video'),
+
+    ...warmupTimeline,
+
+    ...buildScenarioTimeline(condition[0], 'scenario_1'),
+    ...buildScenarioTimeline(condition[1], 'scenario_2'),
+
+    videoTrial('overall_study_end', 'end_video'),
+    stop_recording,
+    { type: jsPsychFullscreen, fullscreen_mode: false, delay_after: 0 },
+    { type: chsSurvey.ExitSurveyPlugin }
+]);
