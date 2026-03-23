@@ -53,6 +53,12 @@ _style.textContent = `
         cursor: pointer !important;
         outline: none !important;
         transition: border-color 0.15s, transform 0.1s !important;
+        /* Fixed uniform size so all buttons are the same box */
+        width: 22vh !important;
+        height: 22vh !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
     }
     .image-choice-btn:hover:not(:disabled) {
         border-color: #4a90d9 !important;
@@ -60,9 +66,10 @@ _style.textContent = `
     }
     .image-choice-btn:disabled { cursor: default !important; }
     .choice-img {
-        height: 20vh;
-        max-width: 35vw;
+        max-width: 100%;
+        max-height: 100%;
         width: auto;
+        height: auto;
         object-fit: contain;
         display: block;
         pointer-events: none;
@@ -131,11 +138,11 @@ const CONDITIONS = [
             intro:    'test_case_intro',
             scenario: 'fence_scenario_boy_bike',
             questions: [
-                { video: 'fence_scenario_boy_bike_break_question',         img: 'gender_order1/fence_scenario_boy_bike_break_question.png',         left: 'boy_bike_case_suzy.png',  right: 'boy_bike_case_andy.png',  type: 'break'         },
-                { video: 'fence_scenario_boy_bike_caused_question',        img: 'gender_order1/fence_scenario_boy_bike_caused_question.png',        left: 'boy_bike_case_suzy.png',  right: 'boy_bike_case_andy.png',  type: 'caused'        },
-                { video: 'fence_scenario_boy_bike_fault_question',         img: 'gender_order1/fence_scenario_boy_bike_fault_question.png',         left: 'boy_bike_case_suzy.png',  right: 'boy_bike_case_andy.png',  type: 'fault'         },
+                { video: 'fence_scenario_boy_bike_break_question',         img: 'gender_order1/fence_scenario_boy_bike_break_question.png',         left: 'boy_bike_case_andy.png',  right: 'boy_bike_case_suzy.png',  type: 'break'         },
+                { video: 'fence_scenario_boy_bike_caused_question',        img: 'gender_order1/fence_scenario_boy_bike_caused_question.png',        left: 'boy_bike_case_andy.png',  right: 'boy_bike_case_suzy.png',  type: 'caused'        },
+                { video: 'fence_scenario_boy_bike_fault_question',         img: 'gender_order1/fence_scenario_boy_bike_fault_question.png',         left: 'boy_bike_case_andy.png',  right: 'boy_bike_case_suzy.png',  type: 'fault'         },
                 { video: 'fence_scenario_boy_bike_should_punish_question', img: 'gender_order1/fence_scenario_boy_bike_should_punish_question.png', left: 'yes.png',                 right: 'no.png',                  type: 'should_punish' },
-                { video: 'fence_scenario_boy_bike_who_punish_question',    img: 'gender_order1/fence_scenario_boy_bike_who_punish_question.png',    left: 'boy_bike_case_suzy.png',  right: 'boy_bike_case_andy.png',  type: 'who_punish'    }
+                { video: 'fence_scenario_boy_bike_who_punish_question',    img: 'gender_order1/fence_scenario_boy_bike_who_punish_question.png',    left: 'boy_bike_case_andy.png',  right: 'boy_bike_case_suzy.png',  type: 'who_punish'    }
             ]
         },
         {   // Scenario 2 – girl on chair (mirror)
@@ -157,11 +164,11 @@ const CONDITIONS = [
             intro:    'test_case_intro',
             scenario: 'fence_scenario_boy_bike',
             questions: [
-                { video: 'fence_scenario_boy_bike_caused_question',        img: 'gender_order1/fence_scenario_boy_bike_caused_question.png',        left: 'boy_bike_case_suzy.png',  right: 'boy_bike_case_andy.png',  type: 'caused'        },
-                { video: 'fence_scenario_boy_bike_break_question',         img: 'gender_order1/fence_scenario_boy_bike_break_question.png',         left: 'boy_bike_case_suzy.png',  right: 'boy_bike_case_andy.png',  type: 'break'         },
-                { video: 'fence_scenario_boy_bike_fault_question',         img: 'gender_order1/fence_scenario_boy_bike_fault_question.png',         left: 'boy_bike_case_suzy.png',  right: 'boy_bike_case_andy.png',  type: 'fault'         },
+                { video: 'fence_scenario_boy_bike_caused_question',        img: 'gender_order1/fence_scenario_boy_bike_caused_question.png',        left: 'boy_bike_case_andy.png',  right: 'boy_bike_case_suzy.png',  type: 'caused'        },
+                { video: 'fence_scenario_boy_bike_break_question',         img: 'gender_order1/fence_scenario_boy_bike_break_question.png',         left: 'boy_bike_case_andy.png',  right: 'boy_bike_case_suzy.png',  type: 'break'         },
+                { video: 'fence_scenario_boy_bike_fault_question',         img: 'gender_order1/fence_scenario_boy_bike_fault_question.png',         left: 'boy_bike_case_andy.png',  right: 'boy_bike_case_suzy.png',  type: 'fault'         },
                 { video: 'fence_scenario_boy_bike_should_punish_question', img: 'gender_order1/fence_scenario_boy_bike_should_punish_question.png', left: 'yes.png',                 right: 'no.png',                  type: 'should_punish' },
-                { video: 'fence_scenario_boy_bike_who_punish_question',    img: 'gender_order1/fence_scenario_boy_bike_who_punish_question.png',    left: 'boy_bike_case_suzy.png',  right: 'boy_bike_case_andy.png',  type: 'who_punish'    }
+                { video: 'fence_scenario_boy_bike_who_punish_question',    img: 'gender_order1/fence_scenario_boy_bike_who_punish_question.png',    left: 'boy_bike_case_andy.png',  right: 'boy_bike_case_suzy.png',  type: 'who_punish'    }
             ]
         },
         {
@@ -196,11 +203,11 @@ const CONDITIONS = [
             intro:    'test_case_intro',
             scenario: 'mirror_scenario_boy_chair',
             questions: [
-                { video: 'mirror_scenario_boy_chair_crack_question',         img: 'gender_order2/mirror_scenario_boy_chair_crack_question.png',         left: 'boy_chair_case_sophia.png', right: 'boy_chair_case_bobby.png', type: 'crack'         },
-                { video: 'mirror_scenario_boy_chair_cause_question',         img: 'gender_order2/mirror_scenario_boy_chair_cause_question.png',         left: 'boy_chair_case_sophia.png', right: 'boy_chair_case_bobby.png', type: 'caused'        },
-                { video: 'mirror_scenario_boy_chair_fault_question',         img: 'gender_order2/mirror_scenario_boy_chair_fault_question.png',         left: 'boy_chair_case_sophia.png', right: 'boy_chair_case_bobby.png', type: 'fault'         },
+                { video: 'mirror_scenario_boy_chair_crack_question',         img: 'gender_order2/mirror_scenario_boy_chair_crack_question.png',         left: 'boy_chair_case_bobby.png',  right: 'boy_chair_case_sophia.png', type: 'crack'         },
+                { video: 'mirror_scenario_boy_chair_cause_question',         img: 'gender_order2/mirror_scenario_boy_chair_cause_question.png',         left: 'boy_chair_case_bobby.png',  right: 'boy_chair_case_sophia.png', type: 'caused'        },
+                { video: 'mirror_scenario_boy_chair_fault_question',         img: 'gender_order2/mirror_scenario_boy_chair_fault_question.png',         left: 'boy_chair_case_bobby.png',  right: 'boy_chair_case_sophia.png', type: 'fault'         },
                 { video: 'mirror_scenario_boy_chair_should_punish_question', img: 'gender_order2/mirror_scenario_boy_chair_should_punish_question.png', left: 'yes.png',                   right: 'no.png',                   type: 'should_punish' },
-                { video: 'mirror_scenario_boy_chair_who_punish_question',    img: 'gender_order2/mirror_scenario_boy_chair_who_punish_question.png',    left: 'boy_chair_case_sophia.png', right: 'boy_chair_case_bobby.png', type: 'who_punish'    }
+                { video: 'mirror_scenario_boy_chair_who_punish_question',    img: 'gender_order2/mirror_scenario_boy_chair_who_punish_question.png',    left: 'boy_chair_case_bobby.png',  right: 'boy_chair_case_sophia.png', type: 'who_punish'    }
             ]
         }
     ],
@@ -222,11 +229,11 @@ const CONDITIONS = [
             intro:    'test_case_intro',
             scenario: 'mirror_scenario_boy_chair',
             questions: [
-                { video: 'mirror_scenario_boy_chair_cause_question',         img: 'gender_order2/mirror_scenario_boy_chair_cause_question.png',         left: 'boy_chair_case_sophia.png', right: 'boy_chair_case_bobby.png', type: 'caused'        },
-                { video: 'mirror_scenario_boy_chair_crack_question',         img: 'gender_order2/mirror_scenario_boy_chair_crack_question.png',         left: 'boy_chair_case_sophia.png', right: 'boy_chair_case_bobby.png', type: 'crack'         },
-                { video: 'mirror_scenario_boy_chair_fault_question',         img: 'gender_order2/mirror_scenario_boy_chair_fault_question.png',         left: 'boy_chair_case_sophia.png', right: 'boy_chair_case_bobby.png', type: 'fault'         },
+                { video: 'mirror_scenario_boy_chair_cause_question',         img: 'gender_order2/mirror_scenario_boy_chair_cause_question.png',         left: 'boy_chair_case_bobby.png',  right: 'boy_chair_case_sophia.png', type: 'caused'        },
+                { video: 'mirror_scenario_boy_chair_crack_question',         img: 'gender_order2/mirror_scenario_boy_chair_crack_question.png',         left: 'boy_chair_case_bobby.png',  right: 'boy_chair_case_sophia.png', type: 'crack'         },
+                { video: 'mirror_scenario_boy_chair_fault_question',         img: 'gender_order2/mirror_scenario_boy_chair_fault_question.png',         left: 'boy_chair_case_bobby.png',  right: 'boy_chair_case_sophia.png', type: 'fault'         },
                 { video: 'mirror_scenario_boy_chair_should_punish_question', img: 'gender_order2/mirror_scenario_boy_chair_should_punish_question.png', left: 'yes.png',                   right: 'no.png',                   type: 'should_punish' },
-                { video: 'mirror_scenario_boy_chair_who_punish_question',    img: 'gender_order2/mirror_scenario_boy_chair_who_punish_question.png',    left: 'boy_chair_case_sophia.png', right: 'boy_chair_case_bobby.png', type: 'who_punish'    }
+                { video: 'mirror_scenario_boy_chair_who_punish_question',    img: 'gender_order2/mirror_scenario_boy_chair_who_punish_question.png',    left: 'boy_chair_case_bobby.png',  right: 'boy_chair_case_sophia.png', type: 'who_punish'    }
             ]
         }
     ]
@@ -258,7 +265,7 @@ function videoTrial(videoName, trialType) {
         type: jsPsychHtmlButtonResponse,
         stimulus: `<video id="trial-video" class="trial-video"
                          src="${VID(videoName)}" autoplay playsinline></video>`,
-        choices: ['Continue ▶'],
+        choices: ['Next'],
         on_load: function () {
             const group = document.getElementById('jspsych-html-button-response-btngroup');
             if (group) group.classList.add('continue-btn-group');
@@ -303,12 +310,12 @@ function questionTrial({ videoName, leftImgSrc, rightImgSrc, questionType, scena
             }
         },
         data: {
-            trial_type:  questionType,
-            scenario:    scenarioId,
-            condition:   conditionIndex,
-            left_label:  leftLabel,
-            right_label: rightLabel,
-            video:       videoName
+            question_type: questionType,
+            scenario:      scenarioId,
+            condition:     conditionIndex,
+            left_label:    leftLabel,
+            right_label:   rightLabel,
+            video:         videoName
         },
         response_ends_trial: true
     };
@@ -364,7 +371,7 @@ function buildScenarioTimeline(scenarioData, scenarioId) {
         })],
         conditional_function: function () {
             const sp = jsPsych.data.get()
-                .filter({ trial_type: 'should_punish', scenario: scenarioId })
+                .filter({ question_type: 'should_punish', scenario: scenarioId })
                 .last(1).values()[0];
             return sp && sp.response === 0; // 0 = left = "yes"
         }
@@ -378,12 +385,58 @@ function buildScenarioTimeline(scenarioData, scenarioId) {
 //  WARMUP TIMELINE
 // ════════════════════════════════════════════════════════════════════
 
+/**
+ * warmupQuestionTrial – like questionTrial but buttons are hidden until
+ * the video finishes playing, then fade in.
+ */
+function warmupQuestionTrial({ videoName, leftImgSrc, rightImgSrc }) {
+    const leftLabel  = lbl(leftImgSrc);
+    const rightLabel = lbl(rightImgSrc);
+    return {
+        type: jsPsychHtmlButtonResponse,
+        stimulus: `<video id="q-audio" src="${VID(videoName)}"
+                         class="trial-video" autoplay playsinline></video>`,
+        choices: [
+            `<img src="${leftImgSrc}"  class="choice-img" alt="${leftLabel}">`,
+            `<img src="${rightImgSrc}" class="choice-img" alt="${rightLabel}">`
+        ],
+        on_load: function () {
+            const group = document.getElementById('jspsych-html-button-response-btngroup');
+            if (group) {
+                group.querySelectorAll('button').forEach(b => {
+                    b.classList.add('image-choice-btn');
+                    b.disabled = true;
+                    b.style.opacity = '0';
+                    b.style.transition = 'opacity 0.3s';
+                });
+                const reveal = () => {
+                    group.querySelectorAll('button').forEach(b => {
+                        b.disabled = false;
+                        b.style.opacity = '1';
+                    });
+                };
+                document.getElementById('q-audio').addEventListener('ended', reveal);
+                setTimeout(reveal, 300_000); // safety fallback
+            }
+        },
+        data: {
+            question_type: 'warmup',
+            scenario:      'warmup',
+            condition:     conditionIndex,
+            left_label:    leftLabel,
+            right_label:   rightLabel,
+            video:         videoName
+        },
+        response_ends_trial: true
+    };
+}
+
 const warmupTimeline = [
-    // Each warmup question: video plays + choice buttons visible simultaneously
-    questionTrial({ videoName: 'warmup_part1_bird_question', leftImgSrc: IMG('bird.png'), rightImgSrc: IMG('cat.png'), questionType: 'warmup', scenarioId: 'warmup' }),
-    questionTrial({ videoName: 'warmup_part1_fish_question', leftImgSrc: IMG('pig.png'),  rightImgSrc: IMG('fish.png'), questionType: 'warmup', scenarioId: 'warmup' }),
-    questionTrial({ videoName: 'warmup_part2_yes_question',  leftImgSrc: IMG('yes.png'), rightImgSrc: IMG('no.png'),  questionType: 'warmup', scenarioId: 'warmup' }),
-    questionTrial({ videoName: 'warmup_part2_no_question',   leftImgSrc: IMG('yes.png'), rightImgSrc: IMG('no.png'),  questionType: 'warmup', scenarioId: 'warmup' }),
+    // Warmup questions: choice buttons appear after the video finishes
+    warmupQuestionTrial({ videoName: 'warmup_part1_bird_question', leftImgSrc: IMG('bird.png'), rightImgSrc: IMG('cat.png')  }),
+    warmupQuestionTrial({ videoName: 'warmup_part1_fish_question', leftImgSrc: IMG('pig.png'),  rightImgSrc: IMG('fish.png') }),
+    warmupQuestionTrial({ videoName: 'warmup_part2_yes_question',  leftImgSrc: IMG('yes.png'),  rightImgSrc: IMG('no.png')   }),
+    warmupQuestionTrial({ videoName: 'warmup_part2_no_question',   leftImgSrc: IMG('yes.png'),  rightImgSrc: IMG('no.png')   }),
     // Warmup finish: video only, no choices
     videoTrial('warmup_finish', 'warmup_video')
 ];
