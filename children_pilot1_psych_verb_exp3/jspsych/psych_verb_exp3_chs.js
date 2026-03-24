@@ -48,6 +48,12 @@ _style.textContent = `
         cursor: pointer !important;
         outline: none !important;
         transition: border-color 0.15s, transform 0.1s !important;
+        /* Fixed uniform size so all buttons are the same box */
+        width: 22vh !important;
+        height: 22vh !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
     }
     .image-choice-btn:hover:not(:disabled) {
         border-color: #4a90d9 !important;
@@ -55,9 +61,10 @@ _style.textContent = `
     }
     .image-choice-btn:disabled { cursor: default !important; }
     .choice-img {
-        height: 20vh;
-        max-width: 35vw;
+        max-width: 100%;
+        max-height: 100%;
         width: auto;
+        height: auto;
         object-fit: contain;
         display: block;
         pointer-events: none;
@@ -267,9 +274,46 @@ function buildScenarioTimeline(scenarioData, scenarioId) {
 //  WARMUP TIMELINE
 // ════════════════════════════════════════════════════════════════════
 
+/**
+ * warmupQuestionTrial – buttons are hidden until the video finishes, then fade in.
+ */
+function warmupQuestionTrial({ videoName, leftImgSrc, rightImgSrc }) {
+    return {
+        type: jsPsychHtmlButtonResponse,
+        stimulus: `<video id="q-audio" src="${VID(videoName)}"
+                         class="trial-video" autoplay playsinline></video>`,
+        choices: [
+            `<img src="${leftImgSrc}"  class="choice-img" alt="distal">`,
+            `<img src="${rightImgSrc}" class="choice-img" alt="proximal">`
+        ],
+        on_load: function () {
+            const group = document.getElementById('jspsych-html-button-response-btngroup');
+            if (group) {
+                group.querySelectorAll('button').forEach(b => {
+                    b.classList.add('image-choice-btn');
+                    b.disabled = true;
+                    b.style.opacity = '0';
+                    b.style.transition = 'opacity 0.3s';
+                });
+                const reveal = () => {
+                    group.querySelectorAll('button').forEach(b => {
+                        b.disabled = false;
+                        b.style.opacity = '1';
+                    });
+                };
+                document.getElementById('q-audio').addEventListener('ended', reveal);
+                setTimeout(reveal, 300_000); // safety fallback
+            }
+        },
+        data: { question_type: 'warmup', scenario: 'warmup', condition: conditionIndex,
+                left_label: 'distal', right_label: 'proximal', video: videoName },
+        response_ends_trial: true
+    };
+}
+
 const warmupTimeline = [
-    questionTrial({ videoName: 'warmup_part1_bird_question', leftImgSrc: IMG('bird.png'), rightImgSrc: IMG('cat.png'),  questionType: 'warmup', scenarioId: 'warmup' }),
-    questionTrial({ videoName: 'warmup_part2_fish_question', leftImgSrc: IMG('pig.png'),  rightImgSrc: IMG('fish.png'), questionType: 'warmup', scenarioId: 'warmup' }),
+    warmupQuestionTrial({ videoName: 'warmup_part1_bird_question', leftImgSrc: IMG('bird.png'), rightImgSrc: IMG('cat.png')  }),
+    warmupQuestionTrial({ videoName: 'warmup_part2_fish_question', leftImgSrc: IMG('pig.png'),  rightImgSrc: IMG('fish.png') }),
     videoTrial('warmup_finish', 'warmup_video')
 ];
 
