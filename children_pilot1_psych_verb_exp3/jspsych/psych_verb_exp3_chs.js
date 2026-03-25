@@ -313,7 +313,7 @@ function warmupQuestionTrial({ videoName, leftImgSrc, rightImgSrc }) {
 
 const warmupTimeline = [
     warmupQuestionTrial({ videoName: 'warmup_part1_bird_question', leftImgSrc: IMG('bird.png'), rightImgSrc: IMG('cat.png')  }),
-    warmupQuestionTrial({ videoName: 'warmup_part2_fish_question', leftImgSrc: IMG('pig.png'),  rightImgSrc: IMG('fish.png') }),
+    warmupQuestionTrial({ videoName: 'warmup_part1_fish_question', leftImgSrc: IMG('pig.png'),  rightImgSrc: IMG('fish.png') }),
     videoTrial('warmup_finish', 'warmup_video')
 ];
 
