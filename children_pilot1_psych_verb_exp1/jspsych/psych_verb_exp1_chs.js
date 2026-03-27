@@ -304,7 +304,7 @@ function videoTrial(videoName, trialType) {
         type: jsPsychHtmlButtonResponse,
         stimulus: `<video id="trial-video" class="trial-video"
                          src="${VID(videoName)}" autoplay playsinline></video>`,
-        choices: ['Continue ▶'],
+        choices: ['Next'],
         on_load: function () {
             const group = document.getElementById('jspsych-html-button-response-btngroup');
             if (group) group.classList.add('continue-btn-group');
@@ -333,7 +333,20 @@ function questionTrial({ videoName, leftImgSrc, rightImgSrc, questionType, scena
         on_load: function () {
             const group = document.getElementById('jspsych-html-button-response-btngroup');
             if (group) {
-                group.querySelectorAll('button').forEach(b => b.classList.add('image-choice-btn'));
+                group.querySelectorAll('button').forEach(b => {
+                    b.classList.add('image-choice-btn');
+                    b.disabled = true;
+                    b.style.opacity = '0';
+                    b.style.transition = 'opacity 0.3s';
+                });
+                const reveal = () => {
+                    group.querySelectorAll('button').forEach(b => {
+                        b.disabled = false;
+                        b.style.opacity = '1';
+                    });
+                };
+                document.getElementById('q-audio').addEventListener('ended', reveal);
+                setTimeout(reveal, 300_000);
             }
         },
         data: {
