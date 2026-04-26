@@ -331,57 +331,50 @@ const stop_recording  = { type: chsRecord.StopRecordPlugin  };
 
 
 // ════════════════════════════════════════════════════════════════════
-//  RUN — async so we can use chs.conditions for balanced assignment
+//  INIT jsPsych & ASSIGN CONDITION
 // ════════════════════════════════════════════════════════════════════
 
-(async function () {
+const jsPsych = initJsPsych();
 
-    // ── Balanced between-subjects assignment via CHS conditions API ──
-    //  Returns one of: 'control_cond0' … 'experimental_cond3'  (8 total).
-    //  CHS keeps these counts balanced across participants.
-    const ALL_CONDITIONS = [];
-    for (const grp of ['control', 'experimental']) {
-        for (let i = 0; i < WITHIN_CONDITIONS.length; i++) {
-            ALL_CONDITIONS.push(`${grp}_cond${i}`);
-        }
-    }
+// 8 total conditions = 2 groups × 4 within-subject orders.
+// We use Math.random() here (synchronous, works in CHS preview).
+// To balance between-group N, monitor recruitment on the Lookit
+// dashboard and close recruitment when each group is full.
+const groupAssignment = Math.random() < 0.5 ? 'control' : 'experimental';
+const conditionIndex  = Math.floor(Math.random() * WITHIN_CONDITIONS.length);
+const within          = WITHIN_CONDITIONS[conditionIndex];
 
-    const assignedLabel = await chs.session.assignCondition(ALL_CONDITIONS);
-    // assignedLabel e.g. 'experimental_cond2'
-    const [groupAssignment, condTag] = assignedLabel.split('_cond');
-    const conditionIndex = parseInt(condTag, 10);
-    const within         = WITHIN_CONDITIONS[conditionIndex];
+// Tag every trial with group / condition / within-subject info
+jsPsych.data.addProperties({
+    group:           groupAssignment,
+    condition:       conditionIndex,
+    scenario_order:  within.scenarioOrder.join('-'),
+    question_order:  within.questionOrder.join('-')
+});
 
-    const jsPsych = initJsPsych();
+const [scen1, scen2] = within.scenarioOrder;
 
-    // Tag every trial with group / condition / within-subject info
-    jsPsych.data.addProperties({
-        group:           groupAssignment,
-        condition:       conditionIndex,
-        scenario_order:  within.scenarioOrder.join('-'),
-        question_order:  within.questionOrder.join('-')
-    });
 
-    const [scen1, scen2] = within.scenarioOrder;
+// ════════════════════════════════════════════════════════════════════
+//  RUN THE EXPERIMENT
+// ════════════════════════════════════════════════════════════════════
 
-    jsPsych.run([
-        { type: jsPsychFullscreen, fullscreen_mode: true },
-        video_config,
-        video_consent,
-        instructions,
+jsPsych.run([
+    { type: jsPsychFullscreen, fullscreen_mode: true },
+    video_config,
+    video_consent,
+    instructions,
 
-        start_recording,
-        videoTrial('overall_study_intro', 'intro_video'),
+    start_recording,
+    videoTrial('overall_study_intro', 'intro_video'),
 
-        ...warmupTimeline,
+    ...warmupTimeline,
 
-        ...buildScenario(scen1, groupAssignment, within.questionOrder, 'scenario_1'),
-        ...buildScenario(scen2, groupAssignment, within.questionOrder, 'scenario_2'),
+    ...buildScenario(scen1, groupAssignment, within.questionOrder, 'scenario_1'),
+    ...buildScenario(scen2, groupAssignment, within.questionOrder, 'scenario_2'),
 
-        videoTrial('overall_study_end', 'end_video'),
-        stop_recording,
-        { type: jsPsychFullscreen, fullscreen_mode: false, delay_after: 0 },
-        { type: chsSurvey.ExitSurveyPlugin }
-    ]);
-
-})();
+    videoTrial('overall_study_end', 'end_video'),
+    stop_recording,
+    { type: jsPsychFullscreen, fullscreen_mode: false, delay_after: 0 },
+    { type: chsSurvey.ExitSurveyPlugin }
+]);
