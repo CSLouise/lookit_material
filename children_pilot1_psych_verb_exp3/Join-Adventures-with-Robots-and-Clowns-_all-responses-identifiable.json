@@ -1,0 +1,1796 @@
+[
+{
+	"response": {
+		"id": "426093",
+		"uuid": "6637cdb0-f5e7-4c0b-994c-835de4b90cd3",
+		"date_created": "2026-04-15 22:38:15.152995+00:00",
+		"completed": true,
+		"withdrawn": false,
+		"eligibility": [
+			"Eligible"
+		],
+		"parent_feedback": "Good",
+		"birthdate_difference": -207,
+		"video_privacy": "private",
+		"databrary": "yes",
+		"is_preview": false,
+		"sequence": [
+			"0-fullscreen",
+			"1-video-config-plugin",
+			"2-consent-video",
+			"3-html-button-response",
+			"4-start-record-plugin",
+			"5-html-button-response",
+			"6-html-button-response",
+			"7-html-button-response",
+			"8-html-button-response",
+			"9-html-button-response",
+			"10-html-button-response",
+			"11-html-button-response",
+			"12-html-button-response",
+			"13-html-button-response",
+			"14-html-button-response",
+			"15-html-button-response",
+			"16-html-button-response",
+			"17-html-button-response",
+			"18-stop-record-plugin",
+			"19-fullscreen",
+			"20-survey"
+		],
+		"conditions": [],
+		"researcher_payment_status": "",
+		"researcher_session_status": "",
+		"researcher_star": false
+	},
+	"consent": {
+		"ruling": "accepted",
+		"arbiter": "David  Rose",
+		"time": "2026-04-16 16:02",
+		"comment": null
+	},
+	"study": {
+		"uuid": "67ab9617-a8cc-41e1-a823-bdaca0acde70"
+	},
+	"participant": {
+		"hashed_id": "PZUARM"
+	},
+	"child": {
+		"hashed_id": "K2SX2X",
+		"age_rounded": "2010",
+		"gender": "f",
+		"age_at_birth": "39 weeks",
+		"language_list": "en",
+		"condition_list": "",
+		"additional_information": ""
+	},
+	"exp_data": [
+		{
+			"rt": 2608,
+			"success": true,
+			"trial_type": "fullscreen",
+			"trial_index": 0,
+			"time_elapsed": 3630,
+			"plugin_version": "2.1.0"
+		},
+		{
+			"rt": 13122,
+			"camId": "e85e00fe2f88da9af2f8c9eb2d47f5f55d026d52712eaa3177d5e338eb5858f7",
+			"micId": "99cb9b2824f9f87ff2c7902df10b0075d17bc0082ce104d6a1c71030779ba606",
+			"trial_type": "video-config-plugin",
+			"trial_index": 1,
+			"time_elapsed": 16920,
+			"plugin_version": "6.0.0"
+		},
+		{
+			"chs_type": "consent",
+			"trial_type": "consent-video",
+			"trial_index": 2,
+			"time_elapsed": 51144,
+			"plugin_version": "6.0.0"
+		},
+		{
+			"rt": 7457,
+			"response": 0,
+			"stimulus": "\n        <div class=\"instructions-box\">\n            <h2>Overview</h2>\n            <ul>\n                <li>The study takes about 5\u20138 minutes.</li>\n                <li>Your child will watch short videos and answer questions by clicking on pictures.</li>\n                <li>There are no right or wrong answers.</li>\n            </ul>\n            <p><strong>For parents:</strong> Please help keep your child's attention,\n               but don't tell them which answer to choose.</p>\n        </div>",
+			"trial_type": "html-button-response",
+			"trial_index": 3,
+			"time_elapsed": 58619,
+			"plugin_version": "2.0.0"
+		},
+		{
+			"trial_type": "start-record-plugin",
+			"trial_index": 4,
+			"time_elapsed": 58877,
+			"plugin_version": "6.0.0"
+		},
+		{
+			"rt": 56411,
+			"video": "overall_study_intro",
+			"response": 0,
+			"stimulus": "<video id=\"trial-video\" class=\"trial-video\"\n                         src=\"https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp3/mp4/overall_study_intro.mp4\" autoplay playsinline></video>",
+			"condition": 1,
+			"trial_type": "html-button-response",
+			"trial_index": 5,
+			"time_elapsed": 115303,
+			"plugin_version": "2.0.0"
+		},
+		{
+			"rt": 53042,
+			"video": "warmup_part1_bird_question",
+			"response": 0,
+			"scenario": "warmup",
+			"stimulus": "<video id=\"q-audio\" src=\"https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp3/mp4/warmup_part1_bird_question.mp4\"\n                         class=\"trial-video\" autoplay playsinline></video>",
+			"condition": 1,
+			"left_label": "distal",
+			"trial_type": "html-button-response",
+			"right_label": "proximal",
+			"trial_index": 6,
+			"time_elapsed": 168376,
+			"question_type": "warmup",
+			"plugin_version": "2.0.0"
+		},
+		{
+			"rt": 22785,
+			"video": "warmup_part1_fish_question",
+			"response": 1,
+			"scenario": "warmup",
+			"stimulus": "<video id=\"q-audio\" src=\"https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp3/mp4/warmup_part1_fish_question.mp4\"\n                         class=\"trial-video\" autoplay playsinline></video>",
+			"condition": 1,
+			"left_label": "distal",
+			"trial_type": "html-button-response",
+			"right_label": "proximal",
+			"trial_index": 7,
+			"time_elapsed": 191178,
+			"question_type": "warmup",
+			"plugin_version": "2.0.0"
+		},
+		{
+			"rt": 12943,
+			"video": "warmup_finish",
+			"response": 0,
+			"stimulus": "<video id=\"trial-video\" class=\"trial-video\"\n                         src=\"https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp3/mp4/warmup_finish.mp4\" autoplay playsinline></video>",
+			"condition": 1,
+			"trial_type": "html-button-response",
+			"trial_index": 8,
+			"time_elapsed": 204134,
+			"plugin_version": "2.0.0"
+		},
+		{
+			"rt": 9247,
+			"video": "test_case_intro",
+			"response": 0,
+			"stimulus": "<video id=\"trial-video\" class=\"trial-video\"\n                         src=\"https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp3/mp4/test_case_intro.mp4\" autoplay playsinline></video>",
+			"condition": 1,
+			"trial_type": "html-button-response",
+			"trial_index": 9,
+			"time_elapsed": 213388,
+			"plugin_version": "2.0.0"
+		},
+		{
+			"rt": 61494,
+			"video": "scared_scenario",
+			"response": 0,
+			"stimulus": "<video id=\"trial-video\" class=\"trial-video\"\n                         src=\"https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp3/mp4/scared_scenario.mp4\" autoplay playsinline></video>",
+			"condition": 1,
+			"trial_type": "html-button-response",
+			"trial_index": 10,
+			"time_elapsed": 274915,
+			"plugin_version": "2.0.0"
+		},
+		{
+			"rt": 9702,
+			"video": "scared_caused",
+			"response": 0,
+			"scenario": "scenario_1",
+			"stimulus": "<video id=\"q-audio\" src=\"https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp3/mp4/scared_caused.mp4\"\n                         class=\"trial-video\" autoplay playsinline></video>",
+			"condition": 1,
+			"left_label": "distal",
+			"trial_type": "html-button-response",
+			"right_label": "proximal",
+			"trial_index": 11,
+			"time_elapsed": 284635,
+			"plugin_version": "2.0.0"
+		},
+		{
+			"rt": 8152,
+			"video": "scared_lexical",
+			"response": 1,
+			"scenario": "scenario_1",
+			"stimulus": "<video id=\"q-audio\" src=\"https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp3/mp4/scared_lexical.mp4\"\n                         class=\"trial-video\" autoplay playsinline></video>",
+			"condition": 1,
+			"left_label": "distal",
+			"trial_type": "html-button-response",
+			"right_label": "proximal",
+			"trial_index": 12,
+			"time_elapsed": 292803,
+			"plugin_version": "2.0.0"
+		},
+		{
+			"rt": 9934,
+			"video": "test_case_intro",
+			"response": 0,
+			"stimulus": "<video id=\"trial-video\" class=\"trial-video\"\n                         src=\"https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp3/mp4/test_case_intro.mp4\" autoplay playsinline></video>",
+			"condition": 1,
+			"trial_type": "html-button-response",
+			"trial_index": 13,
+			"time_elapsed": 302742,
+			"plugin_version": "2.0.0"
+		},
+		{
+			"rt": 60261,
+			"video": "surprised_scenario",
+			"response": 0,
+			"stimulus": "<video id=\"trial-video\" class=\"trial-video\"\n                         src=\"https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp3/mp4/surprised_scenario.mp4\" autoplay playsinline></video>",
+			"condition": 1,
+			"trial_type": "html-button-response",
+			"trial_index": 14,
+			"time_elapsed": 363009,
+			"plugin_version": "2.0.0"
+		},
+		{
+			"rt": 9029,
+			"video": "surprised_caused",
+			"response": 0,
+			"scenario": "scenario_2",
+			"stimulus": "<video id=\"q-audio\" src=\"https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp3/mp4/surprised_caused.mp4\"\n                         class=\"trial-video\" autoplay playsinline></video>",
+			"condition": 1,
+			"left_label": "distal",
+			"trial_type": "html-button-response",
+			"right_label": "proximal",
+			"trial_index": 15,
+			"time_elapsed": 372050,
+			"plugin_version": "2.0.0"
+		},
+		{
+			"rt": 7000,
+			"video": "surprised_lexical",
+			"response": 1,
+			"scenario": "scenario_2",
+			"stimulus": "<video id=\"q-audio\" src=\"https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp3/mp4/surprised_lexical.mp4\"\n                         class=\"trial-video\" autoplay playsinline></video>",
+			"condition": 1,
+			"left_label": "distal",
+			"trial_type": "html-button-response",
+			"right_label": "proximal",
+			"trial_index": 16,
+			"time_elapsed": 379057,
+			"plugin_version": "2.0.0"
+		},
+		{
+			"rt": 12852,
+			"video": "overall_study_end",
+			"response": 0,
+			"stimulus": "<video id=\"trial-video\" class=\"trial-video\"\n                         src=\"https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp3/mp4/overall_study_end.mp4\" autoplay playsinline></video>",
+			"condition": 1,
+			"trial_type": "html-button-response",
+			"trial_index": 17,
+			"time_elapsed": 391916,
+			"plugin_version": "2.0.0"
+		},
+		{
+			"trial_type": "stop-record-plugin",
+			"trial_index": 18,
+			"time_elapsed": 402119,
+			"plugin_version": "6.0.0"
+		},
+		{
+			"rt": null,
+			"success": true,
+			"trial_type": "fullscreen",
+			"trial_index": 19,
+			"time_elapsed": 402136,
+			"plugin_version": "2.1.0"
+		},
+		{
+			"rt": 49069,
+			"chs_type": "exit",
+			"response": {
+				"feedback": "Good",
+				"birthDate": "2020-03-10",
+				"useOfMedia": "private",
+				"withdrawal": false,
+				"databraryShare": "yes"
+			},
+			"trial_type": "survey",
+			"chs_version": "6.0.0",
+			"trial_index": 20,
+			"time_elapsed": 451513,
+			"plugin_version": "2.0.0"
+		}
+	]
+},
+{
+	"response": {
+		"id": "426112",
+		"uuid": "c3736d00-5e80-4861-845c-04d2195e2488",
+		"date_created": "2026-04-15 23:14:17.067738+00:00",
+		"completed": false,
+		"withdrawn": true,
+		"eligibility": [
+			"Eligible"
+		],
+		"parent_feedback": "good",
+		"birthdate_difference": 0,
+		"video_privacy": "private",
+		"databrary": "no",
+		"is_preview": false,
+		"sequence": [
+			"0-fullscreen",
+			"1-video-config-plugin",
+			"2-consent-video",
+			"3-html-button-response",
+			"4-start-record-plugin",
+			"5-html-button-response",
+			"6-html-button-response",
+			"7-html-button-response",
+			"8-html-button-response",
+			"9-html-button-response",
+			"10-html-button-response",
+			"11-html-button-response",
+			"12-html-button-response",
+			"13-html-button-response",
+			"14-html-button-response",
+			"15-html-button-response",
+			"16-html-button-response",
+			"17-html-button-response",
+			"18-stop-record-plugin",
+			"19-fullscreen",
+			"20-survey"
+		],
+		"conditions": [],
+		"researcher_payment_status": "",
+		"researcher_session_status": "",
+		"researcher_star": false
+	},
+	"consent": {
+		"ruling": "accepted",
+		"arbiter": "David  Rose",
+		"time": "2026-04-16 16:02",
+		"comment": null
+	},
+	"study": {
+		"uuid": "67ab9617-a8cc-41e1-a823-bdaca0acde70"
+	},
+	"participant": {
+		"hashed_id": "56LJJD"
+	},
+	"child": {
+		"hashed_id": "ZZTSVK",
+		"age_rounded": "2490",
+		"gender": "m",
+		"age_at_birth": "39 weeks",
+		"language_list": "en ko",
+		"condition_list": "",
+		"additional_information": ""
+	},
+	"exp_data": [
+		{
+			"rt": 2286,
+			"success": true,
+			"trial_type": "fullscreen",
+			"trial_index": 0,
+			"time_elapsed": 3300,
+			"plugin_version": "2.1.0"
+		},
+		{
+			"rt": 12321,
+			"camId": "dedf624efac7af503e364c1b08384b3db40b42e29e6ff39fa0c80b6489a5289f",
+			"micId": "6edb71e949f4ef1000fa7403db21c63ab132fc2cce30697dd057536d4ada5b31",
+			"trial_type": "video-config-plugin",
+			"trial_index": 1,
+			"time_elapsed": 15649,
+			"plugin_version": "6.0.0"
+		},
+		{
+			"chs_type": "consent",
+			"trial_type": "consent-video",
+			"trial_index": 2,
+			"time_elapsed": 42745,
+			"plugin_version": "6.0.0"
+		},
+		{
+			"rt": 3288,
+			"response": 0,
+			"stimulus": "\n        <div class=\"instructions-box\">\n            <h2>Overview</h2>\n            <ul>\n                <li>The study takes about 5\u20138 minutes.</li>\n                <li>Your child will watch short videos and answer questions by clicking on pictures.</li>\n                <li>There are no right or wrong answers.</li>\n            </ul>\n            <p><strong>For parents:</strong> Please help keep your child's attention,\n               but don't tell them which answer to choose.</p>\n        </div>",
+			"trial_type": "html-button-response",
+			"trial_index": 3,
+			"time_elapsed": 46035,
+			"plugin_version": "2.0.0"
+		},
+		{
+			"trial_type": "start-record-plugin",
+			"trial_index": 4,
+			"time_elapsed": 46246,
+			"plugin_version": "6.0.0"
+		},
+		{
+			"rt": 72707,
+			"video": "overall_study_intro",
+			"response": 0,
+			"stimulus": "<video id=\"trial-video\" class=\"trial-video\"\n                         src=\"https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp3/mp4/overall_study_intro.mp4\" autoplay playsinline></video>",
+			"condition": 1,
+			"trial_type": "html-button-response",
+			"trial_index": 5,
+			"time_elapsed": 118955,
+			"plugin_version": "2.0.0"
+		},
+		{
+			"rt": 54916,
+			"video": "warmup_part1_bird_question",
+			"response": 0,
+			"scenario": "warmup",
+			"stimulus": "<video id=\"q-audio\" src=\"https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp3/mp4/warmup_part1_bird_question.mp4\"\n                         class=\"trial-video\" autoplay playsinline></video>",
+			"condition": 1,
+			"left_label": "distal",
+			"trial_type": "html-button-response",
+			"right_label": "proximal",
+			"trial_index": 6,
+			"time_elapsed": 173873,
+			"question_type": "warmup",
+			"plugin_version": "2.0.0"
+		},
+		{
+			"rt": 23062,
+			"video": "warmup_part1_fish_question",
+			"response": 1,
+			"scenario": "warmup",
+			"stimulus": "<video id=\"q-audio\" src=\"https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp3/mp4/warmup_part1_fish_question.mp4\"\n                         class=\"trial-video\" autoplay playsinline></video>",
+			"condition": 1,
+			"left_label": "distal",
+			"trial_type": "html-button-response",
+			"right_label": "proximal",
+			"trial_index": 7,
+			"time_elapsed": 196937,
+			"question_type": "warmup",
+			"plugin_version": "2.0.0"
+		},
+		{
+			"rt": 13104,
+			"video": "warmup_finish",
+			"response": 0,
+			"stimulus": "<video id=\"trial-video\" class=\"trial-video\"\n                         src=\"https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp3/mp4/warmup_finish.mp4\" autoplay playsinline></video>",
+			"condition": 1,
+			"trial_type": "html-button-response",
+			"trial_index": 8,
+			"time_elapsed": 210043,
+			"plugin_version": "2.0.0"
+		},
+		{
+			"rt": 11486,
+			"video": "test_case_intro",
+			"response": 0,
+			"stimulus": "<video id=\"trial-video\" class=\"trial-video\"\n                         src=\"https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp3/mp4/test_case_intro.mp4\" autoplay playsinline></video>",
+			"condition": 1,
+			"trial_type": "html-button-response",
+			"trial_index": 9,
+			"time_elapsed": 221530,
+			"plugin_version": "2.0.0"
+		},
+		{
+			"rt": 60212,
+			"video": "scared_scenario",
+			"response": 0,
+			"stimulus": "<video id=\"trial-video\" class=\"trial-video\"\n                         src=\"https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp3/mp4/scared_scenario.mp4\" autoplay playsinline></video>",
+			"condition": 1,
+			"trial_type": "html-button-response",
+			"trial_index": 10,
+			"time_elapsed": 281744,
+			"plugin_version": "2.0.0"
+		},
+		{
+			"rt": 9250,
+			"video": "scared_caused",
+			"response": 0,
+			"scenario": "scenario_1",
+			"stimulus": "<video id=\"q-audio\" src=\"https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp3/mp4/scared_caused.mp4\"\n                         class=\"trial-video\" autoplay playsinline></video>",
+			"condition": 1,
+			"left_label": "distal",
+			"trial_type": "html-button-response",
+			"right_label": "proximal",
+			"trial_index": 11,
+			"time_elapsed": 290996,
+			"plugin_version": "2.0.0"
+		},
+		{
+			"rt": 7511,
+			"video": "scared_lexical",
+			"response": 1,
+			"scenario": "scenario_1",
+			"stimulus": "<video id=\"q-audio\" src=\"https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp3/mp4/scared_lexical.mp4\"\n                         class=\"trial-video\" autoplay playsinline></video>",
+			"condition": 1,
+			"left_label": "distal",
+			"trial_type": "html-button-response",
+			"right_label": "proximal",
+			"trial_index": 12,
+			"time_elapsed": 298508,
+			"plugin_version": "2.0.0"
+		},
+		{
+			"rt": 9945,
+			"video": "test_case_intro",
+			"response": 0,
+			"stimulus": "<video id=\"trial-video\" class=\"trial-video\"\n                         src=\"https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp3/mp4/test_case_intro.mp4\" autoplay playsinline></video>",
+			"condition": 1,
+			"trial_type": "html-button-response",
+			"trial_index": 13,
+			"time_elapsed": 308455,
+			"plugin_version": "2.0.0"
+		},
+		{
+			"rt": 60217,
+			"video": "surprised_scenario",
+			"response": 0,
+			"stimulus": "<video id=\"trial-video\" class=\"trial-video\"\n                         src=\"https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp3/mp4/surprised_scenario.mp4\" autoplay playsinline></video>",
+			"condition": 1,
+			"trial_type": "html-button-response",
+			"trial_index": 14,
+			"time_elapsed": 368674,
+			"plugin_version": "2.0.0"
+		},
+		{
+			"rt": 12655,
+			"video": "surprised_caused",
+			"response": 1,
+			"scenario": "scenario_2",
+			"stimulus": "<video id=\"q-audio\" src=\"https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp3/mp4/surprised_caused.mp4\"\n                         class=\"trial-video\" autoplay playsinline></video>",
+			"condition": 1,
+			"left_label": "distal",
+			"trial_type": "html-button-response",
+			"right_label": "proximal",
+			"trial_index": 15,
+			"time_elapsed": 381332,
+			"plugin_version": "2.0.0"
+		},
+		{
+			"rt": 9848,
+			"video": "surprised_lexical",
+			"response": 0,
+			"scenario": "scenario_2",
+			"stimulus": "<video id=\"q-audio\" src=\"https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp3/mp4/surprised_lexical.mp4\"\n                         class=\"trial-video\" autoplay playsinline></video>",
+			"condition": 1,
+			"left_label": "distal",
+			"trial_type": "html-button-response",
+			"right_label": "proximal",
+			"trial_index": 16,
+			"time_elapsed": 391181,
+			"plugin_version": "2.0.0"
+		},
+		{
+			"rt": 11842,
+			"video": "overall_study_end",
+			"response": 0,
+			"stimulus": "<video id=\"trial-video\" class=\"trial-video\"\n                         src=\"https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp3/mp4/overall_study_end.mp4\" autoplay playsinline></video>",
+			"condition": 1,
+			"trial_type": "html-button-response",
+			"trial_index": 17,
+			"time_elapsed": 403024,
+			"plugin_version": "2.0.0"
+		},
+		{
+			"trial_type": "stop-record-plugin",
+			"trial_index": 18,
+			"time_elapsed": 410829,
+			"plugin_version": "6.0.0"
+		},
+		{
+			"rt": null,
+			"success": true,
+			"trial_type": "fullscreen",
+			"trial_index": 19,
+			"time_elapsed": 410829,
+			"plugin_version": "2.1.0"
+		},
+		{
+			"rt": 55572,
+			"chs_type": "exit",
+			"response": {
+				"feedback": "good",
+				"birthDate": "2019-06-21",
+				"useOfMedia": "private",
+				"withdrawal": true,
+				"databraryShare": "no"
+			},
+			"trial_type": "survey",
+			"chs_version": "6.0.0",
+			"trial_index": 20,
+			"time_elapsed": 466450,
+			"plugin_version": "2.0.0"
+		}
+	]
+},
+{
+	"response": {
+		"id": "426133",
+		"uuid": "4ff81c48-46a5-4c6f-a57f-75a69ea910ac",
+		"date_created": "2026-04-16 00:07:01.235280+00:00",
+		"completed": true,
+		"withdrawn": false,
+		"eligibility": [
+			"Eligible"
+		],
+		"parent_feedback": null,
+		"birthdate_difference": 0,
+		"video_privacy": "private",
+		"databrary": "no",
+		"is_preview": false,
+		"sequence": [
+			"0-fullscreen",
+			"1-video-config-plugin",
+			"2-consent-video",
+			"3-html-button-response",
+			"4-start-record-plugin",
+			"5-html-button-response",
+			"6-html-button-response",
+			"7-html-button-response",
+			"8-html-button-response",
+			"9-html-button-response",
+			"10-html-button-response",
+			"11-html-button-response",
+			"12-html-button-response",
+			"13-html-button-response",
+			"14-html-button-response",
+			"15-html-button-response",
+			"16-html-button-response",
+			"17-html-button-response",
+			"18-stop-record-plugin",
+			"19-fullscreen",
+			"20-survey"
+		],
+		"conditions": [],
+		"researcher_payment_status": "",
+		"researcher_session_status": "",
+		"researcher_star": false
+	},
+	"consent": {
+		"ruling": "accepted",
+		"arbiter": "David  Rose",
+		"time": "2026-04-16 16:02",
+		"comment": null
+	},
+	"study": {
+		"uuid": "67ab9617-a8cc-41e1-a823-bdaca0acde70"
+	},
+	"participant": {
+		"hashed_id": "622CK2"
+	},
+	"child": {
+		"hashed_id": "BYZGc2",
+		"age_rounded": "2520",
+		"gender": "f",
+		"age_at_birth": "37 weeks",
+		"language_list": "en",
+		"condition_list": "",
+		"additional_information": ""
+	},
+	"exp_data": [
+		{
+			"rt": 2281,
+			"success": true,
+			"trial_type": "fullscreen",
+			"trial_index": 0,
+			"time_elapsed": 3306,
+			"plugin_version": "2.1.0"
+		},
+		{
+			"rt": 11301,
+			"camId": "4lKTB2ae5r8PWUka3F2sb2SyEPIYZlN4uwqPRAolLUM=",
+			"micId": "m7+RLQa9dEAfe75KYPkh96Bn56peCkh/3nm6zLxBG+s=",
+			"trial_type": "video-config-plugin",
+			"trial_index": 1,
+			"time_elapsed": 14688,
+			"plugin_version": "6.0.0"
+		},
+		{
+			"chs_type": "consent",
+			"trial_type": "consent-video",
+			"trial_index": 2,
+			"time_elapsed": 40655,
+			"plugin_version": "6.0.0"
+		},
+		{
+			"rt": 6850,
+			"response": 0,
+			"stimulus": "\n        <div class=\"instructions-box\">\n            <h2>Overview</h2>\n            <ul>\n                <li>The study takes about 5\u20138 minutes.</li>\n                <li>Your child will watch short videos and answer questions by clicking on pictures.</li>\n                <li>There are no right or wrong answers.</li>\n            </ul>\n            <p><strong>For parents:</strong> Please help keep your child's attention,\n               but don't tell them which answer to choose.</p>\n        </div>",
+			"trial_type": "html-button-response",
+			"trial_index": 3,
+			"time_elapsed": 47513,
+			"plugin_version": "2.0.0"
+		},
+		{
+			"trial_type": "start-record-plugin",
+			"trial_index": 4,
+			"time_elapsed": 47792,
+			"plugin_version": "6.0.0"
+		},
+		{
+			"rt": 55800,
+			"video": "overall_study_intro",
+			"response": 0,
+			"stimulus": "<video id=\"trial-video\" class=\"trial-video\"\n                         src=\"https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp3/mp4/overall_study_intro.mp4\" autoplay playsinline></video>",
+			"condition": 2,
+			"trial_type": "html-button-response",
+			"trial_index": 5,
+			"time_elapsed": 103599,
+			"plugin_version": "2.0.0"
+		},
+		{
+			"rt": 52603,
+			"video": "warmup_part1_bird_question",
+			"response": 0,
+			"scenario": "warmup",
+			"stimulus": "<video id=\"q-audio\" src=\"https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp3/mp4/warmup_part1_bird_question.mp4\"\n                         class=\"trial-video\" autoplay playsinline></video>",
+			"condition": 2,
+			"left_label": "distal",
+			"trial_type": "html-button-response",
+			"right_label": "proximal",
+			"trial_index": 6,
+			"time_elapsed": 156210,
+			"question_type": "warmup",
+			"plugin_version": "2.0.0"
+		},
+		{
+			"rt": 22316,
+			"video": "warmup_part1_fish_question",
+			"response": 1,
+			"scenario": "warmup",
+			"stimulus": "<video id=\"q-audio\" src=\"https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp3/mp4/warmup_part1_fish_question.mp4\"\n                         class=\"trial-video\" autoplay playsinline></video>",
+			"condition": 2,
+			"left_label": "distal",
+			"trial_type": "html-button-response",
+			"right_label": "proximal",
+			"trial_index": 7,
+			"time_elapsed": 178533,
+			"question_type": "warmup",
+			"plugin_version": "2.0.0"
+		},
+		{
+			"rt": 10552,
+			"video": "warmup_finish",
+			"response": 0,
+			"stimulus": "<video id=\"trial-video\" class=\"trial-video\"\n                         src=\"https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp3/mp4/warmup_finish.mp4\" autoplay playsinline></video>",
+			"condition": 2,
+			"trial_type": "html-button-response",
+			"trial_index": 8,
+			"time_elapsed": 189090,
+			"plugin_version": "2.0.0"
+		},
+		{
+			"rt": 14264,
+			"video": "test_case_intro",
+			"response": 0,
+			"stimulus": "<video id=\"trial-video\" class=\"trial-video\"\n                         src=\"https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp3/mp4/test_case_intro.mp4\" autoplay playsinline></video>",
+			"condition": 2,
+			"trial_type": "html-button-response",
+			"trial_index": 9,
+			"time_elapsed": 203370,
+			"plugin_version": "2.0.0"
+		},
+		{
+			"rt": 61159,
+			"video": "surprised_scenario",
+			"response": 0,
+			"stimulus": "<video id=\"trial-video\" class=\"trial-video\"\n                         src=\"https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp3/mp4/surprised_scenario.mp4\" autoplay playsinline></video>",
+			"condition": 2,
+			"trial_type": "html-button-response",
+			"trial_index": 10,
+			"time_elapsed": 264539,
+			"plugin_version": "2.0.0"
+		},
+		{
+			"rt": 6939,
+			"video": "surprised_lexical",
+			"response": 1,
+			"scenario": "scenario_1",
+			"stimulus": "<video id=\"q-audio\" src=\"https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp3/mp4/surprised_lexical.mp4\"\n                         class=\"trial-video\" autoplay playsinline></video>",
+			"condition": 2,
+			"left_label": "distal",
+			"trial_type": "html-button-response",
+			"right_label": "proximal",
+			"trial_index": 11,
+			"time_elapsed": 271486,
+			"plugin_version": "2.0.0"
+		},
+		{
+			"rt": 7836,
+			"video": "surprised_caused",
+			"response": 0,
+			"scenario": "scenario_1",
+			"stimulus": "<video id=\"q-audio\" src=\"https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp3/mp4/surprised_caused.mp4\"\n                         class=\"trial-video\" autoplay playsinline></video>",
+			"condition": 2,
+			"left_label": "distal",
+			"trial_type": "html-button-response",
+			"right_label": "proximal",
+			"trial_index": 12,
+			"time_elapsed": 279333,
+			"plugin_version": "2.0.0"
+		},
+		{
+			"rt": 8867,
+			"video": "test_case_intro",
+			"response": 0,
+			"stimulus": "<video id=\"trial-video\" class=\"trial-video\"\n                         src=\"https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp3/mp4/test_case_intro.mp4\" autoplay playsinline></video>",
+			"condition": 2,
+			"trial_type": "html-button-response",
+			"trial_index": 13,
+			"time_elapsed": 288206,
+			"plugin_version": "2.0.0"
+		},
+		{
+			"rt": 59745,
+			"video": "scared_scenario",
+			"response": 0,
+			"stimulus": "<video id=\"trial-video\" class=\"trial-video\"\n                         src=\"https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp3/mp4/scared_scenario.mp4\" autoplay playsinline></video>",
+			"condition": 2,
+			"trial_type": "html-button-response",
+			"trial_index": 14,
+			"time_elapsed": 347958,
+			"plugin_version": "2.0.0"
+		},
+		{
+			"rt": 6723,
+			"video": "scared_lexical",
+			"response": 1,
+			"scenario": "scenario_2",
+			"stimulus": "<video id=\"q-audio\" src=\"https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp3/mp4/scared_lexical.mp4\"\n                         class=\"trial-video\" autoplay playsinline></video>",
+			"condition": 2,
+			"left_label": "distal",
+			"trial_type": "html-button-response",
+			"right_label": "proximal",
+			"trial_index": 15,
+			"time_elapsed": 354686,
+			"plugin_version": "2.0.0"
+		},
+		{
+			"rt": 8087,
+			"video": "scared_caused",
+			"response": 0,
+			"scenario": "scenario_2",
+			"stimulus": "<video id=\"q-audio\" src=\"https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp3/mp4/scared_caused.mp4\"\n                         class=\"trial-video\" autoplay playsinline></video>",
+			"condition": 2,
+			"left_label": "distal",
+			"trial_type": "html-button-response",
+			"right_label": "proximal",
+			"trial_index": 16,
+			"time_elapsed": 362776,
+			"plugin_version": "2.0.0"
+		},
+		{
+			"rt": 11797,
+			"video": "overall_study_end",
+			"response": 0,
+			"stimulus": "<video id=\"trial-video\" class=\"trial-video\"\n                         src=\"https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp3/mp4/overall_study_end.mp4\" autoplay playsinline></video>",
+			"condition": 2,
+			"trial_type": "html-button-response",
+			"trial_index": 17,
+			"time_elapsed": 374579,
+			"plugin_version": "2.0.0"
+		},
+		{
+			"trial_type": "stop-record-plugin",
+			"trial_index": 18,
+			"time_elapsed": 384667,
+			"plugin_version": "6.0.0"
+		},
+		{
+			"rt": null,
+			"success": true,
+			"trial_type": "fullscreen",
+			"trial_index": 19,
+			"time_elapsed": 384676,
+			"plugin_version": "2.1.0"
+		},
+		{
+			"rt": 20258,
+			"chs_type": "exit",
+			"response": {
+				"feedback": null,
+				"birthDate": "2019-06-04",
+				"useOfMedia": "private",
+				"withdrawal": false,
+				"databraryShare": "no"
+			},
+			"trial_type": "survey",
+			"chs_version": "6.0.0",
+			"trial_index": 20,
+			"time_elapsed": 405319,
+			"plugin_version": "2.0.0"
+		}
+	]
+},
+{
+	"response": {
+		"id": "426134",
+		"uuid": "d310f057-89a6-436a-98b1-8be413f216aa",
+		"date_created": "2026-04-16 00:09:57.072729+00:00",
+		"completed": true,
+		"withdrawn": false,
+		"eligibility": [
+			"Eligible"
+		],
+		"parent_feedback": null,
+		"birthdate_difference": 0,
+		"video_privacy": "private",
+		"databrary": "no",
+		"is_preview": false,
+		"sequence": [
+			"0-fullscreen",
+			"1-video-config-plugin",
+			"2-consent-video",
+			"3-html-button-response",
+			"4-start-record-plugin",
+			"5-html-button-response",
+			"6-html-button-response",
+			"7-html-button-response",
+			"8-html-button-response",
+			"9-html-button-response",
+			"10-html-button-response",
+			"11-html-button-response",
+			"12-html-button-response",
+			"13-html-button-response",
+			"14-html-button-response",
+			"15-html-button-response",
+			"16-html-button-response",
+			"17-html-button-response",
+			"18-stop-record-plugin",
+			"19-fullscreen",
+			"20-survey"
+		],
+		"conditions": [],
+		"researcher_payment_status": "",
+		"researcher_session_status": "",
+		"researcher_star": false
+	},
+	"consent": {
+		"ruling": "accepted",
+		"arbiter": "David  Rose",
+		"time": "2026-04-16 16:02",
+		"comment": null
+	},
+	"study": {
+		"uuid": "67ab9617-a8cc-41e1-a823-bdaca0acde70"
+	},
+	"participant": {
+		"hashed_id": "dSX4WA"
+	},
+	"child": {
+		"hashed_id": "RNDJYT",
+		"age_rounded": "2010",
+		"gender": "f",
+		"age_at_birth": "40 or more weeks",
+		"language_list": "en",
+		"condition_list": "",
+		"additional_information": ""
+	},
+	"exp_data": [
+		{
+			"rt": 2459,
+			"success": true,
+			"trial_type": "fullscreen",
+			"trial_index": 0,
+			"time_elapsed": 3479,
+			"plugin_version": "2.1.0"
+		},
+		{
+			"rt": 10287,
+			"camId": "0cf164838f3de42054f6a19150ed52c1e9d21bca29389e3c4cda609e2b65a560",
+			"micId": "128cf44716efa922db9d2806a95c4d1552538a3e1ddd3d2908f04327decd8c4c",
+			"trial_type": "video-config-plugin",
+			"trial_index": 1,
+			"time_elapsed": 13821,
+			"plugin_version": "6.0.0"
+		},
+		{
+			"chs_type": "consent",
+			"trial_type": "consent-video",
+			"trial_index": 2,
+			"time_elapsed": 36498,
+			"plugin_version": "6.0.0"
+		},
+		{
+			"rt": 3121,
+			"response": 0,
+			"stimulus": "\n        <div class=\"instructions-box\">\n            <h2>Overview</h2>\n            <ul>\n                <li>The study takes about 5\u20138 minutes.</li>\n                <li>Your child will watch short videos and answer questions by clicking on pictures.</li>\n                <li>There are no right or wrong answers.</li>\n            </ul>\n            <p><strong>For parents:</strong> Please help keep your child's attention,\n               but don't tell them which answer to choose.</p>\n        </div>",
+			"trial_type": "html-button-response",
+			"trial_index": 3,
+			"time_elapsed": 39623,
+			"plugin_version": "2.0.0"
+		},
+		{
+			"trial_type": "start-record-plugin",
+			"trial_index": 4,
+			"time_elapsed": 39937,
+			"plugin_version": "6.0.0"
+		},
+		{
+			"rt": 55497,
+			"video": "overall_study_intro",
+			"response": 0,
+			"stimulus": "<video id=\"trial-video\" class=\"trial-video\"\n                         src=\"https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp3/mp4/overall_study_intro.mp4\" autoplay playsinline></video>",
+			"condition": 0,
+			"trial_type": "html-button-response",
+			"trial_index": 5,
+			"time_elapsed": 95439,
+			"plugin_version": "2.0.0"
+		},
+		{
+			"rt": 52433,
+			"video": "warmup_part1_bird_question",
+			"response": 0,
+			"scenario": "warmup",
+			"stimulus": "<video id=\"q-audio\" src=\"https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp3/mp4/warmup_part1_bird_question.mp4\"\n                         class=\"trial-video\" autoplay playsinline></video>",
+			"condition": 0,
+			"left_label": "distal",
+			"trial_type": "html-button-response",
+			"right_label": "proximal",
+			"trial_index": 6,
+			"time_elapsed": 147876,
+			"question_type": "warmup",
+			"plugin_version": "2.0.0"
+		},
+		{
+			"rt": 24445,
+			"video": "warmup_part1_fish_question",
+			"response": 1,
+			"scenario": "warmup",
+			"stimulus": "<video id=\"q-audio\" src=\"https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp3/mp4/warmup_part1_fish_question.mp4\"\n                         class=\"trial-video\" autoplay playsinline></video>",
+			"condition": 0,
+			"left_label": "distal",
+			"trial_type": "html-button-response",
+			"right_label": "proximal",
+			"trial_index": 7,
+			"time_elapsed": 172324,
+			"question_type": "warmup",
+			"plugin_version": "2.0.0"
+		},
+		{
+			"rt": 10016,
+			"video": "warmup_finish",
+			"response": 0,
+			"stimulus": "<video id=\"trial-video\" class=\"trial-video\"\n                         src=\"https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp3/mp4/warmup_finish.mp4\" autoplay playsinline></video>",
+			"condition": 0,
+			"trial_type": "html-button-response",
+			"trial_index": 8,
+			"time_elapsed": 182343,
+			"plugin_version": "2.0.0"
+		},
+		{
+			"rt": 8982,
+			"video": "test_case_intro",
+			"response": 0,
+			"stimulus": "<video id=\"trial-video\" class=\"trial-video\"\n                         src=\"https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp3/mp4/test_case_intro.mp4\" autoplay playsinline></video>",
+			"condition": 0,
+			"trial_type": "html-button-response",
+			"trial_index": 9,
+			"time_elapsed": 191328,
+			"plugin_version": "2.0.0"
+		},
+		{
+			"rt": 54726,
+			"video": "scared_scenario",
+			"response": 0,
+			"stimulus": "<video id=\"trial-video\" class=\"trial-video\"\n                         src=\"https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp3/mp4/scared_scenario.mp4\" autoplay playsinline></video>",
+			"condition": 0,
+			"trial_type": "html-button-response",
+			"trial_index": 10,
+			"time_elapsed": 246057,
+			"plugin_version": "2.0.0"
+		},
+		{
+			"rt": 25950,
+			"video": "scared_lexical",
+			"response": 1,
+			"scenario": "scenario_1",
+			"stimulus": "<video id=\"q-audio\" src=\"https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp3/mp4/scared_lexical.mp4\"\n                         class=\"trial-video\" autoplay playsinline></video>",
+			"condition": 0,
+			"left_label": "distal",
+			"trial_type": "html-button-response",
+			"right_label": "proximal",
+			"trial_index": 11,
+			"time_elapsed": 272011,
+			"plugin_version": "2.0.0"
+		},
+		{
+			"rt": 6393,
+			"video": "scared_caused",
+			"response": 0,
+			"scenario": "scenario_1",
+			"stimulus": "<video id=\"q-audio\" src=\"https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp3/mp4/scared_caused.mp4\"\n                         class=\"trial-video\" autoplay playsinline></video>",
+			"condition": 0,
+			"left_label": "distal",
+			"trial_type": "html-button-response",
+			"right_label": "proximal",
+			"trial_index": 12,
+			"time_elapsed": 278409,
+			"plugin_version": "2.0.0"
+		},
+		{
+			"rt": 9648,
+			"video": "test_case_intro",
+			"response": 0,
+			"stimulus": "<video id=\"trial-video\" class=\"trial-video\"\n                         src=\"https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp3/mp4/test_case_intro.mp4\" autoplay playsinline></video>",
+			"condition": 0,
+			"trial_type": "html-button-response",
+			"trial_index": 13,
+			"time_elapsed": 288060,
+			"plugin_version": "2.0.0"
+		},
+		{
+			"rt": 67359,
+			"video": "surprised_scenario",
+			"response": 0,
+			"stimulus": "<video id=\"trial-video\" class=\"trial-video\"\n                         src=\"https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp3/mp4/surprised_scenario.mp4\" autoplay playsinline></video>",
+			"condition": 0,
+			"trial_type": "html-button-response",
+			"trial_index": 14,
+			"time_elapsed": 355433,
+			"plugin_version": "2.0.0"
+		},
+		{
+			"rt": 9575,
+			"video": "surprised_lexical",
+			"response": 1,
+			"scenario": "scenario_2",
+			"stimulus": "<video id=\"q-audio\" src=\"https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp3/mp4/surprised_lexical.mp4\"\n                         class=\"trial-video\" autoplay playsinline></video>",
+			"condition": 0,
+			"left_label": "distal",
+			"trial_type": "html-button-response",
+			"right_label": "proximal",
+			"trial_index": 15,
+			"time_elapsed": 365050,
+			"plugin_version": "2.0.0"
+		},
+		{
+			"rt": 15263,
+			"video": "surprised_caused",
+			"response": 0,
+			"scenario": "scenario_2",
+			"stimulus": "<video id=\"q-audio\" src=\"https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp3/mp4/surprised_caused.mp4\"\n                         class=\"trial-video\" autoplay playsinline></video>",
+			"condition": 0,
+			"left_label": "distal",
+			"trial_type": "html-button-response",
+			"right_label": "proximal",
+			"trial_index": 16,
+			"time_elapsed": 380316,
+			"plugin_version": "2.0.0"
+		},
+		{
+			"rt": 27747,
+			"video": "overall_study_end",
+			"response": 0,
+			"stimulus": "<video id=\"trial-video\" class=\"trial-video\"\n                         src=\"https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp3/mp4/overall_study_end.mp4\" autoplay playsinline></video>",
+			"condition": 0,
+			"trial_type": "html-button-response",
+			"trial_index": 17,
+			"time_elapsed": 408065,
+			"plugin_version": "2.0.0"
+		},
+		{
+			"trial_type": "stop-record-plugin",
+			"trial_index": 18,
+			"time_elapsed": 418118,
+			"plugin_version": "6.0.0"
+		},
+		{
+			"rt": null,
+			"success": true,
+			"trial_type": "fullscreen",
+			"trial_index": 19,
+			"time_elapsed": 418119,
+			"plugin_version": "2.1.0"
+		},
+		{
+			"rt": 13711,
+			"chs_type": "exit",
+			"response": {
+				"feedback": null,
+				"birthDate": "2020-10-04",
+				"useOfMedia": "private",
+				"withdrawal": false,
+				"databraryShare": "no"
+			},
+			"trial_type": "survey",
+			"chs_version": "6.0.0",
+			"trial_index": 20,
+			"time_elapsed": 431950,
+			"plugin_version": "2.0.0"
+		}
+	]
+},
+{
+	"response": {
+		"id": "426161",
+		"uuid": "d1d26291-6005-490c-8bfe-0d294a9dc0c9",
+		"date_created": "2026-04-16 00:52:55.926520+00:00",
+		"completed": true,
+		"withdrawn": false,
+		"eligibility": [
+			"Eligible"
+		],
+		"parent_feedback": null,
+		"birthdate_difference": 0,
+		"video_privacy": "private",
+		"databrary": "no",
+		"is_preview": false,
+		"sequence": [
+			"0-fullscreen",
+			"1-video-config-plugin",
+			"2-consent-video",
+			"3-html-button-response",
+			"4-start-record-plugin",
+			"5-html-button-response",
+			"6-html-button-response",
+			"7-html-button-response",
+			"8-html-button-response",
+			"9-html-button-response",
+			"10-html-button-response",
+			"11-html-button-response",
+			"12-html-button-response",
+			"13-html-button-response",
+			"14-html-button-response",
+			"15-html-button-response",
+			"16-html-button-response",
+			"17-html-button-response",
+			"18-stop-record-plugin",
+			"19-fullscreen",
+			"20-survey"
+		],
+		"conditions": [],
+		"researcher_payment_status": "",
+		"researcher_session_status": "",
+		"researcher_star": false
+	},
+	"consent": {
+		"ruling": "accepted",
+		"arbiter": "David  Rose",
+		"time": "2026-04-16 16:02",
+		"comment": null
+	},
+	"study": {
+		"uuid": "67ab9617-a8cc-41e1-a823-bdaca0acde70"
+	},
+	"participant": {
+		"hashed_id": "CMKM45"
+	},
+	"child": {
+		"hashed_id": "TdXPYL",
+		"age_rounded": "2520",
+		"gender": "m",
+		"age_at_birth": "40 or more weeks",
+		"language_list": "en",
+		"condition_list": "",
+		"additional_information": ""
+	},
+	"exp_data": [
+		{
+			"rt": 2135,
+			"success": true,
+			"trial_type": "fullscreen",
+			"trial_index": 0,
+			"time_elapsed": 3168,
+			"plugin_version": "2.1.0"
+		},
+		{
+			"rt": 16081,
+			"camId": "c1ece0c111397968c0952f38d74d088cf812d852f5b0922dc890d02852a2bf40",
+			"micId": "9505dfb1deaebc03da942e5e5be47f3d844cc0c079bfd547d04c342b51a93811",
+			"trial_type": "video-config-plugin",
+			"trial_index": 1,
+			"time_elapsed": 19322,
+			"plugin_version": "6.0.0"
+		},
+		{
+			"chs_type": "consent",
+			"trial_type": "consent-video",
+			"trial_index": 2,
+			"time_elapsed": 36016,
+			"plugin_version": "6.0.0"
+		},
+		{
+			"rt": 4113,
+			"response": 0,
+			"stimulus": "\n        <div class=\"instructions-box\">\n            <h2>Overview</h2>\n            <ul>\n                <li>The study takes about 5\u20138 minutes.</li>\n                <li>Your child will watch short videos and answer questions by clicking on pictures.</li>\n                <li>There are no right or wrong answers.</li>\n            </ul>\n            <p><strong>For parents:</strong> Please help keep your child's attention,\n               but don't tell them which answer to choose.</p>\n        </div>",
+			"trial_type": "html-button-response",
+			"trial_index": 3,
+			"time_elapsed": 40138,
+			"plugin_version": "2.0.0"
+		},
+		{
+			"trial_type": "start-record-plugin",
+			"trial_index": 4,
+			"time_elapsed": 40552,
+			"plugin_version": "6.0.0"
+		},
+		{
+			"rt": 55455,
+			"video": "overall_study_intro",
+			"response": 0,
+			"stimulus": "<video id=\"trial-video\" class=\"trial-video\"\n                         src=\"https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp3/mp4/overall_study_intro.mp4\" autoplay playsinline></video>",
+			"condition": 3,
+			"trial_type": "html-button-response",
+			"trial_index": 5,
+			"time_elapsed": 96015,
+			"plugin_version": "2.0.0"
+		},
+		{
+			"rt": 68783,
+			"video": "warmup_part1_bird_question",
+			"response": 0,
+			"scenario": "warmup",
+			"stimulus": "<video id=\"q-audio\" src=\"https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp3/mp4/warmup_part1_bird_question.mp4\"\n                         class=\"trial-video\" autoplay playsinline></video>",
+			"condition": 3,
+			"left_label": "distal",
+			"trial_type": "html-button-response",
+			"right_label": "proximal",
+			"trial_index": 6,
+			"time_elapsed": 164804,
+			"question_type": "warmup",
+			"plugin_version": "2.0.0"
+		},
+		{
+			"rt": 38281,
+			"video": "warmup_part1_fish_question",
+			"response": 1,
+			"scenario": "warmup",
+			"stimulus": "<video id=\"q-audio\" src=\"https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp3/mp4/warmup_part1_fish_question.mp4\"\n                         class=\"trial-video\" autoplay playsinline></video>",
+			"condition": 3,
+			"left_label": "distal",
+			"trial_type": "html-button-response",
+			"right_label": "proximal",
+			"trial_index": 7,
+			"time_elapsed": 203089,
+			"question_type": "warmup",
+			"plugin_version": "2.0.0"
+		},
+		{
+			"rt": 10232,
+			"video": "warmup_finish",
+			"response": 0,
+			"stimulus": "<video id=\"trial-video\" class=\"trial-video\"\n                         src=\"https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp3/mp4/warmup_finish.mp4\" autoplay playsinline></video>",
+			"condition": 3,
+			"trial_type": "html-button-response",
+			"trial_index": 8,
+			"time_elapsed": 213325,
+			"plugin_version": "2.0.0"
+		},
+		{
+			"rt": 16706,
+			"video": "test_case_intro",
+			"response": 0,
+			"stimulus": "<video id=\"trial-video\" class=\"trial-video\"\n                         src=\"https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp3/mp4/test_case_intro.mp4\" autoplay playsinline></video>",
+			"condition": 3,
+			"trial_type": "html-button-response",
+			"trial_index": 9,
+			"time_elapsed": 230035,
+			"plugin_version": "2.0.0"
+		},
+		{
+			"rt": 60430,
+			"video": "surprised_scenario",
+			"response": 0,
+			"stimulus": "<video id=\"trial-video\" class=\"trial-video\"\n                         src=\"https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp3/mp4/surprised_scenario.mp4\" autoplay playsinline></video>",
+			"condition": 3,
+			"trial_type": "html-button-response",
+			"trial_index": 10,
+			"time_elapsed": 290469,
+			"plugin_version": "2.0.0"
+		},
+		{
+			"rt": 8771,
+			"video": "surprised_caused",
+			"response": 1,
+			"scenario": "scenario_1",
+			"stimulus": "<video id=\"q-audio\" src=\"https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp3/mp4/surprised_caused.mp4\"\n                         class=\"trial-video\" autoplay playsinline></video>",
+			"condition": 3,
+			"left_label": "distal",
+			"trial_type": "html-button-response",
+			"right_label": "proximal",
+			"trial_index": 11,
+			"time_elapsed": 299245,
+			"plugin_version": "2.0.0"
+		},
+		{
+			"rt": 7098,
+			"video": "surprised_lexical",
+			"response": 1,
+			"scenario": "scenario_1",
+			"stimulus": "<video id=\"q-audio\" src=\"https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp3/mp4/surprised_lexical.mp4\"\n                         class=\"trial-video\" autoplay playsinline></video>",
+			"condition": 3,
+			"left_label": "distal",
+			"trial_type": "html-button-response",
+			"right_label": "proximal",
+			"trial_index": 12,
+			"time_elapsed": 306347,
+			"plugin_version": "2.0.0"
+		},
+		{
+			"rt": 11187,
+			"video": "test_case_intro",
+			"response": 0,
+			"stimulus": "<video id=\"trial-video\" class=\"trial-video\"\n                         src=\"https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp3/mp4/test_case_intro.mp4\" autoplay playsinline></video>",
+			"condition": 3,
+			"trial_type": "html-button-response",
+			"trial_index": 13,
+			"time_elapsed": 317538,
+			"plugin_version": "2.0.0"
+		},
+		{
+			"rt": 58402,
+			"video": "scared_scenario",
+			"response": 0,
+			"stimulus": "<video id=\"trial-video\" class=\"trial-video\"\n                         src=\"https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp3/mp4/scared_scenario.mp4\" autoplay playsinline></video>",
+			"condition": 3,
+			"trial_type": "html-button-response",
+			"trial_index": 14,
+			"time_elapsed": 375943,
+			"plugin_version": "2.0.0"
+		},
+		{
+			"rt": 12255,
+			"video": "scared_caused",
+			"response": 1,
+			"scenario": "scenario_2",
+			"stimulus": "<video id=\"q-audio\" src=\"https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp3/mp4/scared_caused.mp4\"\n                         class=\"trial-video\" autoplay playsinline></video>",
+			"condition": 3,
+			"left_label": "distal",
+			"trial_type": "html-button-response",
+			"right_label": "proximal",
+			"trial_index": 15,
+			"time_elapsed": 388203,
+			"plugin_version": "2.0.0"
+		},
+		{
+			"rt": 10658,
+			"video": "scared_lexical",
+			"response": 1,
+			"scenario": "scenario_2",
+			"stimulus": "<video id=\"q-audio\" src=\"https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp3/mp4/scared_lexical.mp4\"\n                         class=\"trial-video\" autoplay playsinline></video>",
+			"condition": 3,
+			"left_label": "distal",
+			"trial_type": "html-button-response",
+			"right_label": "proximal",
+			"trial_index": 16,
+			"time_elapsed": 398865,
+			"plugin_version": "2.0.0"
+		},
+		{
+			"rt": 16856,
+			"video": "overall_study_end",
+			"response": 0,
+			"stimulus": "<video id=\"trial-video\" class=\"trial-video\"\n                         src=\"https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp3/mp4/overall_study_end.mp4\" autoplay playsinline></video>",
+			"condition": 3,
+			"trial_type": "html-button-response",
+			"trial_index": 17,
+			"time_elapsed": 415725,
+			"plugin_version": "2.0.0"
+		},
+		{
+			"trial_type": "stop-record-plugin",
+			"trial_index": 18,
+			"time_elapsed": 425772,
+			"plugin_version": "6.0.0"
+		},
+		{
+			"rt": null,
+			"success": true,
+			"trial_type": "fullscreen",
+			"trial_index": 19,
+			"time_elapsed": 425774,
+			"plugin_version": "2.1.0"
+		},
+		{
+			"rt": 13978,
+			"chs_type": "exit",
+			"response": {
+				"feedback": null,
+				"birthDate": "2019-05-28",
+				"useOfMedia": "private",
+				"withdrawal": false,
+				"databraryShare": "no"
+			},
+			"trial_type": "survey",
+			"chs_version": "6.0.0",
+			"trial_index": 20,
+			"time_elapsed": 439919,
+			"plugin_version": "2.0.0"
+		}
+	]
+},
+{
+	"response": {
+		"id": "426162",
+		"uuid": "6fbe3d55-fa82-4006-91da-ec9580bdc8da",
+		"date_created": "2026-04-16 00:54:41.389498+00:00",
+		"completed": false,
+		"withdrawn": false,
+		"eligibility": [
+			"Eligible"
+		],
+		"parent_feedback": null,
+		"birthdate_difference": 0,
+		"video_privacy": "private",
+		"databrary": "no",
+		"is_preview": false,
+		"sequence": [
+			"0-fullscreen",
+			"1-video-config-plugin",
+			"2-consent-video",
+			"3-html-button-response",
+			"4-start-record-plugin",
+			"5-html-button-response",
+			"6-html-button-response",
+			"7-html-button-response",
+			"8-html-button-response",
+			"9-html-button-response",
+			"10-html-button-response",
+			"11-html-button-response",
+			"12-html-button-response",
+			"13-html-button-response",
+			"14-html-button-response",
+			"15-html-button-response",
+			"16-html-button-response",
+			"17-html-button-response",
+			"18-stop-record-plugin",
+			"19-fullscreen",
+			"20-survey"
+		],
+		"conditions": [],
+		"researcher_payment_status": "",
+		"researcher_session_status": "",
+		"researcher_star": false
+	},
+	"consent": {
+		"ruling": "accepted",
+		"arbiter": "David  Rose",
+		"time": "2026-04-16 16:02",
+		"comment": null
+	},
+	"study": {
+		"uuid": "67ab9617-a8cc-41e1-a823-bdaca0acde70"
+	},
+	"participant": {
+		"hashed_id": "EBM36Z"
+	},
+	"child": {
+		"hashed_id": "UEGAc4",
+		"age_rounded": "1860",
+		"gender": "f",
+		"age_at_birth": "40 or more weeks",
+		"language_list": "en",
+		"condition_list": "",
+		"additional_information": "Nope"
+	},
+	"exp_data": [
+		{
+			"rt": 1714,
+			"success": true,
+			"trial_type": "fullscreen",
+			"trial_index": 0,
+			"time_elapsed": 2718,
+			"plugin_version": "2.1.0"
+		},
+		{
+			"rt": 8814,
+			"camId": "jHMf+sWjzbjTDjLDKGq8CVGavzjveb3m+1BNv46s0+8=",
+			"micId": "IRSLZwkkhojPFNCGNboYMh5ud8h4qVygCCh0MT6qyRQ=",
+			"trial_type": "video-config-plugin",
+			"trial_index": 1,
+			"time_elapsed": 11564,
+			"plugin_version": "6.0.0"
+		},
+		{
+			"chs_type": "consent",
+			"trial_type": "consent-video",
+			"trial_index": 2,
+			"time_elapsed": 28198,
+			"plugin_version": "6.0.0"
+		},
+		{
+			"rt": 2107,
+			"response": 0,
+			"stimulus": "\n        <div class=\"instructions-box\">\n            <h2>Overview</h2>\n            <ul>\n                <li>The study takes about 5\u20138 minutes.</li>\n                <li>Your child will watch short videos and answer questions by clicking on pictures.</li>\n                <li>There are no right or wrong answers.</li>\n            </ul>\n            <p><strong>For parents:</strong> Please help keep your child's attention,\n               but don't tell them which answer to choose.</p>\n        </div>",
+			"trial_type": "html-button-response",
+			"trial_index": 3,
+			"time_elapsed": 30306,
+			"plugin_version": "2.0.0"
+		},
+		{
+			"trial_type": "start-record-plugin",
+			"trial_index": 4,
+			"time_elapsed": 30538,
+			"plugin_version": "6.0.0"
+		},
+		{
+			"rt": 56721,
+			"video": "overall_study_intro",
+			"response": 0,
+			"stimulus": "<video id=\"trial-video\" class=\"trial-video\"\n                         src=\"https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp3/mp4/overall_study_intro.mp4\" autoplay playsinline></video>",
+			"condition": 3,
+			"trial_type": "html-button-response",
+			"trial_index": 5,
+			"time_elapsed": 87264,
+			"plugin_version": "2.0.0"
+		},
+		{
+			"rt": 55495,
+			"video": "warmup_part1_bird_question",
+			"response": 0,
+			"scenario": "warmup",
+			"stimulus": "<video id=\"q-audio\" src=\"https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp3/mp4/warmup_part1_bird_question.mp4\"\n                         class=\"trial-video\" autoplay playsinline></video>",
+			"condition": 3,
+			"left_label": "distal",
+			"trial_type": "html-button-response",
+			"right_label": "proximal",
+			"trial_index": 6,
+			"time_elapsed": 142765,
+			"question_type": "warmup",
+			"plugin_version": "2.0.0"
+		},
+		{
+			"rt": 24163,
+			"video": "warmup_part1_fish_question",
+			"response": 1,
+			"scenario": "warmup",
+			"stimulus": "<video id=\"q-audio\" src=\"https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp3/mp4/warmup_part1_fish_question.mp4\"\n                         class=\"trial-video\" autoplay playsinline></video>",
+			"condition": 3,
+			"left_label": "distal",
+			"trial_type": "html-button-response",
+			"right_label": "proximal",
+			"trial_index": 7,
+			"time_elapsed": 166934,
+			"question_type": "warmup",
+			"plugin_version": "2.0.0"
+		},
+		{
+			"rt": 17451,
+			"video": "warmup_finish",
+			"response": 0,
+			"stimulus": "<video id=\"trial-video\" class=\"trial-video\"\n                         src=\"https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp3/mp4/warmup_finish.mp4\" autoplay playsinline></video>",
+			"condition": 3,
+			"trial_type": "html-button-response",
+			"trial_index": 8,
+			"time_elapsed": 184390,
+			"plugin_version": "2.0.0"
+		},
+		{
+			"rt": 15876,
+			"video": "test_case_intro",
+			"response": 0,
+			"stimulus": "<video id=\"trial-video\" class=\"trial-video\"\n                         src=\"https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp3/mp4/test_case_intro.mp4\" autoplay playsinline></video>",
+			"condition": 3,
+			"trial_type": "html-button-response",
+			"trial_index": 9,
+			"time_elapsed": 200271,
+			"plugin_version": "2.0.0"
+		},
+		{
+			"rt": 72023,
+			"video": "surprised_scenario",
+			"response": 0,
+			"stimulus": "<video id=\"trial-video\" class=\"trial-video\"\n                         src=\"https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp3/mp4/surprised_scenario.mp4\" autoplay playsinline></video>",
+			"condition": 3,
+			"trial_type": "html-button-response",
+			"trial_index": 10,
+			"time_elapsed": 272297,
+			"plugin_version": "2.0.0"
+		},
+		{
+			"rt": 11110,
+			"video": "surprised_caused",
+			"response": 1,
+			"scenario": "scenario_1",
+			"stimulus": "<video id=\"q-audio\" src=\"https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp3/mp4/surprised_caused.mp4\"\n                         class=\"trial-video\" autoplay playsinline></video>",
+			"condition": 3,
+			"left_label": "distal",
+			"trial_type": "html-button-response",
+			"right_label": "proximal",
+			"trial_index": 11,
+			"time_elapsed": 283413,
+			"plugin_version": "2.0.0"
+		},
+		{
+			"rt": 10124,
+			"video": "surprised_lexical",
+			"response": 1,
+			"scenario": "scenario_1",
+			"stimulus": "<video id=\"q-audio\" src=\"https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp3/mp4/surprised_lexical.mp4\"\n                         class=\"trial-video\" autoplay playsinline></video>",
+			"condition": 3,
+			"left_label": "distal",
+			"trial_type": "html-button-response",
+			"right_label": "proximal",
+			"trial_index": 12,
+			"time_elapsed": 293547,
+			"plugin_version": "2.0.0"
+		},
+		{
+			"rt": 8578,
+			"video": "test_case_intro",
+			"response": 0,
+			"stimulus": "<video id=\"trial-video\" class=\"trial-video\"\n                         src=\"https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp3/mp4/test_case_intro.mp4\" autoplay playsinline></video>",
+			"condition": 3,
+			"trial_type": "html-button-response",
+			"trial_index": 13,
+			"time_elapsed": 302133,
+			"plugin_version": "2.0.0"
+		},
+		{
+			"rt": 58401,
+			"video": "scared_scenario",
+			"response": 0,
+			"stimulus": "<video id=\"trial-video\" class=\"trial-video\"\n                         src=\"https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp3/mp4/scared_scenario.mp4\" autoplay playsinline></video>",
+			"condition": 3,
+			"trial_type": "html-button-response",
+			"trial_index": 14,
+			"time_elapsed": 360539,
+			"plugin_version": "2.0.0"
+		},
+		{
+			"rt": 12436,
+			"video": "scared_caused",
+			"response": 1,
+			"scenario": "scenario_2",
+			"stimulus": "<video id=\"q-audio\" src=\"https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp3/mp4/scared_caused.mp4\"\n                         class=\"trial-video\" autoplay playsinline></video>",
+			"condition": 3,
+			"left_label": "distal",
+			"trial_type": "html-button-response",
+			"right_label": "proximal",
+			"trial_index": 15,
+			"time_elapsed": 372979,
+			"plugin_version": "2.0.0"
+		},
+		{
+			"rt": 14594,
+			"video": "scared_lexical",
+			"response": 1,
+			"scenario": "scenario_2",
+			"stimulus": "<video id=\"q-audio\" src=\"https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp3/mp4/scared_lexical.mp4\"\n                         class=\"trial-video\" autoplay playsinline></video>",
+			"condition": 3,
+			"left_label": "distal",
+			"trial_type": "html-button-response",
+			"right_label": "proximal",
+			"trial_index": 16,
+			"time_elapsed": 387577,
+			"plugin_version": "2.0.0"
+		},
+		{
+			"rt": 14205,
+			"video": "overall_study_end",
+			"response": 0,
+			"stimulus": "<video id=\"trial-video\" class=\"trial-video\"\n                         src=\"https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp3/mp4/overall_study_end.mp4\" autoplay playsinline></video>",
+			"condition": 3,
+			"trial_type": "html-button-response",
+			"trial_index": 17,
+			"time_elapsed": 401790,
+			"plugin_version": "2.0.0"
+		},
+		{
+			"trial_type": "stop-record-plugin",
+			"trial_index": 18,
+			"time_elapsed": 411861,
+			"plugin_version": "6.0.0"
+		},
+		{
+			"rt": null,
+			"success": true,
+			"trial_type": "fullscreen",
+			"trial_index": 19,
+			"time_elapsed": 411865,
+			"plugin_version": "2.1.0"
+		},
+		{
+			"rt": 14752,
+			"chs_type": "exit",
+			"response": {
+				"feedback": null,
+				"birthDate": "2021-03-25",
+				"useOfMedia": "private",
+				"withdrawal": false,
+				"databraryShare": "no"
+			},
+			"trial_type": "survey",
+			"chs_version": "6.0.0",
+			"trial_index": 20,
+			"time_elapsed": 426665,
+			"plugin_version": "2.0.0"
+		}
+	]
+}
+]
