@@ -106,7 +106,7 @@ document.head.appendChild(_style);
 //  CONFIG
 // ════════════════════════════════════════════════════════════════════
 
-const BASE = 'https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_exp1mats_with_punish/';
+const BASE = 'https://raw.githubusercontent.com/SunnyZ-cs/lookit_material/master/children_pilot1_exp1mats_with_punish/';
 const IMG  = src => BASE + 'img/' + src;
 const VID  = src => BASE + 'mp4/' + src + '.mp4';
 
