@@ -122,32 +122,12 @@ function lbl(src) {
 //  SCENARIOS & RANDOMIZATION
 // ════════════════════════════════════════════════════════════════════
 
-const character_order_condition = Math.random() < 0.5 ? 0 : 1;
-const cause_break_order = Math.random() < 0.5 ? ["caused", "break"] : ["break", "caused"];
-const question_order = [...cause_break_order, "fault", "punish"];
-
-const characters = {
-    "bike": ["andy", "suzy"],
-    "mirror": ["bobby", "sophia"]
-};
+const intent_condition = Math.random() < 0.5 ? "intentional" : "accidental";
+const proximal_distal_order = Math.random() < 0.5 ? ["proximal", "distal"] : ["distal", "proximal"];
+const cause_lexical_order = Math.random() < 0.5 ? ["cause", "lexical"] : ["lexical", "cause"];
+const question_order = [...cause_lexical_order, "fault", "punish"];
 
 const scenario_list = Math.random() < 0.5 ? ["bike", "mirror"] : ["mirror", "bike"];
-
-// Image mappings for the generic question background
-const bg_images = {
-    "bike": {
-        "caused": "gender_order1/fence_scenario_boy_bike_caused_question.png",
-        "break": "gender_order1/fence_scenario_boy_bike_break_question.png",
-        "fault": "gender_order1/fence_scenario_boy_bike_fault_question.png",
-        "punish": "gender_order1/fence_scenario_boy_bike_should_punish_question.png"
-    },
-    "mirror": {
-        "caused": "gender_order1/mirror_scenario_girl_chair_caused_question.png",
-        "break": "gender_order1/mirror_scenario_girl_chair_crack_question.png",
-        "fault": "gender_order1/mirror_scenario_girl_chair_fault_question.png",
-        "punish": "gender_order1/mirror_scenario_girl_chair_should_punish_question.png"
-    }
-};
 
 // ════════════════════════════════════════════════════════════════════
 //  INIT jsPsych
@@ -193,7 +173,7 @@ function videoTrial(videoName, trialType) {
             // Safety: enable after 5 minutes if video event never fires
             setTimeout(() => { btn.disabled = false; }, 300_000);
         },
-        data: { trial_type: trialType, video: videoName, condition: character_order_condition }
+        data: { trial_type: trialType, video: videoName, intent_condition: intent_condition }
     };
 }
 
@@ -205,16 +185,15 @@ function videoTrial(videoName, trialType) {
  *
  * response index: 0 = left button, 1 = right button
  */
-function questionTrial({ videoName, questionImgSrc, leftImgSrc, rightImgSrc, questionType, scenarioId }) {
+function questionTrial({ videoName, leftImgSrc, rightImgSrc, questionType, scenarioId }) {
     const leftLabel  = lbl(leftImgSrc);
     const rightLabel = lbl(rightImgSrc);
 
     return {
         type: jsPsychHtmlButtonResponse,
         stimulus: `
-            <img src="${questionImgSrc}" class="question-image" alt="question">
             <video id="q-audio" src="${VID(videoName)}"
-                   style="position:absolute;width:1px;height:1px;opacity:0;pointer-events:none;"
+                   class="scenario-video"
                    autoplay playsinline></video>`,
         choices: [
             `<img src="${leftImgSrc}"  class="choice-img" alt="${leftLabel}">`,
@@ -241,7 +220,7 @@ function questionTrial({ videoName, questionImgSrc, leftImgSrc, rightImgSrc, que
         data: {
             trial_type:  questionType,
             scenario:    scenarioId,
-            condition:   character_order_condition,
+            intent_condition: intent_condition,
             left_label:  leftLabel,
             right_label: rightLabel,
             video:       videoName
@@ -256,10 +235,8 @@ function questionTrial({ videoName, questionImgSrc, leftImgSrc, rightImgSrc, que
 
 function buildScenarioTimeline(scenarioKey) {
     const trials = [];
-    const is_bike = scenarioKey === "bike";
     const intro_vid = "test_case_intro";
-    const scenario_vid = is_bike ? "fence_scenario_boy_bike" : "mirror_scenario_girl_chair";
-    const scenario_prefix = is_bike ? "fence_scenario_boy_bike" : "mirror_scenario_girl_chair";
+    const scenario_vid = `${scenarioKey}_${intent_condition}`;
 
     // 1. Intro video (experimenter clicks Continue after watching)
     trials.push(videoTrial(intro_vid, 'intro'));
@@ -267,26 +244,16 @@ function buildScenarioTimeline(scenarioKey) {
     // 2. Scenario video
     trials.push(videoTrial(scenario_vid, 'scenario'));
 
-    // Determine character order for this scenario
-    let scenario_chars = characters[scenarioKey];
-    if (character_order_condition === 1) {
-        scenario_chars = [scenario_chars[1], scenario_chars[0]];
-    }
-
     // Generate the 8 Yes/No questions iteratively
     for (const q_type of question_order) {
-        for (const character of scenario_chars) {
-            // Mirror uses 'crack' instead of 'break' for the action question
-            const type_for_file = (q_type === "break" && !is_bike) ? "crack" : q_type;
-            const videoName = `${scenario_prefix}_${type_for_file}_${character}_question`;
-            const bg_img = bg_images[scenarioKey][q_type];
+        for (const role of proximal_distal_order) {
+            const videoName = `${scenarioKey}_${intent_condition}_${role}_${q_type}`;
 
             trials.push(questionTrial({
                 videoName: videoName,
-                questionImgSrc: IMG(bg_img),
                 leftImgSrc: IMG('yes.png'),
                 rightImgSrc: IMG('no.png'),
-                questionType: `${q_type}_${character}`,
+                questionType: `${q_type}_${role}`,
                 scenarioId: scenarioKey
             }));
         }
@@ -304,12 +271,9 @@ function buildScenarioTimeline(scenarioKey) {
 //    choices appear after audio
 // ════════════════════════════════════════════════════════════════════
 
-const WARMUP_Q_IMG = IMG('warmup_question.png');
-
 function warmupQuestionTrial(videoName, leftImg, rightImg) {
     return questionTrial({
         videoName,
-        questionImgSrc: WARMUP_Q_IMG,
         leftImgSrc:     IMG(leftImg),
         rightImgSrc:    IMG(rightImg),
         questionType:   'warmup',
@@ -367,7 +331,9 @@ const timeline = [
             trial_type: 'randomization_info',
             scenario_order: scenario_list,
             question_order: question_order,
-            character_order_condition: character_order_condition
+            intent_condition: intent_condition,
+            proximal_distal_order: proximal_distal_order,
+            cause_lexical_order: cause_lexical_order
         }
     },
 
