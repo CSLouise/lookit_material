@@ -252,12 +252,16 @@ const CONDITIONS = [
 
 // ════════════════════════════════════════════════════════════════════
 //  INIT jsPsych
+//
+//  conditionIndex / condition are assigned AFTER the per-age gate runs
+//  (see "RUN THE EXPERIMENT" at the bottom). The trial builders below read
+//  these module-level variables at trial time, by which point they are set.
 // ════════════════════════════════════════════════════════════════════
 
 const jsPsych = initJsPsych();
 
-const conditionIndex = Math.floor(Math.random() * CONDITIONS.length);
-const condition      = CONDITIONS[conditionIndex];
+let conditionIndex;
+let condition;
 
 
 // ════════════════════════════════════════════════════════════════════
@@ -390,11 +394,16 @@ function warmupQuestionTrial({ videoName, leftImgSrc, rightImgSrc }) {
     };
 }
 
-const warmupTimeline = [
-    warmupQuestionTrial({ videoName: 'warmup_part1_bird_question', leftImgSrc: IMG('bird.png'), rightImgSrc: IMG('cat.png')  }),
-    warmupQuestionTrial({ videoName: 'warmup_part1_fish_question', leftImgSrc: IMG('pig.png'),  rightImgSrc: IMG('fish.png') }),
-    videoTrial('warmup_finish', 'warmup_video')
-];
+// Built as a function (not a const) so it is constructed AFTER conditionIndex
+// is assigned in the gated IIFE below — otherwise the warmup trials would
+// capture conditionIndex === undefined in their data.
+function makeWarmupTimeline() {
+    return [
+        warmupQuestionTrial({ videoName: 'warmup_part1_bird_question', leftImgSrc: IMG('bird.png'), rightImgSrc: IMG('cat.png')  }),
+        warmupQuestionTrial({ videoName: 'warmup_part1_fish_question', leftImgSrc: IMG('pig.png'),  rightImgSrc: IMG('fish.png') }),
+        videoTrial('warmup_finish', 'warmup_video')
+    ];
+}
 
 
 // ════════════════════════════════════════════════════════════════════
@@ -437,25 +446,168 @@ const stop_recording  = { type: chsRecord.StopRecordPlugin  };
 
 
 // ════════════════════════════════════════════════════════════════════
+//  PER-AGE CONDITION GATING
+//
+//  Between-subjects domains:  physical (cond 0-3) | mental (cond 4-7)
+//  Each participant sees ONE domain only.
+//
+//  Once a domain reaches its per-condition target for a given age, new
+//  participants of that age are NO LONGER assigned to it — only the still-open
+//  domain's conditions are drawn. If BOTH domains are full for an age, that age
+//  is closed and the participant is shown a "quota full" message.
+//
+//  The child's age is read at runtime from window.chs.child.birthday and
+//  bucketed by age-in-days using the SAME table as the lab-manager
+//  (lookit-tools/scripts/lookit_response_coder.py → AGE_BUCKETS).
+//
+//  ▼▼▼  UPDATE THESE COUNTS as data comes in  ▼▼▼
+//  Per-condition target, and the current analysis-eligible counts per age.
+//  A domain whose count >= TARGET_PER_CONDITION is treated as FULL.
+// ════════════════════════════════════════════════════════════════════
+
+const TARGET_PER_CONDITION = 30;
+
+// age bucket → { physical: n, mental: n }   (analysis-eligible counts)
+// Updated 2026-08-12 from the lab-manager dashboard.
+const CONDITION_COUNTS = {
+    '3': { physical: 36, mental: 28 },
+    '4': { physical: 26, mental: 30 },
+    '5': { physical: 31, mental: 20 },
+    '6': { physical: 29, mental: 33 },
+    '7': { physical: 31, mental: 25 },
+    '8': { physical: 30, mental: 29 },
+    '9': { physical: 30, mental: 32 }
+};
+//  ▲▲▲  UPDATE THESE COUNTS as data comes in  ▲▲▲
+
+const ALL_DOMAINS    = ['physical', 'mental'];
+const DOMAIN_INDICES = { physical: [0, 1, 2, 3], mental: [4, 5, 6, 7] };
+const domainOf       = idx => (idx < 4 ? 'physical' : 'mental');
+
+// Age-in-days buckets — must match lookit-tools AGE_BUCKETS (lower < days < upper).
+const AGE_BUCKETS = [
+    [1095, 1460, '3'], [1460, 1826, '4'], [1826, 2191, '5'], [2191, 2556, '6'],
+    [2556, 2921, '7'], [2921, 3287, '8'], [3287, 3652, '9']
+];
+
+function childBirthday() {
+    const c = window.chs && window.chs.child;
+    if (!c) return null;
+    return (c.attributes && c.attributes.birthday) || c.birthday || null;
+}
+
+function ageBucketFromBirthday() {
+    const b = childBirthday();
+    if (!b) return null;
+    const ms = new Date(b).getTime();
+    if (isNaN(ms)) return null;
+    const ageDays = Math.floor((Date.now() - ms) / 86400000);
+    for (const [lo, hi, label] of AGE_BUCKETS) {
+        if (lo < ageDays && ageDays < hi) return label;
+    }
+    return null;  // outside the 3-9 range → no gating
+}
+
+// window.chs.child is populated asynchronously by CHS. Wait until the birthday
+// is actually readable (not just window.chs.child) so ageBucketFromBirthday()
+// doesn't return null because of a load race. Falls through after the timeout.
+async function ensureChsLoaded(timeoutMs) {
+    const start = Date.now();
+    while (!childBirthday() && (Date.now() - start) < timeoutMs) {
+        await new Promise(r => setTimeout(r, 50));
+    }
+}
+
+
+// ════════════════════════════════════════════════════════════════════
 //  RUN THE EXPERIMENT
 // ════════════════════════════════════════════════════════════════════
 
-jsPsych.run([
-    { type: jsPsychFullscreen, fullscreen_mode: true },
-    video_config,
-    video_consent,
-    instructions,
+(async () => {
+    await ensureChsLoaded(8000);
 
-    start_recording,
-    videoTrial('overall_study_intro', 'intro_video'),
+    const bday      = childBirthday();
+    const ageBucket = ageBucketFromBirthday();
+    const counts    = ageBucket ? CONDITION_COUNTS[ageBucket] : null;
 
-    ...warmupTimeline,
+    // Determine which domains are still open for this age.
+    // Only skip gating when the age truly can't be determined (missing/unparseable
+    // birthday, or age outside the 3-9 range) — never hard-block on a read failure.
+    // NOTE: gating DOES apply in CHS preview, so you can test it there.
+    let openDomains, gatingApplied, skipReason = null;
+    if (!ageBucket || !counts) {
+        openDomains   = ALL_DOMAINS.slice();
+        gatingApplied = false;
+        skipReason    = !bday ? 'no_birthday' : (!ageBucket ? 'age_out_of_range' : 'no_counts_for_age');
+    } else {
+        openDomains   = ALL_DOMAINS.filter(d => (counts[d] || 0) < TARGET_PER_CONDITION);
+        gatingApplied = true;
+    }
 
-    ...buildScenarioTimeline(condition[0], 'scenario_1'),
-    ...buildScenarioTimeline(condition[1], 'scenario_2'),
+    // Diagnostic — open the DevTools console in CHS preview to see what was
+    // read and decided. Safe to leave in; remove later if you like.
+    console.log('[age-gating exp2]', {
+        chs_child_present: !!(window.chs && window.chs.child),
+        birthday:          bday,
+        age_bucket:        ageBucket,
+        counts_for_age:    counts,
+        gating_applied:    gatingApplied,
+        skip_reason:       skipReason,
+        open_domains:      openDomains
+    });
 
-    videoTrial('overall_study_end', 'end_video'),
-    stop_recording,
-    { type: jsPsychFullscreen, fullscreen_mode: false, delay_after: 0 },
-    { type: chsSurvey.ExitSurveyPlugin }
-]);
+    // Both domains full for this age → close it (show message, do not record).
+    if (gatingApplied && openDomains.length === 0) {
+        jsPsych.data.addProperties({
+            age_bucket: ageBucket, gating_applied: true, quota_full: true
+        });
+        jsPsych.run([{
+            type: jsPsychHtmlButtonResponse,
+            stimulus: `
+                <div class="instructions-box">
+                    <h2>Thank you so much!</h2>
+                    <p>We've already collected enough responses for your child's
+                       age group in this study for now. We really appreciate your
+                       interest — please check back later or try one of our other
+                       studies. Thank you!</p>
+                </div>`,
+            choices: ['Close'],
+            data: { trial_type: 'quota_full', age_bucket: ageBucket }
+        }]);
+        return;
+    }
+
+    // Draw a condition index only from the open domains' conditions.
+    const allowed   = openDomains.reduce((acc, d) => acc.concat(DOMAIN_INDICES[d]), []);
+    conditionIndex  = allowed[Math.floor(Math.random() * allowed.length)];
+    condition       = CONDITIONS[conditionIndex];
+
+    jsPsych.data.addProperties({
+        condition:      conditionIndex,
+        domain:         domainOf(conditionIndex),
+        age_bucket:     ageBucket || 'unknown',
+        gating_applied: gatingApplied,
+        gating_skip_reason: skipReason || '',
+        open_domains:   openDomains.join('-')
+    });
+
+    jsPsych.run([
+        { type: jsPsychFullscreen, fullscreen_mode: true },
+        video_config,
+        video_consent,
+        instructions,
+
+        start_recording,
+        videoTrial('overall_study_intro', 'intro_video'),
+
+        ...makeWarmupTimeline(),
+
+        ...buildScenarioTimeline(condition[0], 'scenario_1'),
+        ...buildScenarioTimeline(condition[1], 'scenario_2'),
+
+        videoTrial('overall_study_end', 'end_video'),
+        stop_recording,
+        { type: jsPsychFullscreen, fullscreen_mode: false, delay_after: 0 },
+        { type: chsSurvey.ExitSurveyPlugin }
+    ]);
+})();

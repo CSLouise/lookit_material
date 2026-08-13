@@ -331,50 +331,172 @@ const stop_recording  = { type: chsRecord.StopRecordPlugin  };
 
 
 // ════════════════════════════════════════════════════════════════════
-//  INIT jsPsych & ASSIGN CONDITION
+//  PER-AGE CONDITION GATING
+//
+//  Between-subjects groups:  control (causal verbs) | experimental (psych verbs)
+//
+//  Once a group reaches its per-condition target for a given age, new
+//  participants of that age are NO LONGER assigned to it — only the still-open
+//  group is drawn. If BOTH groups are full for an age, that age is closed and
+//  the participant is shown a "quota full" message instead of the study.
+//
+//  The child's age is read at runtime from window.chs.child.birthday and
+//  bucketed by age-in-days using the SAME table as the lab-manager
+//  (lookit-tools/scripts/lookit_response_coder.py → AGE_BUCKETS), so this
+//  matches your recruitment dashboard exactly.
+//
+//  ▼▼▼  UPDATE THESE COUNTS as data comes in  ▼▼▼
+//  Per-condition target, and the current analysis-eligible counts per age.
+//  A group whose count >= TARGET_PER_CONDITION is treated as FULL.
+// ════════════════════════════════════════════════════════════════════
+
+const TARGET_PER_CONDITION = 30;
+
+// age bucket → { control: n, experimental: n }   (analysis-eligible counts)
+const CONDITION_COUNTS = {
+    '3': { control: 30, experimental: 28 },
+    '4': { control: 34, experimental: 31 },
+    '5': { control: 32, experimental: 28 },
+    '6': { control: 20, experimental: 23 },
+    '7': { control: 24, experimental: 34 },
+    '8': { control: 20, experimental: 26 },
+    '9': { control: 29, experimental: 29 }
+};
+//  ▲▲▲  UPDATE THESE COUNTS as data comes in  ▲▲▲
+
+const ALL_GROUPS = ['control', 'experimental'];
+
+// Age-in-days buckets — must match lookit-tools AGE_BUCKETS (lower < days < upper).
+const AGE_BUCKETS = [
+    [1095, 1460, '3'], [1460, 1826, '4'], [1826, 2191, '5'], [2191, 2556, '6'],
+    [2556, 2921, '7'], [2921, 3287, '8'], [3287, 3652, '9']
+];
+
+function childBirthday() {
+    const c = window.chs && window.chs.child;
+    if (!c) return null;
+    return (c.attributes && c.attributes.birthday) || c.birthday || null;
+}
+
+function ageBucketFromBirthday() {
+    const b = childBirthday();
+    if (!b) return null;
+    const ms = new Date(b).getTime();
+    if (isNaN(ms)) return null;
+    const ageDays = Math.floor((Date.now() - ms) / 86400000);
+    for (const [lo, hi, label] of AGE_BUCKETS) {
+        if (lo < ageDays && ageDays < hi) return label;
+    }
+    return null;  // outside the 3-9 range → no gating
+}
+
+// window.chs.child is populated asynchronously by CHS. Wait until the birthday
+// is actually readable (not just window.chs.child) so ageBucketFromBirthday()
+// doesn't return null because of a load race. Falls through after the timeout.
+async function ensureChsLoaded(timeoutMs) {
+    const start = Date.now();
+    while (!childBirthday() && (Date.now() - start) < timeoutMs) {
+        await new Promise(r => setTimeout(r, 50));
+    }
+}
+
+
+// ════════════════════════════════════════════════════════════════════
+//  INIT jsPsych & RUN (condition is assigned AFTER the age gate runs)
 // ════════════════════════════════════════════════════════════════════
 
 const jsPsych = initJsPsych();
 
-// 8 total conditions = 2 groups × 4 within-subject orders.
-// We use Math.random() here (synchronous, works in CHS preview).
-// To balance between-group N, monitor recruitment on the Lookit
-// dashboard and close recruitment when each group is full.
-const groupAssignment = Math.random() < 0.5 ? 'control' : 'experimental';
-const conditionIndex  = Math.floor(Math.random() * WITHIN_CONDITIONS.length);
-const within          = WITHIN_CONDITIONS[conditionIndex];
+(async () => {
+    await ensureChsLoaded(8000);
 
-// Tag every trial with group / condition / within-subject info
-jsPsych.data.addProperties({
-    group:           groupAssignment,
-    condition:       conditionIndex,
-    scenario_order:  within.scenarioOrder.join('-'),
-    question_order:  within.questionOrder.join('-')
-});
+    const bday      = childBirthday();
+    const ageBucket = ageBucketFromBirthday();
+    const counts    = ageBucket ? CONDITION_COUNTS[ageBucket] : null;
 
-const [scen1, scen2] = within.scenarioOrder;
+    // Determine which groups are still open for this age.
+    // Only skip gating when the age truly can't be determined (missing/unparseable
+    // birthday, or age outside the 3-9 range) — never hard-block on a read failure.
+    // NOTE: gating DOES apply in CHS preview, so you can test it there.
+    let openGroups, gatingApplied, skipReason = null;
+    if (!ageBucket || !counts) {
+        openGroups    = ALL_GROUPS.slice();
+        gatingApplied = false;
+        skipReason    = !bday ? 'no_birthday' : (!ageBucket ? 'age_out_of_range' : 'no_counts_for_age');
+    } else {
+        openGroups    = ALL_GROUPS.filter(g => (counts[g] || 0) < TARGET_PER_CONDITION);
+        gatingApplied = true;
+    }
 
+    // Diagnostic — open the DevTools console in CHS preview to see what was
+    // read and decided. Safe to leave in; remove later if you like.
+    console.log('[age-gating exp1]', {
+        chs_child_present: !!(window.chs && window.chs.child),
+        birthday:          bday,
+        age_bucket:        ageBucket,
+        counts_for_age:    counts,
+        gating_applied:    gatingApplied,
+        skip_reason:       skipReason,
+        open_groups:       openGroups
+    });
 
-// ════════════════════════════════════════════════════════════════════
-//  RUN THE EXPERIMENT
-// ════════════════════════════════════════════════════════════════════
+    // Both groups full for this age → close it (show message, do not record).
+    if (gatingApplied && openGroups.length === 0) {
+        jsPsych.data.addProperties({
+            age_bucket: ageBucket, gating_applied: true, quota_full: true
+        });
+        jsPsych.run([{
+            type: jsPsychHtmlButtonResponse,
+            stimulus: `
+                <div class="instructions-box">
+                    <h2>Thank you so much!</h2>
+                    <p>We've already collected enough responses for your child's
+                       age group in this study for now. We really appreciate your
+                       interest — please check back later or try one of our other
+                       studies. Thank you!</p>
+                </div>`,
+            choices: ['Close'],
+            data: { trial_type: 'quota_full', age_bucket: ageBucket }
+        }]);
+        return;
+    }
 
-jsPsych.run([
-    { type: jsPsychFullscreen, fullscreen_mode: true },
-    video_config,
-    video_consent,
-    instructions,
+    // Assign group from the open set; within-subject order stays randomized.
+    const groupAssignment = openGroups[Math.floor(Math.random() * openGroups.length)];
+    const conditionIndex  = Math.floor(Math.random() * WITHIN_CONDITIONS.length);
+    const within          = WITHIN_CONDITIONS[conditionIndex];
 
-    start_recording,
-    videoTrial('overall_study_intro', 'intro_video'),
+    // Tag every trial with group / condition / within-subject + gating info
+    jsPsych.data.addProperties({
+        group:           groupAssignment,
+        condition:       conditionIndex,
+        scenario_order:  within.scenarioOrder.join('-'),
+        question_order:  within.questionOrder.join('-'),
+        age_bucket:      ageBucket || 'unknown',
+        gating_applied:  gatingApplied,
+        gating_skip_reason: skipReason || '',
+        open_groups:     openGroups.join('-')
+    });
 
-    ...warmupTimeline,
+    const [scen1, scen2] = within.scenarioOrder;
 
-    ...buildScenario(scen1, groupAssignment, within.questionOrder, 'scenario_1'),
-    ...buildScenario(scen2, groupAssignment, within.questionOrder, 'scenario_2'),
+    jsPsych.run([
+        { type: jsPsychFullscreen, fullscreen_mode: true },
+        video_config,
+        video_consent,
+        instructions,
 
-    videoTrial('overall_study_end', 'end_video'),
-    stop_recording,
-    { type: jsPsychFullscreen, fullscreen_mode: false, delay_after: 0 },
-    { type: chsSurvey.ExitSurveyPlugin }
-]);
+        start_recording,
+        videoTrial('overall_study_intro', 'intro_video'),
+
+        ...warmupTimeline,
+
+        ...buildScenario(scen1, groupAssignment, within.questionOrder, 'scenario_1'),
+        ...buildScenario(scen2, groupAssignment, within.questionOrder, 'scenario_2'),
+
+        videoTrial('overall_study_end', 'end_video'),
+        stop_recording,
+        { type: jsPsychFullscreen, fullscreen_mode: false, delay_after: 0 },
+        { type: chsSurvey.ExitSurveyPlugin }
+    ]);
+})();
